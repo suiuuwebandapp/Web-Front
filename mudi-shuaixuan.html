@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>目的地筛选</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" type="text/css" href="css/cs.css">
+<link rel="stylesheet" type="text/css" href="css/my_select.css">
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/squid.js"></script>
+<script type="text/javascript" src="js/jselect-1.0.js"></script>
+
+<!--初始化select-->
+<script type="text/javascript">
+$(function(){
+squid.swing.jselect();
+
+})
+</script>
+
+</head>
+<body style="background: #eeeeee;">
+
+<!--header开始-->
+<div class="header">
+    <div class="header-main clearfix w1200">
+        <div class="header-nav fl">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="suiyou.html">随游</a></li>
+                <li class="active"><a href="mudi-shuaixuan.html">目的地</a></li>
+                <li><a href="zhuanlan.html">专栏</a></li>
+                <li><a href="suiyou_bianji.html">发布随游</a></li>
+            </ul>
+        </div>
+        <div class="header-right fr">
+            <p class="search"><input type="text" value="" class="text-xqy"></p>
+            <ul>
+            	<li><a href="#" class="search-btn"></a></li>
+                <li class="xitong" id="suiuu-btn1"><a href="javascript:;"></a>
+                    <div class="xit-sz">
+                    	<span class="jiao"></span>
+                        <ol>
+                            <li class="sx">私信</li>
+                            <li class="xtxx">系统消息</li>
+                        </ol>
+                        <ul>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="name" id="suiuu-btn2"><img src="images/2.png" alt=""><a href="javascript:;">用户名</a><img src="images/header-icon.png" alt="" width="14" height="7" class="w20">
+                    <div class="my-suiuu">
+                    	<span class="jiao"></span>
+                        <ul>
+                            <li class="bg1"><a href="javascript:;">我的随游</a></li>
+                            <li class="bg2"><a href="javascript:;">我的订单</a></li>
+                            <li class="bg3"><a href="javascript:;">账号设置</a></li>
+                            <li class="bg4"><a href="javascript:;">注销账号</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--header结束-->
+<div class="mddsx"><!--mddsx begin-->
+	<div class="fl mddsx-left" style="z-index:888;">
+            <select data-enabled="false">
+                <option value="zg">国家</option>
+                <option value="mg">美国</option>
+                <option value="hg">韩国</option>
+                <option value="zg">国家</option>
+                <option value="mg">美国</option>
+                <option value="hg">韩国</option>
+            </select>
+        <select data-enabled="false">
+                <option value="zg">城市</option>
+                <option value="">洛杉矶</option>
+                <option value="">首尔</option>
+        </select>
+    
+    
+    
+    
+    
+<!--        <form action="" method="">
+            <select name="age" id="sell" style=" z-index:5;">
+                <option value="zg">国家</option>
+                <option value="mg">美国</option>
+                <option value="hg">韩国</option>
+                <option value="zg">国家</option>
+                <option value="mg">美国</option>
+                <option value="hg">韩国</option>
+            </select>
+            <br>
+            <select name="chengshi" class="chengshi" class="m-20">
+                <option value="zg">城市</option>
+                <option value="">洛杉矶</option>
+                <option value="">首尔</option>
+            </select>
+        </form>
+-->    </div>
+	<div class="fr mddsx-right">
+    	<ul>
+        	<li><a href="mudi_di.html"><img src="images/mddsx.fw.png" alt=""></a>
+            	<p><font>韩国济州岛</font>
+                <span>京都奈良公园一日游</span></p>
+            </li>
+        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
+            	<p><font>韩国济州岛</font>
+                <span>京都奈良公园一日游</span></p>
+            </li>
+        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
+            	<p><font>韩国济州岛</font>
+                <span>京都奈良公园一日游</span></p>
+            </li>
+        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
+            	<p><font>韩国济州岛</font>
+                <span>京都奈良公园一日游</span></p>
+            </li>
+        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
+            	<p><font>韩国济州岛</font>
+                <span>京都奈良公园一日游</span></p>
+            </li>
+        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
+            	<p><font>韩国济州岛</font>
+                <span>京都奈良公园一日游</span></p>
+            </li>
+        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
+            	<p><font>韩国济州岛</font>
+                <span>京都奈良公园一日游</span></p>
+            </li>
+        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
+            	<p><font>韩国济州岛</font>
+                <span>京都奈良公园一日游</span></p>
+            </li>
+        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
+            	<p><font>韩国济州岛</font>
+                <span>京都奈良公园一日游</span></p>
+            </li>
+        </ul>
+        <a class="more" href="#">加载更多</a>
+    </div>
+</div>
+<!--mddsx end-->
+
+<!-----footer------>
+
+
+<div id="footer-out" class="clearfix">
+	<div class="footer w1200 clearfix">
+    	<div class="left fl">
+            <img src="images/footer-pic.png" width="174" height="122">
+         </div>
+        <dl class="fl middle">
+        	<dt>公司信息</dt>
+            <dd><a href="#">关于随游</a></dd>
+            <dd><a href="#">服务协议</a></dd>
+            <dd><a href="#">联系我们</a></dd>
+            <dd><a href="#">加入我们</a></dd>
+        </dl>
+        <dl class="fl ">
+        	<dt>帮助中心</dt>
+            <dd><a href="#">帮助</a></dd>
+            <dd><a href="#">反馈</a></dd>
+            <dd><a href="#">使用流程</a></dd>
+            <dd><a href="#">退款政策</a></dd>
+        </dl>
+        <dl class="fl ">
+        	<dt>声明</dt>
+            <dd><a href="#">版权声明</a></dd>
+            <dd><a href="#">免责声明</a></dd>
+        </dl>
+        <dl class="fl ">
+        	<dt>随游移动端</dt>
+            <dd><a href="#">APP近期发布</a></dd>
+        </dl>
+        <div class="fr right">
+        	<ul>
+        		<li class="fl"><a href="#" class="icon sina"></a></li>
+        		<li class="fl"><a href="#" class="icon weixin"></a></li>
+        	</ul>
+        	
+        </div>
+    	
+    
+  </div>
+
+</div>
+<!-----footer--end---->
+
+
+
+</body>
+</html>
