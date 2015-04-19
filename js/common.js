@@ -3,10 +3,10 @@
 /*-----登录注册checkUI-----*/
 
 $(function(){
-		$('#denglu-main p.zidong input,#zhuce-main p.zidong input[type=checkbox],#zhuce-main02 p.zidong input[type=checkbox]').prop('checked','')
-		$('#denglu-main p.zidong input,#zhuce-main p.zidong input[type=checkbox],#zhuce-main02 p.zidong input[type=checkbox]').click(function(e) {
+		$('input[type=checkbox]').prop('checked','')
+		$('input[type=checkbox]').click(function(e) {
 			if( $(this).prop("checked")){
-				$(this).next().css('background-position','0 -102px')
+				$(this).next().css('background-position','0 -102px').siblings().css('background-position','0 -157px')
 				
 			}else{
 				$(this).next().css('background-position','0 -157px')
@@ -14,6 +14,23 @@ $(function(){
 			
         });
 })
+
+
+/*-----Radio--UI-----*/
+
+$(function(){
+		$('input[type=radio]').prop('checked','')
+		$('input[type=radio]').click(function(e) {
+			if( $(this).prop("checked")){
+				$(this).next().css('background-position','0 -47px').siblings().css('background-position','0 10px')
+				
+			}else{
+				$(this).next().css('background-position','0 10px')
+			}
+			
+        });
+})
+
 
 /*-----登录注册弹框-----*/
 $(function(){

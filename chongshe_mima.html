@@ -2,27 +2,15 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<title>目的地筛选</title>
+<title>重设密码</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <link rel="stylesheet" type="text/css" href="css/cs.css">
-<link rel="stylesheet" type="text/css" href="css/my_select.css">
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/squid.js"></script>
-<script type="text/javascript" src="js/jselect-1.0.js"></script>
-
-<!--初始化select-->
-<script type="text/javascript">
-$(function(){
-squid.swing.jselect();
-
-})
-</script>
-
 </head>
-<body style="background: #eeeeee;">
 
-<!--header开始-->
+<body>
+<!-------header开始---------->
 <div class="header">
     <div class="header-main clearfix w1200">
         <div class="header-nav fl">
@@ -73,88 +61,25 @@ squid.swing.jselect();
     </div>
 </div>
 
-<!--header结束-->
-<div class="mddsx"><!--mddsx begin-->
-	<div class="fl mddsx-left" style="z-index:888;">
-            <select data-enabled="false">
-                <option value="zg">国家</option>
-                <option value="mg">美国</option>
-                <option value="hg">韩国</option>
-                <option value="zg">国家</option>
-                <option value="mg">美国</option>
-                <option value="hg">韩国</option>
-            </select>
-        <select data-enabled="false">
-                <option value="zg">城市</option>
-                <option value="">洛杉矶</option>
-                <option value="">首尔</option>
-        </select>
-    
-    
-    
-    
-    
-<!--        <form action="" method="">
-            <select name="age" id="sell" style=" z-index:5;">
-                <option value="zg">国家</option>
-                <option value="mg">美国</option>
-                <option value="hg">韩国</option>
-                <option value="zg">国家</option>
-                <option value="mg">美国</option>
-                <option value="hg">韩国</option>
-            </select>
-            <br>
-            <select name="chengshi" class="chengshi" class="m-20">
-                <option value="zg">城市</option>
-                <option value="">洛杉矶</option>
-                <option value="">首尔</option>
-            </select>
-        </form>
--->    </div>
-	<div class="fr mddsx-right">
-    	<ul>
-        	<li><a href="mudi_di.html"><img src="images/mddsx.fw.png" alt=""></a>
-            	<p><font>韩国济州岛</font>
-                <span>京都奈良公园一日游</span></p>
-            </li>
-        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
-            	<p><font>韩国济州岛</font>
-                <span>京都奈良公园一日游</span></p>
-            </li>
-        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
-            	<p><font>韩国济州岛</font>
-                <span>京都奈良公园一日游</span></p>
-            </li>
-        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
-            	<p><font>韩国济州岛</font>
-                <span>京都奈良公园一日游</span></p>
-            </li>
-        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
-            	<p><font>韩国济州岛</font>
-                <span>京都奈良公园一日游</span></p>
-            </li>
-        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
-            	<p><font>韩国济州岛</font>
-                <span>京都奈良公园一日游</span></p>
-            </li>
-        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
-            	<p><font>韩国济州岛</font>
-                <span>京都奈良公园一日游</span></p>
-            </li>
-        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
-            	<p><font>韩国济州岛</font>
-                <span>京都奈良公园一日游</span></p>
-            </li>
-        	<li><a href="javascript:;"><img src="images/mddsx.fw.png" alt=""></a>
-            	<p><font>韩国济州岛</font>
-                <span>京都奈良公园一日游</span></p>
-            </li>
-        </ul>
-        <a class="more" href="#">加载更多</a>
-    </div>
-</div>
-<!--mddsx end-->
+<!-----header结束----------->
 
+<!----------重设密码------->
+<div id="resetPassword">
+	<span>旧密码：</span>	
+    <input type="text" value="" class="csmm-text">
+	<span>新密码：</span>	
+    <input type="text" value="" class="csmm-text">
+	<span>确认密码：</span>	
+    <input type="text" value="" class="csmm-text">
+	<span>验证码:</span>	
+	<p class="p1 clearfix">
+    	<input type="text" value="" class="code">
+        <img src="images/code.png" alt="" class="code-pic">
+        <a href="#" class="change">换一个</a>
+    </p>
+    <p class="btns"><a href="#"  class="btn">保存</a></p>
+</div>
+<!----------重设密码-----end--------->
 <!-----footer------>
 
 
@@ -199,8 +124,5 @@ squid.swing.jselect();
 
 </div>
 <!-----footer--end---->
-
-
-
 </body>
 </html>

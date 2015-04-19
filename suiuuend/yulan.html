@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>预览页</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="css/cs.css">
+<script src="js/tab.js"></script>
+<script src="js/move.js"></script>
+<script src="js/calender.js"></script>
+<script src="js/show.js"></script>
+<script>
+function addReady(fn){
+	if(document.addEventListener){
+		document.addEventListener('DOMContentLoaded',fn,false)	
+	}else{
+		document.onreadystatechange==function(){
+			if(readyState=='complete'){
+				fn();	
+			}	
+		}
+	}	
+};
+addReady(function(){
+	var oBox=document.getElementById('ban');
+	var oPrev=document.getElementById('prev');
+	var oNext=document.getElementById('next');
+	var oBan =document.getElementById('banner');	
+	var oLi  =oBan.children;
+	var oBtn =document.getElementById('btn').getElementsByTagName('li');
+	var iNow=0;
+	var left=0;
+	var oWeb=document.getElementById('web-btn2');
+	var oShow=document.getElementById('show');
+
+	oBan.style.width=oLi[0].offsetWidth*oLi.length+"px";
+		for(var i=0;i<oBtn.length;i++){
+		oBtn[i].index=i;
+		oBtn[i].onmouseover=function(){
+			iNow=this.index;
+			tab();
+		}	
+	}
+	function tab(){
+		for(var i=0;i<oBtn.length;i++){
+			oBtn[i].className='';	
+		}	
+		oBtn[iNow].className='active4';
+		move(oBan,{left:-oLi[0].offsetWidth*iNow});
+	};
+	oPrev.onclick=function(){
+		if(iNow>0){
+			iNow--;	
+		}else{
+			iNow=oBtn.length-1;
+		}
+		tab();
+	};
+	oNext.onclick=next;
+	function next(){
+		iNow++;
+		if(iNow==oBtn.length){
+			iNow=0;	
+		}
+		tab();
+	}
+	var timer=setInterval(function(){
+		next();	
+	},4000);
+	myCalender("beginDate");
+	
+	oWeb.onclick=function(){
+		if(oShow.style.display=="block"){
+			oShow.style.display="none";	
+		}else{
+			oShow.style.display="block";	
+		}
+	};
+	//导航右上角：
+	show('suiuu-btn1');	
+	show('suiuu-btn2');	
+});
+</script>
+</head>
+<body>
+<div class="header"><!--header开始-->
+    <div class="header-main">
+        <div class="header-nav">
+            <ul>
+                <li class="w50"><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">随游</a></li>
+                <li><a href="javascript:;">目的地</a></li>
+                <li><a href="javascript:;">专栏</a></li>
+            </ul>
+            <p><input type="text" value="" class="text-xqy"><input type="button" value="" class="btn-xqy"></p>
+        </div>
+        <div class="header-right">
+            <ul>
+                <li class="xitong" id="suiuu-btn1"><a href="javascript:;"></a>
+                    <div class="xit-sz" style="display:none;">
+                        <ol>
+                            <li class="sx">私信</li>
+                            <li class="xtxx">系统消息</li>
+                        </ol>
+                        <ul>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                            <li><img src="images/1.png"><span>昵称</span><p>给您发了私信</p></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="name" id="suiuu-btn2"><img src="images/2.png" alt=""><a href="javascript:;">用户名</a><img src="images/arr1.png" alt="" width="20" height="20" class="w20">
+                    <div class="my-suiuu">
+                        <ul>
+                            <li class="bg1"><a href="javascript:;">我的随游</a></li>
+                            <li class="bg2"><a href="javascript:;">我的订单</a></li>
+                            <li class="bg3"><a href="javascript:;">账号设置</a></li>
+                            <li class="bg4"><a href="javascript:;">注销账号</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div><!--header结束-->
+<div class="webxqy"><!--.webxqy-->
+	<h3>日本京都奈良公园一日游</h3>
+    <span>这里放星星评分的内容</span>
+    <span>这里放星星评分的内容</span>
+    <span>这里放星星评分的内容</span>
+    <span>这里放星星评分的内容</span>
+    <span>这里放星星评分的内容</span>
+</div><!--.webxqy-->
+<div class="web-content"><!--web-content-->
+	<div class="web-left"><!--web-left-->
+        <div class="web-banner" id="ban">
+                <ul id="banner">
+                    <li><img src="images/9.png" alt=""></li>
+                    <li><img src="images/10.png" alt=""></li>
+                    <li><img src="images/11.png" alt=""></li>
+                    <li><img src="images/12.png" alt=""></li>
+                    <li><img src="images/13.png" alt=""></li>
+                    <li><img src="images/14.png" alt=""></li>
+                </ul>
+                <ol id="btn">
+                    <li class="active4 m_0"><a href="javascript:;"><img src="images/16.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="images/17.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="images/18.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="images/19.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="images/20.png" alt=""></a></li>
+                    <li><a href="javascript:;"><img src="images/21.png" alt=""></a></li>
+                </ol>
+                <a href="javascript:;" class="prev" id="prev"><img src="images/prev.png" at=""></a>
+                <a href="javascript:;" class="next" id="next"><img src="images/next.png" alt=""></a>
+            </div>
+         <span id="web-btn2">购买路线</span>
+        <div class="web-buy" id="show">
+            <form action="" id="" class="cfrq">
+                <p>出发日期:<input type="text" name="beginDate" value=""></p>
+                <p>旅游人数:<input type="text" name=""value=""></p>
+                
+            </form>
+            <div class="ewfw">
+                <span>单项服务:</span>
+                <div>           
+                    <p><input type="checkbox" value="" class="" id="">租车500</p>
+                    <p><input type="checkbox" value="" class="" id="">租车500</p>
+                    <p><input type="checkbox" value="" class="" id="">租车500</p>
+                    <p><input type="checkbox" value="" class="" id="">租车500</p>
+                    <p><input type="checkbox" value="" class="" id="">租车500</p>
+                    <p><input type="checkbox" value="" class="" id="">租车500</p>
+                    <p><input type="checkbox" value="" class="" id="">租车500</p>
+                    <p><input type="checkbox" value="" class="" id="">租车500</p>
+            	</div>
+            </div>
+            <div class="time">
+				<div class="starttime">
+                    <span>开始时间:</span>
+                    <select name="starttime">
+                        <option>1:00-2:00</option>
+                        <option>3:00-4:00</option>
+                    </select>
+                </div>
+              <!-- <div class="starttime endtime">
+                <span>结束时间:</span>
+                <select name="starttime">
+                	<option>1:00-2:00</option>
+                	<option>3:00-4:00</option>
+                </select>
+                </div>--> 
+            </div>
+            <div class="zhifu">
+               <input type="button" value="支付" class="">
+                <span>总价:<a>4354354</a></span>
+                <span>基础价格:<a>12334534</a></span>
+            </div>
+        </div>
+        <div class="web-list">
+        	<ul>
+            	<li>
+                	<img src="images/5.png" alt="">
+                	<span>xiaoheluo</span>
+                    <p>其中有1200头鹿生活在这里，这些鹿大多温顺而讨人喜爱。</p>
+                    <input type="button" value="支持" id="">
+                    <input type="button" value="反对" id="">
+                    <input type="button" value="回复" id="">
+                </li>
+                <li>
+                	<img src="images/5.png" alt="">
+                	<span>xiaoheluo</span>
+                    <p>其中有1200头鹿生活在这里，这些鹿大多温顺而讨人喜爱。</p>
+                    <input type="button" value="支持" id="">
+                    <input type="button" value="反对" id="">
+                    <input type="button" value="回复" id="">
+                </li>
+                <li>
+                	<img src="images/5.png" alt="">
+                	<span>xiaoheluo</span>
+                    <p>其中有1200头鹿生活在这里，这些鹿大多温顺而讨人喜爱。</p>
+                    <input type="button" value="支持" id="">
+                    <input type="button" value="反对" id="">
+                    <input type="button" value="回复" id="">
+                </li>
+                <li>
+                	<img src="images/5.png" alt="">
+                	<span>xiaoheluo</span>
+                    <p>其中有1200头鹿生活在这里，这些鹿大多温顺而讨人喜爱。</p>
+                    <input type="button" value="支持" id="">
+                    <input type="button" value="反对" id="">
+                    <input type="button" value="回复" id="">
+                </li>
+            </ul>
+            <ol>
+            	<li><a href="javascript:;">首页</a></li>
+            	<li><a href="javascript:;">1</a></li>
+            	<li><a href="javascript:;">2</a></li>
+            	<li><a href="javascript:;">3</a></li>
+            	<li><a href="javascript:;">.....</a></li>
+            	<li><a href="javascript:;">尾页</a></li>
+                <li class="w150">跳转到:<input type="text" value=""></li>
+            </ol>
+        </div>
+		<div class="fabiao">
+        	<textarea></textarea>
+            <input type="submit" value="发表" class="">
+        </div>        
+    </div><!--web-left-->
+    <div class="web-right"><!--web-right-->
+    	<ul>
+        	<li>
+            	<img src="images/5.png" alt="">
+            	<span>xiaoheluo</span>
+                <p>生活,而不是活着,生活,而不是活着,</p>
+            </li>
+        </ul>
+        <div class="pf">
+			<ul>
+            	<li class="fen"><span>这</span><span>这</span><span>这</span><span>这</span><span>这</span></li>
+                <li>行程数:<a>3</a></li>
+                <li>随游次数:<a>3</a></li>
+            </ul>
+        </div>
+        <p><span>基础价格:<a>1234</a></span><span>总价:<a>67687</a></span></p>
+        <ol>
+        	<li><span>单项价格:</span>租车500</li>
+        	<li><span></span>租车500</li>
+        	<li><span></span>租车500</li>
+        	<li><span></span>租车500</li>
+        	<li><span></span>租车500</li>
+        	<li><span></span>租车500</li>
+        </ol>
+        <input type="button" value="购买路线" class="web-btn5">
+        <input type="button" value="申请加入路线" class="web-btn6">
+        <div class="web-tuijian">
+        	<h4>日本京都奈良公园一日游</h4>
+            <img src="images/23.png" alt="">
+            <p><span>这</span><span>这</span><span>这</span><span>这</span><span>这</span></p>
+            <div>奈良公园位于街的东边，东西长4公里、南北宽奈良公园位于街的东边，东西长4公里、南北宽奈良公园位于街的东边，东西长4公里、南北宽</div>
+            <span>总价:<a>1234345</a></span>
+        </div>
+        <div class="web-tuijian">
+        	<h4>日本京都奈良公园一日游</h4>
+            <img src="images/23.png" alt="">
+            <p><span>这</span><span>这</span><span>这</span><span>这</span><span>这</span></p>
+            <div>奈良公园位于街的东边，东西长4公里、南北宽奈良公园位于街的东边，东西长4公里、南北宽奈良公园位于街的东边，东西长4公里、南北宽</div>
+            <span>总价:<a>1234345</a></span>
+        </div>
+        <div class="web-tuijian">
+        	<h4>日本京都奈良公园一日游</h4>
+            <img src="images/23.png" alt="">
+            <p><span>这</span><span>这</span><span>这</span><span>这</span><span>这</span></p>
+            <div>奈良公园位于街的东边，东西长4公里、南北宽奈良公园位于街的东边，东西长4公里、南北宽奈良公园位于街的东边，东西长4公里、南北宽</div>
+            <span>总价:<a>1234345</a></span>
+        </div>
+    </div><!--web-right-->	
+</div><!--web-content-->
+</body>
+</html>
