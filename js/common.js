@@ -6,10 +6,10 @@ $(function(){
 		$('input[type=checkbox]').prop('checked','')
 		$('input[type=checkbox]').click(function(e) {
 			if( $(this).prop("checked")){
-				$(this).next().css('background-position','0 -102px').siblings().css('background-position','0 -157px')
+				$(this).next().css('background-position','0 -157px').siblings().css('background-position','0 -102px')
 				
 			}else{
-				$(this).next().css('background-position','0 -157px')
+				$(this).next().css('background-position','0 -102px')
 			}
 			
         });
@@ -32,7 +32,23 @@ $(function(){
 })
 
 
-/*-----登录注册弹框-----*/
+
+/*-----index登录、注册弹框-----*/
+$(function(){
+	$('.nav-out .nav-right ol #zhuce').click(function(e) {
+        $('.nav-out .nav-right ol #zhuce-main').toggle();
+        $('.nav-out .nav-right ol #denglu-main').css('display','none');
+    });
+	$('.nav-out .nav-right ol #denglu').click(function(e) {
+        $('.nav-out .nav-right ol #denglu-main').toggle();
+        $('.nav-out .nav-right ol #zhuce-main').css('display','none');
+    });
+
+
+})
+
+
+/*-----注册方式切换弹框-----*/
 $(function(){
 	$('#zhuce-main .tab-title').click(function(e) {
         $(this).parent('').css('display','none').siblings().css('display','block')
