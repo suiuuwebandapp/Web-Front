@@ -3,7 +3,6 @@
 /*----------公用样式--------*/
 html{-webkit-text-size-adjust:none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,img,legend,input,textarea,p,blockquote,th,td,span,i,b,font{margin:0;padding:0; list-style:none; border:none;font-family: "Microsoft YaHei"; font-weight:normal; }
-input,button,select,textarea{outline:none;}
 table{border-collapse:collapse;border-spacing:0;}
 textarea{resize:none;}
 body { font-family: "Microsoft YaHei"; font-size:16px; color:#858585; }
@@ -167,8 +166,8 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 
 
 .header-right{ height:70px; position:relative;}
-.header-right .search{/* width:135px;*/ width:0; height:30px; line-height:30px; border-radius:30px; float:left; background:#eee; margin-top:18px; position:absolute;right:265px; top:5px; }
-.header-right .search input.text-xqy{ background:none; border:none; width:0; line-height:32px; float:left;}
+.header-right .search{ width:0; height:30px; line-height:30px; border-radius:30px; float:left; background:#eee; margin-top:18px; position:absolute;right:265px; top:5px; }
+.header-right .search input.text-xqy{ background:none; border:none; width:0; line-height:32px; float:left; margin-left:10px;}
 .header-right .search-btn{ background:url(../images/top-search.png) no-repeat; width:35px; height:35px; margin:4px 0px 0px 6px; display:inline-block; margin-top:25px;}
 
 
@@ -280,6 +279,8 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 .sanf img{ float:left; width:40px; height:40px; overflow:hidden; margin-left:60px;}
 .sanf input{ width:120px; height:40px; line-height:40px; text-align:center; margin:80px auto 0px; background:#86c2ff; padding-left:0px; font-size:16px; font-family:"微软雅黑"; display:block;}
 /***wdzl页面样式结束***/
+
+
 /***jsym页面样式开始***/
 .jsym{ width:1202px; height:1500px; margin:110px auto 0px;}
 .jsym p{ width:100%; height:40px; line-height:40px;}
@@ -299,54 +300,98 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 .jsym-js p{ position:absolute; right:20px; top:10px; width:120px; height:24px; line-height:24px; text-align:center;}
 .jsym-js input{ position:absolute; right:20px; bottom:10px; background:#ff7a4d; width:114px; height:42px; text-align:center; color:#ffeb81; font-size:16px; font-family:"微软雅黑"; border:none;}
 /***jsym页面样式结束***/
-/***zccg页面央视开始***/
-.zccg{ width:586px; height:450px; margin:110px auto 0px;}
-.zccg h4{ text-align:center; height:50px; line-height:50px; font-size:16px; color:#858585; margin-bottom:20px;}
-.zccg a{ width:286px; height:260px; float:left; overflow:hidden; display:block;}
-.zccg div{width:586px;height:140px; text-align:center;}
-.zccg div img{ width:54px; height:43px; display:block; margin:auto;}
-.zccg div h4{ width:586px; padding-top:30px; font-weight:normal;}
-.m14{ margin-left:14px;}
-.zccg p{ width:586px; height:38px; padding-top:20px; clear:both;}
-.zccg p a{ float:left; width:286px; height:38px; line-height:38px; text-align:center;}
-.zccg p a.orange{ background:#ff7a4d;color:#ffea87;}
-.zccg p a.blue{ background:#73b9ff; color:#ffea87;}
-.zccg p a:hover{color:#ddd;}
-/***zccg页面样式结束***/
-/***wjmm页面样式开始***/
-.wjmm{ width:366px; height:320px; margin:110px auto 0px;}
-.wjmm ul{ width:366px; height:38px;}
-.wjmm ul li{ width:80px; height:38px; line-height:38px; text-align:center; float:left;}
-.wjmm ul li a{ color:#858585; display:block;}
-.wjmm ul li.active a{ background:#858585; color:#ffea85;}
-.wjmm div{ height:284; width:366px; margin-top:10px; display:none;}
-.wjmm div span{ display:block; height:30px; line-height:30px;}
-.wjmm div input{ background:#eeeeee; border:none; height:36px; width:350px; padding-left:16px; line-height:36px;}
 
-.wjmm div p{ width:400px; height:76px;}
-.wjmm div p span{ display:block; width:400px; line-height:30px; height:30px;}
-.wjmm div p img{ display:block; float:left; width:135px; height:30px; background:#c00; border-radius:0px;}
-.wjmm div p .zhsz-text1{ display:block; float:left; width:152px; height:30px; line-height:30px; margin-right:10px;}
-.wjmm div p .zhsz-btn{ width:52px; height:30px; line-height:30px; text-align:right; float:left; padding-left:0px; background:none;}
-.wjmm div input.zhsz-btn1{ width:80px; height:40px; line-height:40px; text-align:center; background:#70b8ff; color:#ddd; padding-left:0px; font-size:16px; font-family:"微软雅黑"; margin:50px auto 0px; display:block;}
-.wjmm div input.tijiao{ background:#ff7a4d; width:122px; height:38px; line-height:38px; text-align:center; color:#ffeb81; font-size:16px; font-family:"微软雅黑"; display:block; margin:20px auto;}
-/***wjmm页面样式结束***/
+
+/*-------------忘记密码 -----------------*/
+.forgotPaw{ width:366px; margin:110px auto 0px;}
+.forgotPaw ul{ width:366px; height:38px;}
+.forgotPaw ul li{ width:80px; height:38px; line-height:38px; text-align:center; float:left;}
+.forgotPaw ul li a{ color:#858585; display:block;}
+.forgotPaw ul li a.active{ background:#858585; color:#ffea85;}
+.forgotPaw div{ height:284; width:350px; margin-top:10px; display:none;}
+.forgotPaw div span{ display:block; height:36px; line-height:36px;}
+.forgotPaw div input{ background:#eeeeee; border:none; height:36px; padding-left: 15px;width: 335px;line-height:36px;}
+
+.forgotPaw div p{ width:400px; height:76px;}
+.forgotPaw div p span{ display:block; width:400px; line-height:36px; height:36px;}
+.forgotPaw div p img{ display:block; float:left; width:135px; height:36px; }
+.forgotPaw div p .zhsz-text1{ display:block; float:left; width:152px; height:36px; line-height:36px; margin-right:10px;}
+.forgotPaw div p .zhsz-text1.phone{ width:250px; margin-right:0;}
+.forgotPaw div p .zhsz-btn{ width:52px; height:36px; line-height:36px; text-align:right; float:left; padding-left:0px; background:none; color:#858585; cursor:pointer;}
+.forgotPaw div p .zhsz-btn.phone{ width:100px; background:#FF7A4D; color:#fff; text-align:center;}
+.forgotPaw div input.zhsz-btn1{ width:80px; height:40px; line-height:40px; text-align:center; background:#70b8ff; color:#ddd; padding-left:0px; font-size:16px; margin:50px auto 0px; display:block;}
+.forgotPaw div input.tijiao{ background:#73B9FF; width:120px; height:36px; line-height:36px; text-align:center; color:#ffeb81; font-size:16px;  display:block; margin:40px auto; padding-left:0; cursor:pointer;}
+/*-------------忘记密码 -end----------------*/
 
 
 
-/***syzcy页面样式开始***/
-.syzcy{ width:350px; height:auto; overflow:hidden; margin:110px auto 0px;}
-.syzcy span{ display:block; width:350px; height:30px; line-height:30px;}
-.syzcy input{ height:36px; line-height:36px; width:330px; border:none; background:#eeeeee; padding-left:20px;}
-.syzcy img{ width:286px; height:170px; display:block; margin:15px auto; background:#CCC;}
-.syzcy input.schuan,.syzcy input.smrz{ background:#ff7a4d; color:#ffea87; font-size:16px; font-family:"微软雅黑"; width:80px; height:32px; line-height:32px; padding-left:0px; margin:0px auto; display:block;}
-.syzcy p{ width:350px; height:40px; line-height:40px;}
-.syzcy p input{ width:170px; margin-left:5px; height:40px; line-height:40px; border:none; background:none; text-align:center; float:left; font-size:16px; color:#858585; font-family:"微软雅黑";}
-.syzcy p input:hover{ color:#f00; cursor:pointer;}
-.syzcy input.smrz{ margin-top:30px;}
-.syzcy input.agree{ width:15px; line-height:15px; height:15px; margin:13px 0px 0px 100px;}
-.syzcy input.zhuce-syzcy{ width:80px; height:32px; line-height:32px; text-align:center; display:block; margin:20px auto; padding-left:0px; background:#73b9ff; color:#ddd; font-size:16px; font-family:"微软雅黑";}
-/***syzcy页面样式结束***/
+/*----------------随友注册------------*/
+.syRegister{ width:350px; height:auto; overflow:hidden; margin:110px auto 0px;}
+.syRegister span{ display:block; width:350px; height:36px; line-height:36px;}
+.syRegister input{ height:36px; line-height:36px; width:335px; border:none; background:#eeeeee; padding-left:15px;}
+.syRegister .imgPic{ width:286px; height:170px;margin:15px auto; background:#CCC; overflow:hidden;}
+.syRegister img{ width:286px;}
+.syRegister input.schuan{ background:#ff7a4d; color:#fff; font-size:16px;width:80px; height:36px; line-height:36px; padding-left:0px; margin:0px auto; display:block;}
+.syRegister .p1{ width:350px; height:36px; line-height:36px; margin:30px auto;}
+.syRegister .p1 span{ text-align:center; width:100px; height:36px; line-height:36px; float:left; background:#eee;}
+.syRegister .p1 input.text{ margin:0; width:130px; height:36px; line-height:36px; float:left;background:#eee;}
+.syRegister .p1 input.btn{ margin:0; width:100px; height:36px; line-height:36px; float:left; background:#ff7a4d; color:#fff; font-size:16px; text-align:center; padding:0;}
+.syRegister .agree{ padding-left:75px;}
+.syRegister .agree input{ cursor:pointer;opacity:0;  width:auto; vertical-align:middle; float:left}
+.syRegister .agree input+label{ background:url("../images/check.png") no-repeat 0 10px; padding-left:20px; height:36px; line-height:36px; float:left;}
+.syRegister .agree a{ margin-left:15px; float:left; color:#858585; height:36px; line-height:36px; }
+.syRegister .agree a:hover{ text-decoration:underline;}
+.syRegister input.zbtn{ width:80px; height:36px; line-height:36px; text-align:center; display:block; margin:20px auto; padding-left:0px; background:#73b9ff; color:#fff; font-size:16px; cursor:pointer; }
+			/*----------------随友注册 select-------------*/
+.syRegister .phone-select{ height:36px; line-height:36px;}
+.syRegister .sect{ float:left; position:relative; width:100px; height:36px; line-height:36px; display:inline-block;}
+.syRegister .sect .select-wrapper{ position:absolute; top:0; left:0; width:100px; height:36px; line-height:36px; text-align:center; text-indent:0; margin-top:0;}
+.syRegister .select-wrapper .select-list{width:100px; height:36px; line-height:36px; text-align:center; text-indent:0;}
+.syRegister .select-wrapper .select-list .select-option{ background:#eee;}
+.syRegister .select-wrapper .select-list .selected{ background:#7389ff; color:#fff;}
+.syRegister input.phone{ margin-left:10px;width:221px;}
+
+
+/*----------------随友注册--end-------------*/
+
+/*----------------随友注册跳转------------*/
+.syRegisterT{ width:360px; padding-bottom:100px;margin:110px auto 110px;}
+.syRegisterT p{ line-height:36px; font-size:18px; color:#858585; }
+
+/*-------------随友注册跳转-end-----------*/
+
+
+/*----------------随友注册完成------------*/
+.syRegisterW{ width:586px; padding-bottom:100px;margin:110px auto 0px;}
+.syRegisterW .title{ text-align:center; height:50px; line-height:50px; font-size:22px; color:#858585; margin-bottom:40px;}
+.syRegisterW .pic{height:260px; }
+.syRegisterW .pic a{ text-align:center; line-height:280px; font-size:24px; color:#fff; width:286px; height:280px; float:left; overflow:hidden; display:block;}
+.syRegisterW .pic a:hover{ color:#ffeb81;}
+.syRegisterW .pic .go-suiyou{ background:url(../images/go-suiyou.png) no-repeat center 0;}
+.syRegisterW .pic .jion-suiyou{ background:url(../images/jion-suiyou.png) no-repeat center 0;}
+.syRegisterW .m14{ margin-left:14px;}
+.syRegisterW .dnav{ width:586px; height:38px; line-height:38px; padding-top:20px; clear:both;}
+.syRegisterW .dnav a{ width:285px; height:260px; height:38px; line-height:38px; float:left; overflow:hidden; display:block; text-align:center;}
+.syRegisterW .dnav a.orange{ background:#ff7a4d;color:#ffea87;}
+.syRegisterW .dnav a.blue{ background:#73b9ff; color:#ffea87;}
+.syRegisterW .dnav a:hover{color:#ddd;}
+
+/*-------------随友注册完成-end-----------*/
+
+/*----------------完成页------------*/
+#finish{ width:586px; padding-bottom:100px;margin:110px auto 0px;}
+#finish .pic{ padding-bottom:70px; text-align:center; }
+#finish .pic p{ font-size:18px; text-align:center; margin-top:10px;}
+#finish .m14{ margin-left:70px;}
+#finish .dnav{ margin:0 auto; width:350px; height:40px; line-height:40px; padding-top:20px; clear:both;}
+#finish .dnav a{ width:136px; height:40px; height:40px; line-height:40px; float:left; overflow:hidden; display:block; text-align:center;}
+#finish .dnav a.orange{ background:#ff7a4d;color:#ffea87;}
+#finish .dnav a.blue{ background:#73b9ff; color:#ffea87;}
+#finish .dnav a:hover{color:#ddd;}
+
+/*-------------完成页-end-----------*/
+
+
 /***wdsy页面样式开始***/
 .wdsy{ width:1202px; height:auto; overflow:hidden; margin:70px auto 0px; z-index:1;}
 .wdsy p{ width:1202px; height:300px; position:relative;  z-index:1;}
