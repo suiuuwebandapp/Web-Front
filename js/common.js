@@ -6,10 +6,10 @@ $(function(){
 		$('input[type=checkbox]').prop('checked','')
 		$('input[type=checkbox]').click(function(e) {
 			if( $(this).prop("checked")){
-				$(this).next().css('background-position','0 -157px').siblings().css('background-position','0 -102px')
+				$(this).next('label').css('background-position','0 -157px').siblings('label').css('background-position','0 -102px')
 				
 			}else{
-				$(this).next().css('background-position','0 -102px')
+				$(this).next('label').css('background-position','0 -102px')
 			}
 			
         });
@@ -22,10 +22,10 @@ $(function(){
 		$('input[type=radio]').prop('checked','')
 		$('input[type=radio]').click(function(e) {
 			if( $(this).prop("checked")){
-				$(this).next().css('background-position','0 -47px').siblings().css('background-position','0 10px')
+				$(this).next('label').css('background-position','0 -47px').siblings('label').css('background-position','0 10px')
 				
 			}else{
-				$(this).next().css('background-position','0 10px')
+				$(this).next('label').css('background-position','0 10px')
 			}
 			
         });
