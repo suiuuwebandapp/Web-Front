@@ -34,7 +34,30 @@ $(function(){
 
 
 /*-----index登录、注册弹框-----*/
+
+
+
 $(function(){
+	$('.nav-out .nav-right ol li:eq(0)').hover(function(e) {
+        $(this).children('#zhuce-main').css('display','block');
+    },function(){
+        $(this).children('#zhuce-main').css('display','none');
+        $(this).children('#zhuce-main02').css('display','none');
+    
+    
+    });
+	$('.nav-out .nav-right ol li:eq(1)').hover(function(e) {
+        $(this).children('#denglu-main').css('display','block');
+    },function(){
+        $(this).children('#denglu-main').css('display','none');
+    
+    
+    });
+
+
+})
+
+/*$(function(){
 	$('.nav-out .nav-right ol #zhuce').click(function(e) {
         $('.nav-out .nav-right ol #zhuce-main').toggle();
         $('.nav-out .nav-right ol #denglu-main').css('display','none');
@@ -46,7 +69,7 @@ $(function(){
 
 
 })
-
+*/
 
 /*-----注册方式切换弹框-----*/
 $(function(){
