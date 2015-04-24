@@ -50,10 +50,10 @@ $(function(){
 
 /*-----注册方式切换弹框-----*/
 $(function(){
-	$('#zhuce-main .tab-title').click(function(e) {
+	$('#zhuce-main .tab-title01').click(function(e) {
         $(this).parent('').css('display','none').siblings().css('display','block')
     });
-	$('#zhuce-main02 .tab-title').click(function(e) {
+	$('#zhuce-main02 .tab-title02').click(function(e) {
         $(this).parent('').css('display','none').siblings().css('display','block')
     });
 
