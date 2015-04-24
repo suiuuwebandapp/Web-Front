@@ -38,7 +38,7 @@ $(function(){
 
 
 $(function(){
-	$('.nav-out .nav-right ol li:eq(0)').hover(function(e) {
+	$('.nav-out .nav-right ol li:eq(1)').hover(function(e) {
         $(this).children('#zhuce-main').css('display','block');
     },function(){
         $(this).children('#zhuce-main').css('display','none');
@@ -46,7 +46,7 @@ $(function(){
     
     
     });
-	$('.nav-out .nav-right ol li:eq(1)').hover(function(e) {
+	$('.nav-out .nav-right ol li:eq(2)').hover(function(e) {
         $(this).children('#denglu-main').css('display','block');
     },function(){
         $(this).children('#denglu-main').css('display','none');
@@ -84,13 +84,26 @@ $(function(){
 
 })
 
-/*-----top 搜索-----*/
+/*---登陆后--top 搜索-----*/
 $(function(){
 	$('.header-right .search-btn').click(function(e) {
 		if($('.header-right .search').width()==0){
 			$('.header-right .search,.header-right .search input.text-xqy').animate({width:135},500);
         }else{
 			$('.header-right .search,.header-right .search input.text-xqy').animate({width:0},500);
+        }
+    });
+
+
+
+})
+/*--无登陆--top 搜索-----*/
+$(function(){
+	$('.nav-right .search-btn').click(function(e) {
+		if($('.nav-right .search').width()==0){
+			$('.nav-right .search,.nav-right .search input.text-xqy').animate({width:135},500);
+        }else{
+			$('.nav-right .search,.nav-right .search input.text-xqy').animate({width:0},500);
         }
     });
 
