@@ -1,5 +1,8 @@
 // JavaScript Document
 
+
+
+
 /*-----登录注册checkUI-----*/
 
 $(function(){
@@ -32,12 +35,28 @@ $(function(){
 })
 
 
-
 /*-----index登录、注册弹框-----*/
 
 
-
 $(function(){
+	$('.nav-out .nav-right ol li:eq(1)>a').click(function(e) {
+        $('#zhuce-main').toggle();
+        $('.nav-out .nav-right ol li:eq(2)').children('#denglu-main').css('display','none');
+        $('#zhuce-main02').css('display','none');
+    });
+	$('.nav-out .nav-right ol li:eq(2)>a').click(function(e) {
+        $('#denglu-main').toggle();
+        $('.nav-out .nav-right ol li:eq(1)').children('#zhuce-main,#zhuce-main02').css('display','none');
+		
+    });
+	
+
+
+})
+
+
+
+/*$(function(){
 	$('.nav-out .nav-right ol li:eq(1)').hover(function(e) {
         $(this).children('#zhuce-main').css('display','block');
     },function(){
@@ -56,6 +75,10 @@ $(function(){
 
 
 })
+*/
+
+
+
 
 /*$(function(){
 	$('.nav-out .nav-right ol #zhuce').click(function(e) {
@@ -184,10 +207,13 @@ $(function(){
 
 
 
+/*-----随友个人中心私信对话框-----*/
+$(function(){
+	$('.sycon .myEmail .emailCon .left ul li').click(function(e) {
+        $('.sycon .myEmail .emailCon .right').toggle();
+    });
 
-
-
-
+})
 
 
 
