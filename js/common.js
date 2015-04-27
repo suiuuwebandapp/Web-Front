@@ -216,7 +216,28 @@ $(function(){
 })
 
 
+/*-----随游-类型选择----*/
+$(function(){
+	$('.sylx .sylx-xiangxi .p2 span').click(function(e) {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
 
+})
+
+/*-----随游-价格区间拖动条----*/
+  $(function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 10000,
+      values: [ 0, 5000 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "￥" + ui.values[ 0 ] + " - ￥" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "￥" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - ￥" + $( "#slider-range" ).slider( "values", 1 ) );
+  });
 
 
 

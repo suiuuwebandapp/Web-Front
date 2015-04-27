@@ -860,13 +860,21 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 /*-----------随游浏览页面---------*/
 .sylx{ height:auto; margin:85px auto 0px; overflow:hidden;}
 .sylx-serch{ width:340px; height:50px; margin:20px auto;}
-.sylx-serch input{ background:#b2b2b2; color:#ddd; border:none; font-size:16px;}
+.sylx-serch input{ background:#b2b2b2; color:#fff; border:none; font-size:16px;}
 .sylx-serch input.w285{ width:270px; height:50px; padding-left:15px; line-height:50px; float:left;}
 .sylx-serch input.w52{ width:50px; height:50px; margin-left:1px; text-align:center; line-height:50px;}
 
-.sylx-xiangxi{ width:420px; height:auto; margin:0px auto; padding-bottom:10px;}
-.sylx-xiangxi p{ width:100%; height:40px; line-height:40px;}
-.sylx-xiangxi p span{ display:block; float:right;width:360px; height:40px; line-height:40px; overflow:hidden;}
+.sylx-xiangxi{ width:1165px; height:auto; margin:0px auto; padding-bottom:10px;}
+.sylx-xiangxi .p1 label,.sylx-xiangxi .p2 label{ height:36px; line-height:36px; width:50px; display:inline-block; float:left; margin-bottom:20px; }
+.sylx-xiangxi .p1 .icon{ height:36px; line-height:36px; width:36px;display:inline-block; float:left;  }
+.sylx-xiangxi .p1 .icon.jian{ height:36px; line-height:36px; width:36px; background:url(../images/jian.fw.png) no-repeat center center; }
+.sylx-xiangxi .p1 .icon.add{ height:36px; line-height:36px; width:36px; background:url(../images/creat.fw.png) no-repeat center center; }
+.sylx-xiangxi .p1 input{ padding:0 10px; text-align:center; display:inline-block; float:left;height:36px; line-height:36px; width:100px; background:#fff; }
+.sylx-xiangxi .p2 span{ padding:0 20px; text-align:center; display:inline-block; float:left;height:36px; line-height:36px; cursor:pointer;  }
+.sylx-xiangxi .p2 span.active{ color:#FADE33; background:#6DB7FF; }
+.sylx-xiangxi .price-select{ width:70%;}
+.sylx-xiangxi .price-select #amount{ color:#f6931f; font-size:18px;}
+.sylx-xiangxi .price-select #slider-range{ margin:20px 0;}
 
 .sylx-list{margin:0px auto;}
 .sylx-list.h400{ height:400px; overflow:hidden;}
@@ -889,7 +897,7 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 .sylx-page{width:410px; height:40px; line-height:40px; margin:30px auto 0px;}
 .sylx-page ul{ width:100%; height:40px;}
 .sylx-page ul li{ width:40px; height:40px; line-height:40px; text-align:center; float:left; margin-left:10px; margin-top:0px; background:none;}
-.sylx-page ul li a{ display:block;width:40px; height:40px; color:#333;}
+.sylx-page ul li a{ display:block;width:40px; height:40px;}
 
 .sylx-tuij{ width:1200px; height:auto; margin-top:80px;}
 .sylx-tuij p{ height:40px; line-height:40px; text-align:left; clear:both;}
