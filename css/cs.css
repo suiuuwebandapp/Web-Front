@@ -749,15 +749,15 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 .djy-list{ width:1030px; height:auto; overflow:hidden; margin:0px auto;}
 .bjy-bj1{ margin:80px auto 20px;}
 .bjy-bj1 span,.bjy-bj1 input,.bjy-bj2 span,.bjy-bj2 input{ width:346px; height:36px; display:block; text-align:left; line-height:36px; margin:0px auto;}
-.bjy-bj1 input,.bjy-bj2 input{ text-align:center; background:#eee; border:none; padding:0 10px; width:330px;}
-.bjy-bj2 input{ margin-bottom:20px;}
+.bjy-bj1 input,.bjy-bj2 input{ background:#eee; border:none; padding:0 10px; width:330px;}
+.bjy-bj2 input{ margin-bottom:20px; text-align:center;}
 .bjy-bj1 .jianjie{padding:0 10px; width:330px; height:100px;background:#eee; border:none;display:block; text-align:left; line-height:36px; margin:0px auto; resize:none;}
 .bjy-bj1 .pic{width:285px; height:260px; background:#ECECFC; margin:0px auto;}
 .bjy-bj2{ width:350px;margin:80px auto 20px;}
 .bjy-bj2 .jing{ position:relative;}
 .bjy-bj2 .jing a{ position:absolute; right:-50px; top:0; display:inline-block; width:36px; height:36px;}
 .bjy-bj2 .jing a.add{ background:url(../images/creat.fw.png) no-repeat 0 center;}
-.bjy-bj2 .jing a.remove{ background:url(../images/jian.png) no-repeat 0 center;}
+.bjy-bj2 .jing a.remove{ background:url(../images/jian.fw.png) no-repeat 0 center;}
 .bjy-bj2 .map{width:350px; height:320px; background:#ececec; margin:0px auto;}
 
 .bjy-bj3{ width:450px;margin:80px auto 20px; }
@@ -774,7 +774,7 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 .sx{width:430px; height:36px; line-height:36px; padding-left:10px; border:none; background:#eee; font-size:16px;}
 .bj4-main p{width:475px; height:36px; line-height:36px; margin-top:10px;}
 .bj4-main p em{ display:block; float:left; text-align:center; font-style:normal;}
-.bj4-main p input{ width:110px; display:block; float:left; height:36px; }
+.bj4-main p input{ width:105px; display:block; float:left; height:36px; }
 .creat{ width:440px; height:auto; margin:5px auto 0px; border-bottom:1px solid #ddd; padding-bottom:10px;}
 
 .bjy-bj4 .creat dl dd,.bjy-bj4 .creat dl dt{width:440px; height:36px; line-height:36px;}
