@@ -9,7 +9,7 @@ $(function(){
 		$('input[type=checkbox]').prop('checked','')
 		$('input[type=checkbox]').click(function(e) {
 			if( $(this).prop("checked")){
-				$(this).next('label').css('background-position','0 -157px').siblings('label').css('background-position','0 -102px')
+				$(this).next('label').css('background-position','0 -157px')
 				
 			}else{
 				$(this).next('label').css('background-position','0 -102px')
@@ -223,21 +223,6 @@ $(function(){
     });
 
 })
-
-/*-----随游-价格区间拖动条----*/
-  $(function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 10000,
-      values: [ 0, 5000 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "￥" + ui.values[ 0 ] + " - ￥" + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount" ).val( "￥" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - ￥" + $( "#slider-range" ).slider( "values", 1 ) );
-  });
 
 
 
