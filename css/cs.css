@@ -39,12 +39,13 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 .nav-out .nav-right .search-btn{ background:url(../images/top-search.png) no-repeat; width:35px; height:35px; margin:4px 0px 0px 6px; display:inline-block; margin-top:25px;}
 .nav-right ol li:last-child{ padding-right:0;}
 .nav-right ol li a{color:#ddd; font-size:18px; text-decoration:none;}
-.nav-right #denglu-main{ width:370px; height:240px; color:#ddd; background:#333;background:url(../images/logo-bg.png) no-repeat center 0;padding-top:60px; display:none; position:absolute; top:70px; right:0;}
+.nav-right #denglu-main{ width:370px; color:#ddd; background:#333;background:url(../images/logo-bg.png) no-repeat center 0;padding-top:60px; display:none; position:absolute; top:70px; right:0;}
 .nav-right #denglu-main p{ width:210px; height:40px; padding-bottom:6px; border-bottom:1px solid #999; margin:0 auto;line-height:36px; position:relative;}
 .nav-right #denglu-main p.fogot{border:none;}
 .nav-right #denglu-main p.fogot a{ font-size:12px; position:absolute; top:0; right:0;}
 .nav-right #denglu-main p label{ float:left; display:block; height:36px; line-height:36px; margin-top:6px; color:#ddd; font-size:16px;}
 .nav-right #denglu-main p input{ float:right; display:block; border:none; width:110px; height:36px; line-height:36px; padding-left:10px; bottom:0px; margin-top:6px; background:none; color:#ddd;}
+.nav-right #denglu-main p input[type='password']{ width:165px;}
 /* --------登录弹框-----*/
 #denglu-main p.zidong,#zhuce-main p.zidong,#zhuce-main02 p.zidong{ width:130px; margin:0 auto; border-bottom:none; height:36px;}
 #denglu-main p.zidong input,#zhuce-main p.zidong input,#zhuce-main02 p.zidong input{ float:left; display:block; width:14px; height:14px; margin-top:12px; opacity:0;}
@@ -748,9 +749,9 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 .djy-list{ width:1030px; height:auto; overflow:hidden; margin:0px auto;}
 .bjy-bj1{ margin:80px auto 20px;}
 .bjy-bj1 span,.bjy-bj1 input,.bjy-bj2 span,.bjy-bj2 input{ width:346px; height:36px; display:block; text-align:left; line-height:36px; margin:0px auto;}
-.bjy-bj1 input,.bjy-bj2 input{ text-align:center; background:#ECECFC; border:none; padding:0 10px; width:330px;}
+.bjy-bj1 input,.bjy-bj2 input{ text-align:center; background:#eee; border:none; padding:0 10px; width:330px;}
 .bjy-bj2 input{ margin-bottom:20px;}
-.bjy-bj1 .jianjie{padding:0 10px; width:330px; height:100px;background:#ECECFC; border:none;display:block; text-align:left; line-height:36px; margin:0px auto; resize:none;}
+.bjy-bj1 .jianjie{padding:0 10px; width:330px; height:100px;background:#eee; border:none;display:block; text-align:left; line-height:36px; margin:0px auto; resize:none;}
 .bjy-bj1 .pic{width:285px; height:260px; background:#ECECFC; margin:0px auto;}
 .bjy-bj2{ width:350px;margin:80px auto 20px;}
 .bjy-bj2 .jing{ position:relative;}
@@ -766,11 +767,11 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 .bjy-bj4 span{width:440px; height:36px; display:block; line-height:36px; text-align:left; margin:10px auto 0; }
 .bjy-bj4 p{ width:440px; height:36px; margin:0px auto;}
 .bjy-bj4 p.mixi{ border-bottom:1px solid #ddd;}
-.bjy-bj4 p input{ display:block; float:left;_display:inline; width:340px; height:36px; line-height:36px; padding-left:12px; border:none; background:#ECECFC;}
-.bjy-bj4 p a{ display:block; float:right;_display:inline; width:78px; height:36px; line-height:36px; text-align:center;background:#ECECFC; color:#333;}
+.bjy-bj4 p input{ display:block; float:left;_display:inline; width:340px; height:36px; line-height:36px; padding-left:12px; border:none; background:#eee;}
+.bjy-bj4 p a{ display:block; float:right;_display:inline; width:78px; height:36px; line-height:36px; text-align:center;background:#eee; color:#333;}
 .bjy-bj4 font{width:80px; height:36px; line-height:36px; text-align:center; margin:30px auto 0px; background:#FF7A45;color:#FFEB79; display:block;}
 .bj4-main{width:440px; height:auto; overflow:hidden; margin:0px auto;}
-.sx{width:430px; height:36px; line-height:36px; padding-left:10px; border:none; background:#ECECFC; font-size:16px;}
+.sx{width:430px; height:36px; line-height:36px; padding-left:10px; border:none; background:#eee; font-size:16px;}
 .bj4-main p{width:475px; height:36px; line-height:36px; margin-top:10px;}
 .bj4-main p em{ display:block; float:left; text-align:center; font-style:normal;}
 .bj4-main p input{ width:110px; display:block; float:left; height:36px; }
@@ -779,13 +780,13 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 .bjy-bj4 .creat dl dd,.bjy-bj4 .creat dl dt{width:440px; height:36px; line-height:36px;}
 .bjy-bj4 .creat dl dd{ margin-bottom:10px; position:relative;}
 .bjy-bj4 .creat dl dt span{width:33%; height:36px; line-height:36px; float:left; margin:0;}
-.bjy-bj4 .creat dl dd input{width:31%; margin-right:2%; height:36px; line-height:36px; float:left; background:#ececfc; padding-left:5px;}
+.bjy-bj4 .creat dl dd input{width:31%; margin-right:2%; height:36px; line-height:36px; float:left; background:#eee; padding-left:5px;}
 .bjy-bj4 .creat dl dd .sect{float:left; position:relative; width:100px; height:36px; line-height:36px; display:inline-block;}
 .bjy-bj4 .creat dl dd a{ width:36px; height:36px; float:right; _display:inline; }
 .bjy-bj4 .creat dl dd a.add{ background:url(../images/jia.png) no-repeat 0 center;}
 .bjy-bj4 .creat dl dd a.jian{  background:url(../images/jian.png) no-repeat 0 center;}
 			/*---------------- select-------------*/
-.bjy-bj4 .sect .select-wrapper{ width:100px; height:36px; line-height:36px; text-align:center; text-indent:0; margin:0; background:#ececfc;}
+.bjy-bj4 .sect .select-wrapper{ width:100px; height:36px; line-height:36px; text-align:center; text-indent:0; margin:0; background:#eee;}
 .bjy-bj4 .select-wrapper .select-list{width:100px; height:36px; line-height:36px; text-align:center; text-indent:0;}
 .bjy-bj4 .select-wrapper .select-list .select-item{ margin-top:0; width:100%;}
 .bjy-bj4 .select-wrapper .select-list .select-option{ background:#ececfc; width:100%;}
@@ -794,20 +795,20 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 
 .bjy-bj4 .start-time{width:440px; margin:20px auto 0px;}
 .bjy-bj4 .start-time dt span{ width:210px; height:36px; line-height:36px; text-align:left; float:left; margin-right:10px;}
-.bjy-bj4 .start-time dd input{ padding-left:5px; background:#ececfc; width:190px; height:36px; line-height:36px; _display:inline; float:left; text-align:center; margin-right:10px;}
+.bjy-bj4 .start-time dd input{ padding-left:5px; background:#eee; width:190px; height:36px; line-height:36px; _display:inline; float:left; text-align:center; margin-right:10px;}
 
 .bjy-bj4 .times dl dd,.bjy-bj4 .times dl dt{width:440px; height:36px; line-height:36px;}
 .bjy-bj4 .times dl dd{ margin-bottom:10px;}
 .bjy-bj4 .times dl dt span{width:33%; height:36px; line-height:36px; float:left; margin:0;}
-.bjy-bj4 .times dl dd input{width:31%; margin-right:2%; height:36px; line-height:36px; float:left; background:#ececfc; padding-left:5px;}
+.bjy-bj4 .times dl dd input{width:31%; margin-right:2%; height:36px; line-height:36px; float:left; background:#eee; padding-left:5px;}
 .bjy-bj4 .times dl dd .sect{float:left; position:relative; width:100px;line-height:36px; display:inline-block;}
 
 
 .bjy-bj5{height:auto; overflow:hidden; width:1030px;margin:80px auto 90px; }
 .bjy-bj5 span,.bjy-bj5 div span{width:440px; height:40px; margin:0px auto; display:block; line-height:40px; text-align:left;}
-.bjy-bj5 textarea{ width:410px; height:226px; border:none; resize:none; background:#ececfb; margin:0px auto; display:block; padding:15px; line-height:24px;}
+.bjy-bj5 textarea{ width:410px; height:226px; border:none; resize:none; background:#eee; margin:0px auto; display:block; padding:15px; line-height:24px;}
 .bjy-bj5 div{width:440px; margin:0px auto;}
-.bjy-bj5 div ul{ background:none; width:350px; margin:0px auto; padding:5px 45px;  background:#ececfb; height:auto; padding-bottom:20px;}
+.bjy-bj5 div ul{ background:none; width:350px; margin:0px auto; padding:5px 45px;  background:#eee; height:auto; padding-bottom:20px;}
 .bjy-bj5 div ul li{ width:70px; height:36px; margin:16px 0px 0px 14px; float:left; font-size:14px; text-align:center; line-height:36px; background:#848484; color:#FFEB7F; border-radius:3px;}
 .bjy-bj5 div ul li:hover{ cursor:pointer;}
 .bjy-bj5 div ul li.active-bj{ background:#6EB8FF;}
