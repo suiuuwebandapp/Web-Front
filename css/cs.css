@@ -760,7 +760,10 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 .bjy-bj2 .map{width:350px; height:320px; background:#ececec; margin:0px auto;}
 
 .bjy-bj3{ width:450px;margin:80px auto 20px; }
-.bjy-bj3 .imgs{ width:205px; height:115px; overflow:hidden; background:#eee; float:left; margin-right:20px; margin-bottom:20px; }
+.bjy-bj3 .imgs{ width:205px; height:115px; overflow:hidden; background:#eee; float:left; margin-right:20px; margin-bottom:20px; position:relative; }
+.bjy-bj3 .imgs img{ width:205px; }
+.bjy-bj3 .imgs .delet{ background:rgba(0,0,0,0.3) url(../images/delete02.png) no-repeat 182px 4px; height:115px; width:205px; display:block; position:absolute; left:0; top:0; display:none;}
+.bjy-bj3 .imgs:hover .delet{ display:block; }
 
 .bjy-bj4{height:950px; overflow:hidden; width:1030px;margin:80px auto 20px; }
 .bjy-bj4 span{width:440px; height:36px; display:block; line-height:36px; text-align:left; margin:10px auto 0; }
