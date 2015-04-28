@@ -225,8 +225,16 @@ $(function(){
 })
 
 
+/*-----完成页满屏显示----*/
+$(function(){
+	var h1=$(window).height();
+	var h3=$('#footer-out').height();
+	var myh=h1-h3-40-110;
+	$('#finish').outerHeight(myh+'px')
+	$('.forgotPaw').outerHeight(myh+'px')
+	
 
-
+})
 
 
 
