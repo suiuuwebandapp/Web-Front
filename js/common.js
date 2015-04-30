@@ -174,12 +174,14 @@ $(function(){
 $(function(){
 	var num=0;
 	var timer=null;
+	var maxnum=$('.web-banner #banner li').size()-1;
+
 	function fn(){
 		
 		num++;
-		if(num>5){num=0}
-		$('.web-banner ul').stop().animate({left:num*-894},1000)
-		$('.web-banner ol').stop().animate({left:num*-146},1000)
+		if(num>maxnum){num=0}
+		$('.web-banner ul').stop().animate({left:num*-830},1000)
+		$('.web-banner ol').stop().animate({left:num*-195},1000)
 	}
 	timer=setInterval(fn,2000)
 	$('.web-banner ul li,.web-banner ol li').hover(function(e) {
@@ -193,16 +195,16 @@ $(function(){
 	
 	$('.web-banner .next').click(function(e) {
         num++;
-		if(num>5){num=0}
-		$('.web-banner ul').stop().animate({left:num*-894},500)
-		$('.web-banner ol').stop().animate({left:num*-146},500)
+		if(num>maxnum){num=0}
+		$('.web-banner ul').stop().animate({left:num*-830},500)
+		$('.web-banner ol').stop().animate({left:num*-195},500)
 
     });
 	$('.web-banner .prev').click(function(e) {
         num--;
-		if(num<0){num=5}
-		$('.web-banner ul').stop().animate({left:num*-894},500)
-		$('.web-banner ol').stop().animate({left:num*-146},500)
+		if(num<0){num=maxnum}
+		$('.web-banner ul').stop().animate({left:num*-830},500)
+		$('.web-banner ol').stop().animate({left:num*-195},500)
     });
 	$('.web-banner .prev,.web-banner .next').hover(function(e) {
         clearInterval(timer)
