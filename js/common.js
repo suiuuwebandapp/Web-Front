@@ -193,14 +193,14 @@ $(function(){
     
     });
 	
-	$('.web-banner .next').click(function(e) {
+	$('.web-banner .nex').click(function(e) {
         num++;
 		if(num>maxnum){num=0}
 		$('.web-banner ul').stop().animate({left:num*-830},500)
 		$('.web-banner ol').stop().animate({left:num*-195},500)
 
     });
-	$('.web-banner .prev').click(function(e) {
+	$('.web-banner .pre').click(function(e) {
         num--;
 		if(num<0){num=maxnum}
 		$('.web-banner ul').stop().animate({left:num*-830},500)

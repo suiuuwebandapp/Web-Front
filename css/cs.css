@@ -944,8 +944,8 @@ transition:all 0.4s ease-in-out;
 .sydetail .web-content .web-left .collection:hover{ background-position:0 -75px;}
 
 .sydetail .web-content .web-banner{ width:830px; height:570px; overflow:hidden; position:relative;}
-.sydetail .web-content .web-banner .prev{ position:absolute; left:0px; top:225px;}
-.sydetail .web-content .web-banner .next{ position:absolute; right:0px; top:225px;}
+.sydetail .web-content .web-banner .pre{ position:absolute; left:0px; top:225px;}
+.sydetail .web-content .web-banner .nex{ position:absolute; right:0px; top:225px;}
 .sydetail .web-content .web-banner ul{ width:22222px; height:460px; overflow:hidden; position:absolute; left:0px; top:0px;}
 .sydetail .web-content .web-banner ul li{ width:830px; height:460px; overflow:hidden;  float:left;}
 .sydetail .web-content .web-banner ul li img{ width:830px;}
@@ -1085,8 +1085,8 @@ transition:all 0.4s ease-in-out;
 .yldetail .web-content .web-left .collection:hover{ background-position:0 -75px;}
 
 .yldetail .web-content .web-banner{ width:830px; height:570px; overflow:hidden; position:relative;}
-.yldetail .web-content .web-banner .prev{ position:absolute; left:0px; top:225px;}
-.yldetail .web-content .web-banner .next{ position:absolute; right:0px; top:225px;}
+.yldetail .web-content .web-banner .pre{ position:absolute; left:0px; top:225px;}
+.yldetail .web-content .web-banner .nex{ position:absolute; right:0px; top:225px;}
 .yldetail .web-content .web-banner ul{ width:22222px; height:460px; overflow:hidden; position:absolute; left:0px; top:0px;}
 .yldetail .web-content .web-banner ul li{ width:830px; height:460px; overflow:hidden;  float:left;}
 .yldetail .web-content .web-banner ul li img{ width:830px;}
