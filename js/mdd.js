@@ -83,6 +83,12 @@ window.onload=function(){
 			zcmain.style.display="none";		
 		};
 */	
+
+}
+
+
+$(document).ready(function(e) {
+	
 /*登录注册*/
 	var oMdd=document.getElementById('mdd-btn');
 	var oBtn=oMdd.getElementsByTagName('li');
@@ -145,5 +151,4 @@ window.onload=function(){
 		}
 	});
 
-
-}
+});

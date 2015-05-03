@@ -131,14 +131,15 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 #ul1 li p img{ float:left; width:40px; height:40px; border-radius:360px;}
 #ul1 li p font{ float:left; margin-left:10px; width:230px; height:20px; line-height:20px; margin-top:20px; display:block; font-size:14px;}
 #ul1 li h4{ width:284px; height:30px; line-height:30px; text-align:center; margin-top:20px; font-weight:normal;}
-#ul1 li span{ position:absolute; left:0; top:0; width:100%; height:0; background:#000; color:#ddd; text-align:center; line-height:260px; font-size:40px; font-weight:bold; opacity:0;
+#ul1 li div.zhezhao{ position:absolute; left:0; top:0; width:100%; height:0; background:rgba(0,0,0,0.7); color:#ddd; text-align:center; line-height:260px; font-size:14px; font-weight:bold; opacity:0;
 transition:all 0.4s ease-in-out;
 -webkit-transition:all 0.4s ease-in-out;
 -moz-transition:all 0.4s ease-in-out;
 -ms-transition:all 0.4s ease-in-out;
 -o-transition:all 0.4s ease-in-out;
 }
-#ul1 li:hover span{ height:260px; opacity:0.6;}
+#ul1 li:hover div.zhezhao{ height:260px; opacity:0.6;}
+#ul1 li div.zhezhao p{ position:relative; color:#858585; font-size:14px; text-indent:2em;}
 
 .index-tuijian{ height:645px; overflow:hidden;}
 .index-tuijian .countrys{ position:relative; height:645px;}
@@ -939,6 +940,7 @@ transition:all 0.4s ease-in-out;
 .sydetail{margin:110px auto 0px;}
 .sydetail .titTop{ height:auto; overflow:hidden;  position:relative;}
 .sydetail .titTop .bjBtn{display:block; background:#70b8ff; color:#ffea87; position:absolute; right:0; top:0; height:40px; line-height:40px; width:136px; text-align:center; }
+.sydetail .titTop .backbj{display:block; background:#ff7a4d; color:#ffea87; position:absolute; right:140px; top:0; height:40px; line-height:40px; width:155px; text-align:center; }
 
 .sydetail .titTop .title{ color:#858585; font-size:20px;}
 .sydetail .web-content{ width:1200px; height:auto; overflow:hidden; margin:20px auto 60px;}
@@ -1264,7 +1266,7 @@ transition:all 0.4s ease-in-out;
 .mdd-left li span.mdd-btn-left{ width:100px; float:left; text-align:right; height:30px; line-height:30px; padding-right:8px; overflow:hidden;}
 
 .mdd-left li.mdd-active,.mdd-left li:hover{ background:url(../images/yuan.fw.png) no-repeat center 11px;color:#FFA54C; font-size:18px;}
-.mdd-right{width:910px; min-height:700px; overflow:hidden; position:relative; border-left:#ccc 1px solid;border-right:#ccc 1px solid;}
+.mdd-right{width:910px; height:600px; overflow:hidden; position:relative; border-left:#ccc 1px solid;border-right:#ccc 1px solid;}
 .mdd-prev{ left:5px; background:url(../images/mdd-prev.fw.png) no-repeat;}
 .mdd-next{ right:5px; background:url(../images/mdd-next.fw.png) no-repeat;}
 .mdd-prev,.mdd-next{width:21px; height:38px; position:absolute; top:202px; display:block;}
@@ -1272,9 +1274,9 @@ transition:all 0.4s ease-in-out;
 .mdd-right-box .show{ width:910px; height:auto; float:left; position:relative;}
 
 .show p{width:843px; height:40px; margin:0px 34px; background:url(../images/timebj.fw.png) no-repeat center center;}
-.show>a{ display:block; width:843px; height:440px; margin:0px auto; background:pink; overflow:hidden;}
+.show>a{ display:block; width:843px; height:440px; margin:0px auto;  overflow:hidden;}
 .show>a img{ display:block; width:100%; height:auto;}
-.show div.show-posi{ width:823px; height:auto; position:absolute; left:33px; bottom:155px; background:rgba(0,0,0,.68); color:#ddd; padding:10px; word-break:break-all;}
+.show div.show-posi{ line-height:21px; width:823px; height:auto; position:absolute; left:33.5px; bottom:155px; background:rgba(0,0,0,.68); color:#ddd; padding:10px; word-break:break-all;}
 .show p span{ width:82px; height:40px; line-height:40px; text-align:center; display:block; background:#ececfb;}
 .show p span a{ color:#333;}
 .show p span a:hover{ color:#c00;}
