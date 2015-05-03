@@ -61,7 +61,7 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 #denglu-main .icon03{ background-position:0 -323px;}
 #denglu-main .icon03:hover{ background-position:0 -258px;}
 
-#denglu-main . float .gt_holder{ margin-left:50px; font-size:16px;}
+#denglu-main .float .gt_holder{ margin-left:53px; font-size:16px;}
 .nav-right ol li .float .gt_holder .gt_guide_tip a{ color:#858585; font-size:12px;}
 
 /* --------注册弹框-----*/
