@@ -1272,16 +1272,19 @@ transition:all 0.4s ease-in-out;
 .mdd-right-box .show{ width:910px; height:auto; float:left; position:relative;}
 
 .show p{width:843px; height:40px; margin:0px 34px; background:url(../images/timebj.fw.png) no-repeat center center;}
-.show img{ display:block; width:auto; height:auto; margin:0px auto; max-width:843px; max-height:439px; overflow:hidden;}
-.show div.show-posi{ width:823px; height:116px; position:absolute; left:33px; top:343px; background:rgba(0,0,0,.68); color:#ddd; padding:10px;}
+.show>a{ display:block; width:843px; height:440px; margin:0px auto; background:pink; overflow:hidden;}
+.show>a img{ display:block; width:100%; height:auto;}
+.show div.show-posi{ width:823px; height:auto; position:absolute; left:33px; bottom:155px; background:rgba(0,0,0,.68); color:#ddd; padding:10px; word-break:break-all;}
 .show p span{ width:82px; height:40px; line-height:40px; text-align:center; display:block; background:#ececfb;}
 .show p span a{ color:#333;}
 .show p span a:hover{ color:#c00;}
 .show p span.span-left{ float:left;}
 .show p span.span-right{ float:right;}
 .show div.mdd-tuijian{ width:843px; height:116px; margin:20px 34px;}
+.show div.mdd-tuijian div>a{ width:140px; height:100px; overflow:hidden; display:block; float:left;}
+.show div.mdd-tuijian a img{ width:100%; height:auto;}
 .show div{ width:281px; height:116px; float:left;}
-.show div img{ float:left; width:143px; height:87px;}
+.show div img{ float:left; width:143px;}
 .show div h4{width:130px; height:24px; float:right; padding-left:8px;}
 .show div p{ background:none; height:13px; width:130px; padding-left:8px; float:right; margin:15px 0px 0px 0px;}
 .show div p span { width:13px; height:13px; float:left; display:block; margin-left:5px; background:none;}
