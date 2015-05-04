@@ -1218,11 +1218,13 @@ transition:all 0.4s ease-in-out;
 .tanchu-main .zhuanlan-web span,.tanchu-main .zhuanlan-web p{ line-height:24px; padding:0;}
 .tanchu-main .zhuanlan-web p{ width:540px; font-size:16px; margin-top:24px;}
 .tanchu-main .zhuanlan-web p b{ color:#99ccff; font-size:18px;}
-.tanchu-main .zhuanlan-web .resp .picon{ display:inline-block; height:40px; width:40px; background:url(../images/zpicon.png) no-repeat 0 0;}
+.tanchu-main .zhuanlan-web .resp .picon{ margin-top:15px;display:inline-block; height:30px; width:40px; background:url(../images/zpicon.png) no-repeat 0 0;}
 .tanchu-main .zhuanlan-web .resp .zan{ margin-right:20px;}
 .tanchu-main .zhuanlan-web .resp .zan:hover{ background-position:0 -60px;}
+.tanchu-main .zhuanlan-web .resp .zan.active{ background-position:0 -60px;}
 .tanchu-main .zhuanlan-web .resp .huifu{background-position:0 -115px;}
 .tanchu-main .zhuanlan-web .resp .huifu:hover{ background-position:0 -171px;}
+.tanchu-main .zhuanlan-web .resp .huifu.active{ background-position:0 -171px;}
 .tanchu-main .zhuanlan-web li input{ float:right; width:50px; height:40px; line-height:40px; display:inline-block; margin:-39px 5px 0px 0px; border:none; background:none; }
 .tanchu-main .zhuanlan-web ol{ width:550px; line-height:30px; height:30px; margin:15px auto;}
 .tanchu-main .zhuanlan-web ol li{ padding-top:0; width:58px; height:30px; line-height:30px; text-align:center; float:left; border:none;}
