@@ -1211,12 +1211,13 @@ transition:all 0.4s ease-in-out;
 
 .tanchu-main .zhuanlan-web{ height:auto; overflow:hidden; padding:0 49px;}
 .tanchu-main .zhuanlan-web ul{ height:440px; overflow:hidden;}
-.tanchu-main .zhuanlan-web li{ height:60px; padding-top:25px; border-bottom:1px solid #ddd;}
-.tanchu-main .zhuanlan-web .user-pic{ width:150px; height:45px; position:relative;}
+.tanchu-main .zhuanlan-web li{ overflow:hidden;padding-top:25px; border-bottom:1px solid #ddd;}
+.tanchu-main .zhuanlan-web .user-pic{ width:50px; height:45px; position:relative;}
 .tanchu-main .zhuanlan-web .user-pic .user-name{ position:absolute; top:0;left:50px;}
 .tanchu-main .zhuanlan-web img{ width:45px; height:45px; border-radius:360px; display:block; float:left; margin:0 3px 0 0;}
-.tanchu-main .zhuanlan-web span,.tanchu-main .zhuanlan-web p{  height:24px; line-height:24px; padding:0;}
-.tanchu-main .zhuanlan-web p{ width:470px; font-size:16px; margin-top:24px;}
+.tanchu-main .zhuanlan-web span,.tanchu-main .zhuanlan-web p{ line-height:24px; padding:0;}
+.tanchu-main .zhuanlan-web p{ width:540px; font-size:16px; margin-top:24px;}
+.tanchu-main .zhuanlan-web p b{ color:#99ccff; font-size:18px;}
 .tanchu-main .zhuanlan-web .resp .picon{ display:inline-block; height:40px; width:40px; background:url(../images/zpicon.png) no-repeat 0 0;}
 .tanchu-main .zhuanlan-web .resp .zan{ margin-right:20px;}
 .tanchu-main .zhuanlan-web .resp .zan:hover{ background-position:0 -60px;}
