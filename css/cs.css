@@ -732,15 +732,15 @@ transition:all 0.4s ease-in-out;
 .syManage .newTip span{ display:block; width:20px; height:20px; border-radius:360px; position:absolute; right:0px; top:-10px; background:#ff7a4d; color:#ffea88; text-align:center; line-height:20px; font-size:12px;}
 
 .syManage .newsLists{height:auto;}
-.syManage .newsLists .lists{ width:100%; height:66px; overflow:hidden; margin-top:60px;}
+.syManage .newsLists .lists{ width:100%; overflow:hidden; margin-top:60px;}
 .syManage .newsLists .lists img{float:left; width:66px; border-radius:360px;}
 .syManage .newsLists .lists ul{ width:575px; float:left; padding-left:20px;}
-.syManage .newsLists .lists ul li{ float:left; width:20%; height:33px; line-height:33px;}
+.syManage .newsLists .lists ul li{ float:left; width:20%; height:33px; line-height:33px; border-bottom:1px solid #ddd;}
 .syManage .newsLists .lists ul li b{ margin-left:10px;}
-.syManage .newsLists .lists ul li.last{ width:100%; border-top:1px solid #ddd; height:32px; line-height:32px;}
-.syManage .newsLists .lists ul li.last a{ float:left; width:20%; display:inline-block; color:#ff7945; padding-left:10px; overflow:hidden;}
+.syManage .newsLists .lists ul li.last{ width:100%; height:auto; line-height:32px; border:none; display:table}
+.syManage .newsLists .lists ul li.last a{ float:left; width:30px; height:30px; display:table-cell;  color:#ff7945; padding-left:10px;}
+.syManage .newsLists .lists ul li.last p{ word-break:break-all; padding:0 20px; display:table-cell; width:470px;}
 .syManage .newsLists .lists ul li.last a img{ width:18px; height:12px; margin:12px;}
-.syManage .newsLists .lists ul li.last span{ margin-right:20px; background:#ffdfbd; color:#ff7945; margin-top:10px; font-size:12px; float:left; padding:0 5px; height:22px; line-height:22px;}
 .syManage .newsLists .lists .sure,.syManage .newsLists .lists .removeBtn{ width:80px; height:36px; line-height:36px; text-align:center; float:right; margin-top:15px; background:#ff7a4d; color:#ffeb81;border:none; font-size:16px;}
 .syManage .newsLists .lists .removeBtn{ margin-left:15px; background:#73b9ff; }
 
