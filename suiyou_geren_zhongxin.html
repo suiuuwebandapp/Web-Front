@@ -457,7 +457,7 @@ squid.swing.jselect();
                         <span>接机<b></b><br>租车<b></b></span>
                     </dd>
               </dl>
-                <p><a href="#" class="cancel">忽略</a><a href="#" class="sure">接受</a></p>
+                <p><span class="zno">未接单</span><a href="#" class="cancel">忽略</a><a href="#" class="sure">接受</a></p>
           </div>
             <div class="orderList clearfix">
             	<img src="images/delete.fw.png" width="22" height="24" class="rubbish">
@@ -475,7 +475,25 @@ squid.swing.jselect();
                         <span>接机<b></b><br>租车<b></b></span>
                     </dd>
               </dl>
-                <p><a href="#" class="cancel">忽略</a><a href="#" class="sure">接受</a></p>
+                <p><span class="zsure">已接单</span><a href="#" class="nosure">取消订单</a></p>
+          </div>
+            <div class="orderList clearfix">
+            	<img src="images/delete.fw.png" width="22" height="24" class="rubbish">
+                <dl class="order clearfix">
+                    <dt class="title">
+                        <span>3小时前</span><span>申请随游</span><span>开始时间</span><span>申请游客</span><span>出行时间</span><span>人数</span><span>附加服务</span>
+                  </dt>
+                    <dd>
+                        <span class="pic"><img src="images/2.png"></span>
+                        <span>日本京都奈良公园一日游秀公园...</span>
+                        <span>9:00AM</span>
+                        <span><a href="#" class="user"><img src="images/1.png" ></a><a href="#" class="message"><b>xiao</b><br><img src="images/xf.fw.png" width="18" height="12"></a></span>
+                        <span>2015.3.14</span>
+                        <span>2</span>
+                        <span>接机<b></b><br>租车<b></b></span>
+                    </dd>
+              </dl>
+                <p><span class="zcancel">已取消</span><a href="#" class="cancel">忽略</a></p>
           </div>
         </div>    
         <div class="myOder past02 tabCon"> 
@@ -720,7 +738,31 @@ squid.swing.jselect();
     </div>
     
 </div>
-<!-----------个人中心-end--------------->
+<!-----------邮件弹层--------------->
+<div id="messages">
+	<div class="top">
+        <div class="ss"><a href="#" class="userPic"><img src="images/5.png" class="pic"></a> <span class="name">irrt95</span></div>
+        <p>性别: <b>女</b> <b>90后</b> <b>德国慕尼黑</b></p>
+     </div>
+     <textarea></textarea>
+     <a href="###" class="btn">发送</a>
+
+</div>
+
+<!-----------取消订单弹层--------------->
+<div id="cancelTip">
+	<p>随游非常认真地对待随友取消订单</p>
+	<p>我们强烈建议您不要取消订单，因为取消预定会给其他用户造成很大不便。</p>
+	<p>请在随游网站上主动联系预订者，解释您取消订单的原因</p>
+     <textarea>请填写取消原因</textarea>
+     <p class="blue">点击确认后订单将会立即取消，随游的工作人员会在稍后联系您</p>
+     <a href="###" class="btn">确认取消</a>
+
+</div>
+
+
+
+
 
 <!-----footer------>
 
