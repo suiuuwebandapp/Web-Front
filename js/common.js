@@ -269,6 +269,10 @@ $(function(){
 	var h=$(window).height();
 	var w=$(window).width();
 	$('.mask').height(h).width(w);
+	$('.mask').click(function(e) {
+        $(this).css('display','none')
+        $('.screens').css('display','none')
+    });
 	
 
 })
