@@ -264,6 +264,17 @@ $(function(){
 	
 
 })
+/*-----完成页满屏显示----*/
+$(function(){
+	var h=$(window).height();
+	var w=$(window).width();
+	$('.mask').height(h).width(w);
+	
+
+})
+
+
+
 
 
 

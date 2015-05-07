@@ -1297,7 +1297,7 @@ transition:transform 1s ease-in-out;
 
 
 		/*----专栏弹出层----*/
-.mask{ background:rgba(0,0,0,.78); position:fixed; z-index:5; display:none; }
+.mask{ background:rgba(0,0,0,.78); position:fixed; top:0;left:0; z-index:5; display:none; }
 .tanchu-main{width:874px; height:auto; overflow:hidden; background:#FFF; position:absolute; left:50%; top:0px; margin-left:-437px; display:none;z-index:66; padding-bottom:30px;}
 .tanchu-main img{  width:100%; height:411px;}
 .tanchu-main p{ padding:10px 49px; line-height:24px;}
@@ -1461,7 +1461,7 @@ transition:transform 1s ease-in-out;
 #spage li input{ width:70px; height:30px; float:right; margin-top:0px; line-height:30px; border-bottom:#CCC 1px solid;}
 
 /*------------邮件弹层------------*/
-.smessages{ width:350px; height:260px; background:#fff; padding:20px;  font-size:16px; position:absolute; left:50%; margin-left:-175px; top:100px; z-index:99999; display:none;}
+.smessages{ width:350px; height:260px; background:#fff; padding:20px;  font-size:16px; position:fixed; left:50%; margin-left:-175px; top:100px; z-index:99; display:none;}
 .smessages .top .ss{ position:relative; }
 .smessages .top .userPic{display:block; float:left; width:50px; height:50px; overflow:hidden; border-radius:50%; margin-right:10px; }
 .smessages .top .userPic .pic{ width:100%; display:block;}
@@ -1472,7 +1472,7 @@ transition:transform 1s ease-in-out;
 .smessages .btn{ display:block; position:absolute; bottom:0; right:0; width:80px; height:36px; line-height:36px; color:#ffeb79; background:#73b9ff; text-align:center;}
 
 /*-----------取消订单弹层-------------*/
-.scancelTip{ width:590px; height:330px; background:#fff; padding:20px;  font-size:16px; position:absolute; left:50%; margin-left:-295px; top:100px; z-index:99999; display:none;}
+.scancelTip{ width:590px; height:330px; background:#fff; padding:20px;  font-size:16px; position:fixed; left:50%; margin-left:-295px; top:100px; z-index:99; display:none;}
 .scancelTip textarea{ width:100%; height:170px; background:#eee; margin:10px 0;}
 #cancelTip .blue{ color:#73b9ff; font-size:18px;}
 #cancelTip .btn{ display:block; position:absolute; bottom:0; right:0; width:80px; height:36px; line-height:36px; color:#ffeb79; background:#73b9ff; text-align:center;}
