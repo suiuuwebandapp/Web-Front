@@ -1334,12 +1334,7 @@ transition:transform 1s ease-in-out;
 .tanchu-main .zhuanlan-web .resp .huifu:hover{ background-position:0 -171px;}
 .tanchu-main .zhuanlan-web .resp .huifu.active{ background-position:0 -171px;}
 .tanchu-main .zhuanlan-web li input{ float:right; width:50px; height:40px; line-height:40px; display:inline-block; margin:-39px 5px 0px 0px; border:none; background:none; }
-.tanchu-main .zhuanlan-web ol{ width:550px; line-height:30px; height:30px; margin:15px auto;}
-.tanchu-main .zhuanlan-web ol li{ padding-top:0; width:58px; height:30px; line-height:30px; text-align:center; float:left; border:none;}
-.tanchu-main .zhuanlan-web ol li a{ display:block; width:58px; height:30px; color:#858585;}
-.tanchu-main .zhuanlan-web ol li a:hover{color:#FFEA86;}
-.tanchu-main .zhuanlan-web ol li.active a{color:#FFEA86;}
-.tanchu-main .zhuanlan-web ol li input{ width:70px; height:30px; float:right; margin-top:0px; line-height:30px; border-bottom:#CCC 1px solid;}
+
 
 .tanchu-main .zhuanlan-text{ padding:0 49px; height:85px;}
 .tanchu-main .zhuanlan-text textarea{ height:100px; resize:none; width:740px;  border:none; background:#eeeeee; display:block; padding:15px;}
@@ -1455,6 +1450,15 @@ transition:transform 1s ease-in-out;
 #aboutCon-out .aboutCon .rightCon .btnbar .btn{ height:36px; line-height:36px; padding:0 20px; display:block; background:#73b9ff; color:#ffeb80;  float:right;}
 
 /*------------帮助中心--end-----------*/
+
+
+/*------------分页----------*/
+#spage{ width:550px; line-height:30px; height:30px; margin:15px auto;}
+#spage li{ padding-top:0; width:58px; height:30px; line-height:30px; text-align:center; float:left; border:none;}
+#spage li a{ display:block; width:58px; height:30px; color:#858585;}
+#spage li a:hover{color:#FFEA86;}
+#spage li.active a{color:#FFEA86;}
+#spage li input{ width:70px; height:30px; float:right; margin-top:0px; line-height:30px; border-bottom:#CCC 1px solid;}
 
 /*------------邮件弹层------------*/
 #messages{ width:350px; height:260px; background:#fff; padding:20px;  font-size:16px; position:absolute; left:50%; margin-left:-175px; top:100px; z-index:99999; display:none;}
