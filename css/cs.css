@@ -763,6 +763,7 @@ transition:transform 1s ease-in-out;
 .sycon .myEmail .past01 .left{ text-align:left; width:50%; height:auto; padding:15px 0; float:left; _display:inline; }
 .sycon .myEmail .past01 .left ul{ height:575px;overflow:hidden;}
 .sycon .myEmail .past01 .left ul li{ display:table; height:70px; width:100%; border-bottom:1px solid #ddd;}
+.sycon .myEmail .past01 .left ul .new{ color:#ff794c;}
 .sycon .myEmail .past01 .left .people{ vertical-align:middle; width:140px; height:70px; overflow:hidden; display:table-cell; }
 .sycon .myEmail .past01 .left .people span{float:left; font-size:14px;}
 .sycon .myEmail .past01 .left .people img{ width:40px; border-radius:50%; float:left; }
@@ -778,9 +779,10 @@ transition:transform 1s ease-in-out;
 .sycon .myEmail .past01 .right .con .you img,.sycon .myEmail .past01 .right .con .you p{ float:right; text-align:left;}
 .sycon .myEmail .past01 .right .con .zuo img,.sycon .myEmail .past01 .right .con .you img{ width:40px; height:40px; border-radius:50%;}
 .sycon .myEmail .past01 .right .con .zuo p,.sycon .myEmail .past01 .right .con .you p{ width:340px; word-break:break-all; border-radius:10px; padding:10px; line-height:21px; background:#DBDBEB; margin:0 15px; position:relative;}
+.sycon .myEmail .past01 .right .con .you p{ background:#73b9ff; color:#fff;}
 .sycon .myEmail .past01 .right .con .zuo p:before,.sycon .myEmail .past01 .right .con .you p:before{ height:0; width:0; content:""; border:16px solid transparent; border-width:10px 20px; position:absolute; top:5px;}
 .sycon .myEmail .past01 .right .con .zuo p:before{ left:-35px;border-right-color:#DBDBEB;}
-.sycon .myEmail .past01 .right .con .you p:before{ right:-35px;border-left-color:#DBDBEB;}
+.sycon .myEmail .past01 .right .con .you p:before{ right:-35px;border-left-color:#73b9ff;}
 .sycon .myEmail .past01 .right .con .write{ margin:50px 0 20px; height:36px; padding-left:15px; background:#fff;}
 .sycon .myEmail .past01 .right .con .write .txt{ float:left; height:36px; line-height:36px; text-align:left;width:80%;}
 .sycon .myEmail .past01 .right .con .write .btn{ cursor:pointer; float:right; height:36px; line-height:36px; text-align:center;  width:80px; background:#73b9ff; color:#ffeb80; font-size:16px;}
@@ -1121,10 +1123,10 @@ transition:transform 1s ease-in-out;
 .sydetail .web-content .web-left .web-con #other-line .wei{ background-position:0 -168px;}
 .sydetail .web-content .web-left .web-con #other-line .wei:hover{ background-position:0 -252px;}
 .sydetail .web-content .web-left .web-con .zhuanlan-web{ height:auto; overflow:hidden; padding:0 49px;}
-.sydetail .web-content .web-left .web-con .zhuanlan-web ul{ height:440px; overflow:hidden;}
+.sydetail .web-content .web-left .web-con .zhuanlan-web ul{max-height:600px;  overflow:hidden; padding-bottom:20px;}
 .sydetail .web-content .web-left .web-con .zhuanlan-web li{ overflow:hidden;padding-top:25px; border-bottom:1px solid #ddd;}
 .sydetail .web-content .web-left .web-con .zhuanlan-web .user-pic{ width:50px; height:45px; position:relative;}
-.sydetail .web-content .web-left .web-con .zhuanlan-web .user-pic .user-name{ position:absolute; top:0;left:50px;}
+.sydetail .web-content .web-left .web-con .zhuanlan-web .user-pic .user-name{ position:absolute; top:0;left:50px; width:400px;}
 .sydetail .web-content .web-left .web-con .zhuanlan-web img{ width:45px; height:45px; border-radius:360px; display:block; float:left; margin:0 3px 0 0;}
 .sydetail .web-content .web-left .web-con .zhuanlan-web span,.tanchu-main .zhuanlan-web p{ line-height:24px; padding:0;}
 .sydetail .web-content .web-left .web-con .zhuanlan-web p{ width:540px; font-size:16px; margin-top:24px;}
@@ -1317,10 +1319,10 @@ transition:transform 1s ease-in-out;
 .tanchu-main #other-line .qq:hover{ background-position:0 -416px;}
 
 .tanchu-main .zhuanlan-web{ height:auto; overflow:hidden; padding:0 49px;}
-.tanchu-main .zhuanlan-web ul{ height:440px; overflow:hidden;}
+.tanchu-main .zhuanlan-web ul{ max-height:600px; padding-bottom:20px; overflow:hidden;}
 .tanchu-main .zhuanlan-web li{ overflow:hidden;padding-top:25px; border-bottom:1px solid #ddd;}
 .tanchu-main .zhuanlan-web .user-pic{ width:50px; height:45px; position:relative;}
-.tanchu-main .zhuanlan-web .user-pic .user-name{ position:absolute; top:0;left:50px;}
+.tanchu-main .zhuanlan-web .user-pic .user-name{ position:absolute; top:0;left:50px; width:450px; }
 .tanchu-main .zhuanlan-web img{ width:45px; height:45px; border-radius:360px; display:block; float:left; margin:0 3px 0 0;}
 .tanchu-main .zhuanlan-web span,.tanchu-main .zhuanlan-web p{ line-height:24px; padding:0;}
 .tanchu-main .zhuanlan-web p{ width:540px; font-size:16px; margin-top:24px;}
