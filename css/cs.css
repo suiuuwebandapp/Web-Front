@@ -1165,7 +1165,7 @@ transition:transform 1s ease-in-out;
 .sydetail .web-content .web-right .ul02 li span{ height:36px; line-height:36px; width:25%; text-align:center; float:left;}
 .sydetail .web-content .web-right .ul02 li span b{ font-size:18px; color:#ff7945;}
 .sydetail .web-content .web-right p b{ font-size:18px; color:#ff7945; margin:0 10px;}
-.sydetail .web-content .web-right .user .user-name span{ position:absolute; left:50px; top:0;}
+.sydetail .web-content .web-right .user .user-name span{ width:200px; position:absolute; left:50px; top:0;}
 .sydetail .web-content .web-right .user p{ margin-top:24px; float:left;}
 .sydetail .web-content .web-right p span{ width:130px; overflow:hidden; display:block; float:left;}
 .sydetail .web-content .web-right ol{width:285px; height:120px; }
@@ -1269,7 +1269,7 @@ transition:transform 1s ease-in-out;
 .yldetail .web-content .web-right .ul02 li span{ height:36px; line-height:36px; width:25%; text-align:center; float:left;}
 .yldetail .web-content .web-right .ul02 li span b{ font-size:18px; color:#ff7945;}
 .yldetail .web-content .web-right p b{ font-size:18px; color:#ff7945; margin:0 10px;}
-.yldetail .web-content .web-right .user .user-name span{ position:absolute; left:50px; top:0;}
+.yldetail .web-content .web-right .user .user-name span{ width:200px; position:absolute; left:50px; top:0;}
 .yldetail .web-content .web-right .user p{ margin-top:24px; float:left;}
 .yldetail .web-content .web-right p span{ width:130px; overflow:hidden; display:block; float:left;}
 .yldetail .web-content .web-right ol{width:285px; height:120px; }
