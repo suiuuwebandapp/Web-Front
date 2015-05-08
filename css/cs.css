@@ -1455,7 +1455,7 @@ transition:transform 1s ease-in-out;
 
 
 /*------------分页----------*/
-#spage{ width:550px; line-height:30px; height:30px; margin:15px auto;}
+#spage{ width:770px; line-height:30px; height:30px; margin:15px auto;}
 #spage li{ padding-top:0; width:58px; height:30px; line-height:30px; text-align:center; float:left; border:none;}
 #spage li a{ display:block; width:58px; height:30px; color:#858585;}
 #spage li a:hover{color:#FFEA86;}
