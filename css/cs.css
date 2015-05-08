@@ -1455,11 +1455,12 @@ transition:transform 1s ease-in-out;
 
 
 /*------------分页----------*/
-#spage{ width:770px; line-height:30px; height:30px; margin:15px auto; text-align:center;}
-#spage li{ padding-top:0; width:58px; height:30px; line-height:30px; text-align:center; display:inline-block; border:none;}
-#spage li a{ display:block; width:58px; height:30px; color:#858585;}
-#spage li a:hover{color:#FFEA86;}
-#spage li.active a{color:#FFEA86;}
+#spage{ width:770px; line-height:30px; height:30px; margin:15px auto; text-align:center; overflow:hidden;}
+#spage li{ padding-top:0; margin-right:5px; height:30px; line-height:30px; text-align:center; display:inline-block; border:none; padding:0 10px;}
+#spage li:hover{ box-shadow:0 0 5px rgba(0,0,0,0.4);}
+#spage li a{ display:block;  height:30px; color:#858585;}
+#spage li a:hover{color:#ff794c; box-shadow:}
+#spage li.active a{color:#ff794c;}
 #spage li input{ width:70px; height:30px; float:right; margin-top:0px; line-height:30px; border-bottom:#CCC 1px solid;}
 
 /*------------邮件弹层------------*/
