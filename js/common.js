@@ -283,14 +283,14 @@ $(function(){
 })
 
 /*-----弹出浮层-----*/
-$(function(){ 
+/*$(function(){ 
 	$('.tanchuBtn,.tanchu-list ul li').click(function(e) {
         $('.mask,.tanchu-main').css('display','block')
     });
 
 })
 
-
+*/
 
 
 
