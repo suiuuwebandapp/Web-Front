@@ -264,7 +264,7 @@ $(function(){
 	
 
 })
-/*-----完成页满屏显示----*/
+/*-----关闭浮层---*/
 $(function(){
 	var h=$(window).height();
 	var w=$(window).width();
@@ -277,6 +277,13 @@ $(function(){
 
 })
 
+/*-----弹出浮层-----*/
+$(function(){
+	$('.tanchuBtn').click(function(e) {
+        $('.mask,.screens').css('display','block')
+    });
+
+})
 
 
 
