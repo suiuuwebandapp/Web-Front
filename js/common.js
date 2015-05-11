@@ -280,7 +280,7 @@ $(function(){
 /*-----弹出浮层-----*/
 $(function(){
 	$('.tanchuBtn').click(function(e) {
-        $('.mask,.screens').css('display','block')
+        $('.mask,.tanchu-main').css('display','block')
     });
 
 })
