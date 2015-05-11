@@ -485,8 +485,8 @@ transition:all 0.4s ease-in-out;
 .syRegisterW .pic{height:260px; }
 .syRegisterW .pic a{ text-align:center; line-height:280px; font-size:24px; color:#fff; width:286px; height:280px; float:left; overflow:hidden; display:block;}
 .syRegisterW .pic a:hover{ color:#ffeb81;}
-.syRegisterW .pic .go-suiyou{ background:url(../images/go-suiyou.png) no-repeat center 0;}
-.syRegisterW .pic .jion-suiyou{ background:url(../images/jion-suiyou.png) no-repeat center 0;}
+.syRegisterW .pic .go-suiyou{ background:url(../images/go-suiyou.jpg) no-repeat center 0;}
+.syRegisterW .pic .jion-suiyou{ background:url(../images/jion-suiyou.jpg) no-repeat center 0;}
 .syRegisterW .m14{ margin-left:14px;}
 .syRegisterW .dnav{ width:586px; height:38px; line-height:38px; padding-top:20px; clear:both;}
 .syRegisterW .dnav a{ width:285px; height:260px; height:38px; line-height:38px; float:left; overflow:hidden; display:block; text-align:center;}
