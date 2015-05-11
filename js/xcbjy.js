@@ -49,9 +49,17 @@ function bz(id,sClass){
 	var oBjynext=document.getElementById('bjy-next');
 	 var iNow = 0;
 	 for(var i = 0; i < oBtn.length; i++){
-		 oBtn[i].index = i; 
+         if(i==5){
+             continue;
+         }
+		 oBtn[i].index = i;
 		 oBtn[i].onclick = function(){
 			 iNow = this.index;
+             if(iNow==0){
+                 $(oBjyprev).hide();
+             }else{
+                 $(oBjyprev).show();
+             }
 			 tab();
 				 
 		 };
@@ -68,20 +76,44 @@ function bz(id,sClass){
 	 
 	 
 	 oBjyprev.onclick = function(){
+         if(iNow==3){
+             $("#bjy-next").html("完成");
+         }else{
+             $("#bjy-next").html("下一步");
+         }
 	 	iNow--;
 		if(iNow == -1){
 			iNow = oBtn.length - 1;
 		}
+         if(iNow==0){
+           $(oBjyprev).hide();
+         }else{
+             $(oBjyprev).show();
+         }
 		tab();
 	 };
 	 
 	 oBjynext.onclick = next;
 	 
 	 function next(){
+         if(iNow==3){
+             $("#bjy-next").html("完成");
+         }else{
+             $("#bjy-next").html("下一步");
+         }
+         if(iNow==4){
+             saveTrip(1);
+             return;
+         }
 	 	iNow++;
 		if(iNow == oBtn.length){
 			iNow = 0;
 		}
+         if(iNow==0){
+             $(oBjyprev).hide();
+         }else{
+             $(oBjyprev).show();
+         }
 		tab();
 	 }
 };
