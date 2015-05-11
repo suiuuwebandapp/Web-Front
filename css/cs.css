@@ -1009,7 +1009,7 @@ transition:transform 1s ease-in-out;
 .sylx-xiangxi .p1 .icon.jian{ height:36px; line-height:36px; width:36px; background:url(../images/jian.fw.png) no-repeat center center; }
 .sylx-xiangxi .p1 .icon.add{ height:36px; line-height:36px; width:36px; background:url(../images/creat.fw.png) no-repeat center center; }
 .sylx-xiangxi .p1 input{ padding:0 10px; text-align:center; display:inline-block; float:left;height:36px; line-height:36px; width:100px; background:#fff; }
-.sylx-xiangxi .p2 span{ padding:0 20px; text-align:center; display:inline-block; float:left;height:36px; line-height:36px; cursor:pointer;  }
+.sylx-xiangxi .p2 span{ padding:0 20px; text-align:center; display:inline-block; float:left;height:36px; line-height:36px; cursor:pointer; margin:0 10px;  }
 .sylx-xiangxi .p2 span.active{ color:#FADE33; background:#6DB7FF; }
 .sylx-xiangxi .price-select{ width:70%;}
 .sylx-xiangxi .price-select #amount{ color:#f6931f; font-size:18px;}
