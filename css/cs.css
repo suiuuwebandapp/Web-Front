@@ -142,7 +142,7 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 .index-banner .hd ul li.on{background:#DA324D;}
 */
 .index-banner .banners p{  position:absolute; color:#fff; font-size:30px; left:50%; margin-left:-170px; }
-.index-banner .banners .p1{ top:330px;}
+.index-banner .banners .p1{ top:350px;}
 .index-banner .banners .banner01 .p2{ top:390px; text-indent:2em;}
 .index-banner .banners .banner02 .p2{ top:390px; text-indent:6em;}
 .index-banner .banners .banner02 .p2 a{ color:#fff; font-size:16px; text-decoration:none; position:absolute; top:-20px; right:-60px;}
