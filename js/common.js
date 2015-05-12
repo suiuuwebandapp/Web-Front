@@ -246,7 +246,7 @@ $(function(){
 
 
 /*-----随游-类型选择----*/
-$(function(){
+/*$(function(){
 	$('.sylx .sylx-xiangxi .p2 span').click(function(e) {
 		if($(this).hasClass('active')){
 			 $(this).removeClass('active');
@@ -257,7 +257,7 @@ $(function(){
     });
 
 })
-
+*/
 
 /*-----完成页满屏显示----*/
 $(function(){
