@@ -103,7 +103,7 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 #zhuce-main .icon03:hover{ background-position:0 -258px;}
 
 
-#zhuce-main02{ width:370px; height:375px;color:#ddd; background:url(../images/index-zhu.png) no-repeat center 0; padding-top:85px; display:none; position:absolute; top:70px; right:0;}
+#zhuce-main02{ width:370px; height:375px;color:#ddd; background:url(../images/index-zhu.png) no-repeat center 0; padding-top:85px; display:none; position:absolute; top:70px; right:28px;}
 #zhuce-main02 .tab-title{ position:absolute; right:10px; top:32px; font-size:16px; color:#ffeb81; height:36px; line-height:36px; }
 #zhuce-main02 p{width:260px; height:36px; line-height:36px; margin:4px auto 0; clear:both; border-bottom:#999 1px solid;}
 #zhuce-main02 p.m-20{ margin-top:20px;}
