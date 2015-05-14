@@ -1147,6 +1147,12 @@ transition:transform 1s ease-in-out;
 .sydetail .web-content .web-left .web-con #other-line .sina:hover{ background-position:0 -85px;}
 .sydetail .web-content .web-left .web-con #other-line .wei{ background-position:0 -168px;}
 .sydetail .web-content .web-left .web-con #other-line .wei:hover{ background-position:0 -252px;}
+.sydetail .web-content .web-left .web-con #other-line .qq{ background-position:0 -764px;}
+.sydetail .web-content .web-left .web-con #other-line .qq:hover{ background-position:0 -680px;}
+
+
+
+
 .sydetail .web-content .web-left .web-con .zhuanlan-web{ height:auto; overflow:hidden; padding:0 49px;}
 .sydetail .web-content .web-left .web-con .zhuanlan-web ul{  overflow:hidden; padding-bottom:20px;}
 .sydetail .web-content .web-left .web-con .zhuanlan-web li{ overflow:hidden;padding-top:25px; border-bottom:1px solid #ddd;}
@@ -1340,8 +1346,8 @@ transition:transform 1s ease-in-out;
 .tanchu-main #other-line .sina:hover{ background-position:0 -85px;}
 .tanchu-main #other-line .wei{ background-position:0 -168px;}
 .tanchu-main #other-line .wei:hover{ background-position:0 -252px;}
-.tanchu-main #other-line .qq{ background-position:0 -334px;}
-.tanchu-main #other-line .qq:hover{ background-position:0 -416px;}
+.tanchu-main #other-line .qq{ background-position:0 -764px;}
+.tanchu-main #other-line .qq:hover{ background-position:0 -680px;}
 
 .tanchu-main .zhuanlan-web{ height:auto; overflow:hidden; padding:0 49px;}
 .tanchu-main .zhuanlan-web ul{  padding-bottom:20px; overflow:hidden;}
