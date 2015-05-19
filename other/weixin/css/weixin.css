@@ -38,15 +38,33 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 
 
 
-/*-----------随游-填写需求-------------*/
+/*-----------随游-填写需求01-------------*/
 .sy_need01 .logo{ width:4.6rem;display:block; margin:0 auto; margin-top:6.8rem; }
 .sy_need01 p{ text-align:center; }
 .sy_need01 .btn{ font-size:0.85rem; color:#fff; background:#97CBFF; display:block; width:10.8rem; height:2.14rem; line-height:2.14rem; text-align:center; margin:3rem auto 0; text-decoration:none;}
 .sy_need01 .btn:hover{ text-decoration:underline;}
 
+/*-----------随游-填写需求02-------------*/
+.sy_need02 .selet{ width:100%;display:block; height:2.7rem; border:1px solid #ddd; line-height:2.7rem; font-size:0.85rem; color:#858585; text-decoration:none; padding:0 0.5rem; background:#fff url(../images/go.png) no-repeat 98% center; background-size:0.53rem 0.85rem; margin:0.28rem auto; }
+.sy_need02 p{ margin-top:0.5re }
+.sy_need02 .btn{ font-size:0.85rem; color:#fff; background:#97CBFF; display:block; width:10.8rem; height:2.14rem; line-height:2.14rem; text-align:center; margin:0.28rem auto 0; text-decoration:none;}
+.sy_need02 .btn:hover{ text-decoration:underline;}
+
+
 /*-----------成功页-------------*/
 .finish .logo{ width:4.6rem;display:block; margin:0 auto; margin-top:6.8rem; }
 .finish p{ text-align:center; }
+
+/*-----------国家-------------*/
+.country{ position:relative;}
+.country .navbars{ font-size:0.85rem; width:1.6rem; position:fixed; right:0; top:5rem; z-index:9; }
+.country .navbars a{ color:#FFAB00; font-size:0.85rem; text-decoration:none; line-height:0.85rem; }
+.country .search{ height:2.7rem; width:100%; display:block; background:#fff url(../images/top-search.png) no-repeat 0.17rem center; background-size:1.142rem 1.07rem; font-size:0.85rem; margin:0.28rem auto; padding:0 1.25rem; border:1px solid #ddd; }
+.country .lists dt{ height:1.5rem;width:100%; display:block; background:#eee;  font-size:0.85rem; line-height:1.5rem; padding:0 0.5rem;}
+.country .lists dd{ height:2.5rem; border-bottom:1px solid #ddd; width:100%; display:block; background:#fff;  font-size:0.85rem; line-height:2.5rem; padding:0 0.5rem;}
+
+
+
 
 
 
