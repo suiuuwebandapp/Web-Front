@@ -40,7 +40,7 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 /*-----------随游-订单-----------*/
 .sy_order .box{ position:relative; padding:0.9rem 0.8rem 3rem; background:#fff;margin-top:0.5rem;  }
 .sy_order .box .top{ border-bottom:1px solid #ddd; padding-bottom:20px; }
-.sy_order .box .top .left{ float:left;  width:30%; position:relative;  }
+.sy_order .box .top .left{ float:left;  width:30%; position:relative; height:4rem; }
 .sy_order .box .top .right{ float:left; width:60%;  }
 .sy_order .box .top .left .user{ position:relative; width:2.58rem; height:2.58rem; border-radius:50%;display:block; }
 .sy_order .box .top .left .user img{ width:2.58rem; height:2.58rem; border-radius:50%;display:block; }
