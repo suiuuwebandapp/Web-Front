@@ -312,8 +312,8 @@ transition:all 0.4s ease-in-out;
 .header-right ul li.name:hover img.w20{transform:rotate(180deg);-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);-moz-transform:rotate(180deg);}
 .header-right ul li a{ padding:0px 6px; float:left;}
 
-.xit-sz{ border-radius:10px; width:240px; height:auto;position:absolute; right:-11px; top:60px; background:rgba(0,0,0,0.8); padding:10px;  display:none;}
-.jiao{ border:20px solid; border-color:transparent transparent rgba(0,0,0,0.7) transparent; position:absolute; right:10px; top:-40px;}
+.xit-sz{ border-radius:10px; width:240px; height:auto;position:absolute; right:-11px; top:74px; background:rgba(0,0,0,0.8); padding:10px;  display:none;}
+.jiao{ border:20px solid; border-color:transparent transparent rgba(0,0,0,0.8) transparent; position:absolute; right:10px; top:-40px;}
 .xit-sz ol{ width:240px; line-height:30px; height:30px; border-bottom:1px solid #999;}
 .xit-sz ol li{ float:left; height:30px; text-align:center;}
 .xit-sz ol li.sx{ background:url(../images/ico3.png) no-repeat 6px 6px; padding-left:5px; width:114px; border-right:1px solid #999; }
@@ -327,7 +327,7 @@ transition:all 0.4s ease-in-out;
 .xit-sz ul li span{ width:80px; height:30px; line-height:30px; display:block; float:left; overflow:hidden;}
 .xit-sz ul li p{ width:112px; height:30px; line-height:30px; margin-left:10px; overflow:hidden; float:left;}
 
-.my-suiuu{ display:none; width:118px; height:140px; position:absolute; right:10px; top:74px; background:rgba(0,0,0,0.8); border-radius:6px; }
+.my-suiuu{ display:none; width:118px; height:140px; position:absolute; right:10px; top:90px; background:rgba(0,0,0,0.8); border-radius:6px; }
 .my-suiuu ul{width:118px; height:140px;}
 .my-suiuu ul li{ width:88px; height:30px; line-height:30px; margin-top:4px; padding-left:30px;}
 .my-suiuu ul li.bg1{ background:url(../images/ico3.png) no-repeat 8px -72px;}
