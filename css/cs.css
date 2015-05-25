@@ -1475,9 +1475,9 @@ transition:transform 1s ease-in-out;
 .mddsx-right{ float:right; width:880px; height:auto; overflow:hidden;}
 .mddsx-right ul{ width:100%; height:auto; overflow:hidden;}
 .mddsx-right ul li{ width:880px; height:400px; position:relative; margin-top:20px;}
-.mddsx-right ul li p{padding:10px; width:860px;  background:rgba(0,0,0,.58); position:absolute; left:0px; bottom:0px;}
+.mddsx-right ul li p{padding:10px; width:860px;  background:rgba(0,0,0,0.7); position:absolute; left:0px; bottom:0px;}
 .mddsx-right ul li p font{ line-height:30px; font-size:22px; }
-.mddsx-right ul li p span{  line-height:24px;font-size:18px;}
+.mddsx-right ul li p span{  line-height:24px;font-size:18px; margin-top:10px;}
 .mddsx-right ul li p font,.mddsx-right ul li p span{display:block;  overflow:hidden; padding: 0px 10px;color:#ddd; }
 .mddsx .more{ color:#858585; width:100px; height:40px; margin:20px auto 0; line-height:40px; text-align:center; display:block; border:none; background:none; font-size:24px; }
 
