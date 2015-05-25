@@ -228,7 +228,7 @@ $(function(){
 /*-----专栏qq分享-----*/
 $(function(){
 	$('#fenxiang').click(function(e) {
-        $(this).children('#other-line').toggle()
+        $('#other-line').toggle()
     });
 
 })
