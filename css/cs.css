@@ -556,7 +556,7 @@ transition:all 0.4s ease-in-out;
 
 /*-------------随友个人中心-------------*/
 .syTop{height:auto; overflow:hidden; margin:0 auto;}
-.syTop .banner{ width:100%; height:400px; position:relative; background:url(../images/6.png) no-repeat center 0; background-size:100% 400px; }
+.syTop .banner{ width:100%; height:400px; position:relative; background:url(http://image.suiuu.com/suiuu_index/userBanner.png) no-repeat center 0; background-size:100% 400px; }
 .syTop .banner .banner-inner{height:400px; width:1200px; margin:0 auto; position:relative; }
 .syTop .banner .banner-inner .btn{ width:80px; height:40px; text-align:center; line-height:40px; position:absolute; right:20px; bottom:10px; color:#f00; background:#FF0; z-index:2;}
 .syTop .user{height:245px; text-align:center; position:relative; margin-top:-60px; }
