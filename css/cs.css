@@ -181,10 +181,10 @@ transition:all 0.4s ease-in-out;
 }
 #ul1 li:hover div.zhezhao{ height:260px; opacity:1;}
 #ul1 li div.zhezhao p{ position:relative; color:#ddd; font-size:14px; text-indent:2em; margin:15px}
-#ul1 li div.zhezhao .pingjia{ position:absolute; bottom:10px; right:10px;margin:0;}
+#ul1 li div.zhezhao .pingjia{ width:90%; position:absolute; bottom:10px; right:10px;margin:0;}
 #ul1 li div.zhezhao .pingjia img{ margin:0 2px;}
 #ul1 li div.zhezhao .pingjia span b{ color:#ff794c; font-size:16px;}
-#ul1 li div.zhezhao .pingjia span{ margin-left:5px;}
+#ul1 li div.zhezhao .pingjia span{ margin-left:5px; display:block;}
 
 .index-tuijian{ height:645px; overflow:hidden;}
 .index-tuijian .countrys{ position:relative; height:645px;}
