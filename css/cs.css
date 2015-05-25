@@ -73,12 +73,13 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 .nav-right ol li .float .gt_holder .gt_guide_tip a{ color:#858585; font-size:12px;}
 
 .nav-right .select2-container{ float:left;}
-.nav-right .select2-container .select2-choice{ background:none;color:#ddd;}
+.nav-right .select2-container .select2-choice{ background:none;color:#ddd; border:none;}
 .nav-right .select2-container .select2-choice:hover{ color:#ddd;}
 .nav-right .select2-container .select2-choice>.select2-chosen{ color:#ddd; }
 .nav-right .select2-container .select2-choice>.select2-chosen:hover{ color:#ddd; }
 .nav-right .select2-container .select2-choice>.select2-chosen{ color:#ddd; font-size:16px; height:36px; line-height:36px;}
 .nav-right .select2-container .select2-choice .select2-arrow{ border:none;}
+
 
 /* --------注册弹框-----*/
 #zhuce-main{ width:370px;color:#ddd; background:url(../images/index-zhu.png) no-repeat center 0; padding-top:85px; display:none; position:absolute; top:70px; right:28px;}
