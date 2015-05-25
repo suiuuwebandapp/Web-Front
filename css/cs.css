@@ -1071,7 +1071,7 @@ transition:transform 1s ease-in-out;
 .sylx-list ul li div h4{width:285px; height:40px; line-height:40px; text-align:center;}
 .sylx-list ul li div p{ padding-left:58px;}
 .sylx-list ul li div span{ width:14px; height:14px; }
-.sylx-list ul li div font{ text-align:center; display:block; float:right;  width:110px;}
+.sylx-list ul li div font{ text-align:right; display:block; float:right; margin-right:15px; }
 .sylx-list ul li div font b{color:#FFA54C;}
 
 .sylx-lstj{ height:450px; overflow:hidden;}
