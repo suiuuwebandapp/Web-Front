@@ -585,11 +585,11 @@ transition:all 0.4s ease-in-out;
 .syTop .banner .banner-inner .btn{ width:80px; height:40px; text-align:center; line-height:40px; position:absolute; right:20px; bottom:10px; color:#f00; background:#FF0; z-index:2;}
 .syTop .user{height:245px; text-align:center; position:relative; margin-top:-60px; }
 .syTop .user .userPic{ height:120px; width:120px; display:block; margin:0 auto; border-radius:120px; overflow:hidden; box-shadow:0 0 5px rgba(0,0,0,0.3);
--webkit-transition:transform 1s ease-in-out;
--moz-transition:transform 1s ease-in-out;
--ms-transition:transform 1s ease-in-out;
--o-transition:transform 1s ease-in-out;
-transition:transform 1s ease-in-out;
+-webkit-transition:1s;
+-moz-transition:1s;
+-ms-transition:1s;
+-o-transition:1s;
+transition:1s;
 
 }
 .syTop .user .userPic:hover{ -webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg);}
