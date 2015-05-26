@@ -1365,7 +1365,7 @@ transition:transform 1s ease-in-out;
 
 
 /*--------------专栏-----------*/
-.zl-banner{ width:100%; height:600px; position:relative; background:url(http://image.suiuu.com/suiuu_index/mdd3.fw.jpg) no-repeat fixed center 0; background-size:100% 600px; margin:0px auto;}
+.zl-banner{ width:100%; height:600px; position:relative; background:url(http://image.suiuu.com/suiuu_index/zhanBanner.jpg) no-repeat fixed center 0; background-size:100% 600px; margin:0px auto;}
 .zl-banner .con{ height:600px;}
 .zl-banner .data{ font-size:36px; margin-top:430px; color:#fff; padding:0 50px; }
 .zl-banner .tit{ font-size:30px; margin-top:30px; color:#fff; padding:0 50px;}
