@@ -457,7 +457,7 @@ transition:all 0.4s ease-in-out;
 #checkOut .finish .title{ font-size:20px; margin-bottom:30px; }
 #checkOut .finish .tip{ margin-bottom:40px; }
 
-#checkOut .finish .share{ width:150px; margin:20px auto;}
+#checkOut .finish .share{ width:185px; margin:20px auto;}
 #checkOut .finish .icon{background: url("../images/footer-icon.png") no-repeat 0 -252px;
     cursor: pointer;
     display: block;
