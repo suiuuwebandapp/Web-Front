@@ -232,8 +232,22 @@ transition:all 0.4s ease-in-out;
 
 /*---搜索结果页面----*/
 .serchTop{ width:100%; height:240px;  position:relative;}
-.serchTop .serch{ position:absolute; top:120px; left:50%; margin-left:-170px;  width:340px; height:50px; overflow:hidden; } 
-.sosoCon .nav{ height:40px; width:300px; margin:10px auto;}
+.serchTop .serch{ position:absolute; top:120px; left:50%; margin-left:-190px;  width:340px; height:50px; overflow:hidden; } 
+.serchTop .serch .text1{ color:#fff; background:#b2b2b2;  float: left;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 15px;
+    width: 270px;}
+.serchTop .serch .btn1{background:#b2b2b2; height: 50px;
+    line-height: 50px;
+    margin-left: 1px;
+    text-align: center;
+    width: 50px; color:#fff;
+	 
+	 }
+
+
+.sosoCon .nav{ height:40px; width:300px; }
 .sosoCon .nav li{ float:left; margin:0 30px; height:40px; width:auto;}
 .sosoCon .nav li a{ position:relative;text-align:center; height:38px; line-height:38px; font-size:24px; display:block;}
 .sosoCon .nav li a:hover{ color:#FFA54C;border-bottom:1px solid #ffa54c; }
@@ -246,7 +260,7 @@ transition:all 0.4s ease-in-out;
     width: 100% ; float:none;}
 .sosoCon .slist .ul1 li .box img{ width:100%; display:block; }
 .sosoCon .slist{ display:none; height: auto;
-    margin: 35px auto 0;}
+    margin: 10px auto 0;}
 .sosoCon .slist .ul1{margin: 0 auto;
     overflow: hidden;
     width: 1216px;}
@@ -290,8 +304,17 @@ transition:all 0.4s ease-in-out;
 
 /*------------header---------------*/
 .header{ width:100%; height:70px; background:rgba(0,0,0,0.6);position:fixed;top:0px; z-index:30;}
-.header-main{ height:70px; margin:0px auto;}
-.header-nav{ width:470px; height:70px; padding-left:245px; margin:0px auto; background:url(../images/logo.png) no-repeat 48px 14px;}
+.header-main{ height:70px; margin:0px auto; position:relative;}
+.header-main .logo{ height: 70px;
+    left:47px;
+    position:absolute;
+    top:0;
+    vertical-align: middle;
+    width:120px;
+	
+	}
+.header-main .logo img{ padding-top:13px;}
+.header-nav{ width:470px; height:70px; padding-left:245px; margin:0px auto;}
 .header-nav ul li{ float:left; padding-right:35px; line-height:70px;}
 .header-nav ul li a{ color:#ddd; font-size:20px;}
 .header-nav ul li a:hover{ color:#ffeb81;}
