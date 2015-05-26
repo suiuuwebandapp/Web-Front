@@ -126,10 +126,23 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .country .lists dd{ height:2.5rem; border-bottom:1px solid #ddd; width:100%; display:block; background:#fff;  font-size:0.85rem; line-height:2.5rem; padding:0 0.5rem;}
 
 
+/*----------申请退款------------*/
+.Remoney .logo{ width:4.6rem;display:block; margin:0 auto; margin-top:6.8rem; }
+.Remoney p{ text-align:center; }
+.Remoney label{ font-size:0.85rem; width:100%; margin-top:1rem; display:block; }
+.Remoney input{ background:#fff; font-size:0.85rem; width:100%; height:2.7rem; line-height:2.7rem; border:1px solid #ddd; padding:0 1%; display:block;}
+.Remoney textarea{ width:100%; padding:0.5rem;  line-height:0.85rem; font-size:0.85rem; height:8.2rem; background:#fff; border:1px solid #ddd;}
+
+.Remoney .btn{ font-size:0.85rem; color:#fff; background:#97CBFF; display:block; width:7rem; height:2.14rem; line-height:2.14rem; text-align:center; margin:3rem auto 0; text-decoration:none;}
+.Remoney .btn:hover{ text-decoration:underline;}
 
 
+/*----------申请退款02------------*/
+.Remoney02 .logo{ width:4.6rem;display:block; margin:0 auto; margin-top:6.8rem; }
+.Remoney02 p{ text-align:center; }
 
-
+.Remoney02 .btn{ font-size:0.85rem; color:#fff; background:#97CBFF; display:block; width:7rem; height:2.14rem; line-height:2.14rem; text-align:center; margin:3rem auto 0; text-decoration:none;}
+.Remoney02 .btn:hover{ text-decoration:underline;}
 
 
 
