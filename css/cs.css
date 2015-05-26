@@ -592,7 +592,9 @@ transition:all 0.4s ease-in-out;
 transition:transform 1s ease-in-out;
 
 }
-.syTop .user .userPic:hover{ -webkit-transform:rotate(360deg);transform:rotate(360deg);}
+.syTop .user .userPic:hover{ -webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg);}
+.syTop .user .sum{ margin-top:10px;}
+
 .syTop .user .userPic img{ width:100%; border-radius:50%; display:block;}
 .syTop .user ul{ width:500px; height:60px; line-height:60px; margin:0px auto; overflow:hidden;}
 .syTop .user ul li{ float:left; width:25%;}
