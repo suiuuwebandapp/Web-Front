@@ -40,7 +40,11 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 
 
 /*-----------随游-订单-----------*/
-.sy_order .box{ position:relative; padding:0.9rem 0.8rem 3rem; background:#fff;margin-top:0.5rem;  }
+
+.fixedBtn{ position:fixed; top:10px; left:50%; margin-left:-4rem;z-index:999; font-size:1rem; color:#fff; background:#97CBFF; display:block; width:8rem; height:2.14rem; line-height:2.14rem; text-align:center;  text-decoration:none;   }
+.fixedBtn:hover{  text-decoration:underline;  }
+
+.sy_order .box{ position:relative; padding:0.9rem 0.8rem 3rem; background:#fff;margin-top:0.5rem; margin-top:3rem;  }
 .sy_order .box .top{ border-bottom:1px solid #ddd; padding-bottom:20px; }
 .sy_order .box .top .left{ float:left;  width:30%; position:relative; height:4rem; }
 .sy_order .box .top .right{ float:right; width:60%;  }
