@@ -69,7 +69,7 @@ a{text-decoration:none; outline:none; blr:expression(this.onFocus=this.blur()); 
 .serch-out{ width:100%; height:56px; background:rgba(0,0,0,0.6); position:absolute; bottom:0; left:0;}
 .serch-out .serch{ position:absolute; top:10px; left:50%; margin-left:-170px;  width:340px;   overflow:hidden; } 
 .serch-out .text1{ width:244px;  border:none; background:rgba(102,102,102,0.6); padding:9px 20px; color:#ddd; float:left;}
-.serch-out .btn1{ width:50px; text-align:center;background:rgba(102,102,102,0.6); border:none; float:left; margin-left:4px; font-size:16px; color:#ddd; padding:8px;}
+.serch-out .btn1{ width:50px; text-align:center;background:rgba(102,102,102,0.6); border:none; float:left; margin-left:4px; font-size:16px; color:#ddd; padding:8px; cursor:pointer;}
 
 .list{ height:auto;margin:35px auto 0px;}
 .list .title{height:40px; line-height:30px; font-size:24px; color:#858585; padding-left:10px;}
@@ -1053,7 +1053,7 @@ transition:1s;
 .sylx-serch{ width:340px; height:50px; margin:20px auto;}
 .sylx-serch input{ background:#b2b2b2; color:#fff; border:none; font-size:16px;}
 .sylx-serch input.w285{ width:250px; padding:11px;   float:left;}
-.sylx-serch input.w52{ width:50px;  margin-left:1px; text-align:center; padding:10px;}
+.sylx-serch input.w52{ cursor:pointer; width:50px;  margin-left:1px; text-align:center; padding:10px;}
 
 .sylx-xiangxi{ width:1165px; height:auto; margin:0px auto; padding-bottom:10px;}
 .sylx-xiangxi .p1 label,.sylx-xiangxi .p2 label{ height:36px; line-height:36px; width:50px; display:inline-block; float:left; margin-bottom:20px; }
