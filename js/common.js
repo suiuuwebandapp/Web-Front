@@ -54,8 +54,18 @@ $(function(){
 /*----nav-index登录、注册弹框-----*/
 
 $(function(){
-	$('.nav-out .nav-right ol .zhuces #zhuce,.nav-out .nav-right ol .logins #denglu').click(function(e) {
-        $('.myLogins,.mask').toggle();
+	$('.nav-out .nav-right ol .zhuces #zhuce').click(function(e) {
+        $('.myLogins .a1').addClass('active');
+        $('.myLogins .a2,.myLogins .a3').removeClass('active');
+        $('.mask,.myLogins').toggle();
+        $('.myLogins .box1').css('display','block').siblings().css('display','none');
+		
+    });
+	$('.nav-out .nav-right ol .logins #denglu').click(function(e) {
+        $('.myLogins .a2').addClass('active');
+        $('.myLogins .a1,.myLogins .a3').removeClass('active');
+        $('.mask,.myLogins').toggle();
+        $('.myLogins .box2').css('display','block').siblings().css('display','none');
     });
 
 })
