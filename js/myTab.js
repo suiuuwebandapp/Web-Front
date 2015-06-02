@@ -24,6 +24,8 @@ $(function(){
 		tabs('.myTit', '.myCon');
 		tabs('.recTit', '.slideRec');
 		tabs('.aboutNav', '.aboutCon')
+		tabs('.actNav', '.actCon')
+		
 		
 		
 		/*通用----*/

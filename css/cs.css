@@ -608,6 +608,21 @@ transition:all 0.4s ease-in-out;
 
 
 /*-------------随友个人中心-------------*/
+
+
+	/*-------------转出弹层 -----------*/
+.sycon .transfer{ width:220px; padding:25px; background:#fff; position:fixed; z-index:9999; top:110px; left:50%; margin-left:-135px; line-height:28px; display:none;}
+.sycon .transfer p{ margin-bottom:25px;}
+.sycon .transfer .text{ float:left; width:90px; height:36px; line-height:36px; padding:0 5px;background:#eee;  }
+.sycon .transfer .btnBlue{ float:right;}
+
+	/*-------------转出弹层 -----------*/
+.sycon .transfer02{ width:220px; padding:25px; background:#fff; position:fixed; z-index:9999; top:110px; left:50%; margin-left:-135px; line-height:28px; display:none;}
+.sycon .transfer02 p{ margin-bottom:25px;}
+
+
+
+	/*-------------------------------*/
 .syTop{height:auto; overflow:hidden; margin:0 auto;}
 .syTop .banner{ width:100%; height:400px; position:relative; background:url(http://image.suiuu.com/suiuu_index/userBanner.jpg) no-repeat center 0; background-size:100% 400px; }
 .syTop .banner .banner-inner{height:400px; width:1200px; margin:0 auto; position:relative; }
@@ -629,6 +644,12 @@ transition:1s;
 .syTop .user ul li{ float:left; width:25%;}
 
 .sycon{ position:relative;}
+.sycon .orange{ color:#FF7945;}
+.sycon .blueColor{ color:#72b8ff;}
+.sycon .btnBlue{ font-size:18px;  width:90px; height:36px; line-height:36px; color:#FFEB79; background:#73B9FF; text-align:center; display:block;}
+
+
+
 .sycon .synav{ width:100%; height:36px; line-height:36px;}
 .sycon .synav li{ width:100px; margin-right:20px;  height:36px; line-height:36px; text-align:center; float:left;}
 .sycon .synav li a{ color:#858585; display:block; height:36px; line-height:36px; }
@@ -675,7 +696,7 @@ transition:1s;
 .sycon .orderCon .orderList .rubbish{ position:absolute; top:0; right:0; cursor:pointer;}
 .sycon .orderCon .orderList .order{ padding-bottom:40px;}
 .sycon .orderCon .orderList .order .title{ margin-bottom:20px; height:36px; background:#ffbc68; color:#fff;}
-.sycon .orderCon .orderList .order .title span{ width:12.5%; display:inline-block; float:left; text-align:center; height:36px; line-height:36px;}
+.sycon .orderCon .orderList .order .title span{ width:12.5%; display:inline-block; float:left; text-align:center; height:36px; line-height:36px; font-size:18px;}
 .sycon .orderCon .orderList .order dd span{ text-align:center;width:12.5%; display:inline-block; float:left; line-height:22px;}
 .sycon .orderCon .orderList .order dd .pic img{ width:50%; margin:0 auto; display:block;}
 .sycon .orderCon .orderList .order dd a.user{ border-radius:50%; width:50px; height:50px; overflow:hidden; display:block; float:left; margin-left:10px;}
@@ -714,7 +735,7 @@ transition:1s;
 .sycon .mySuiyou .orderList .rubbish{ position:absolute; top:0;right:0; cursor:pointer;}
 .sycon .mySuiyou .orderList .order{ padding-bottom:40px;}
 .sycon .mySuiyou .orderList .order .title{ margin-bottom:20px; height:36px; background:#ffbc68; color:#fff;}
-.sycon .mySuiyou .orderList .order .title span{ width:14.28%; display:inline-block; float:left; text-align:center; height:36px; line-height:36px;}
+.sycon .mySuiyou .orderList .order .title span{ width:14.28%; display:inline-block; float:left; text-align:center; height:36px; line-height:36px; font-size:18px;}
 .sycon .mySuiyou .orderList .order dd span{ text-align:center;width:14.28%; display:inline-block; float:left; line-height:22px;}
 .sycon .mySuiyou .orderList .order dd .pic img{ width:50%; margin:0 auto; display:block;}
 .sycon .mySuiyou .orderList .order dd a.user{ border-radius:50%; width:50px; height:50px; overflow:hidden; display:block; float:left; margin-left:10px;}
@@ -919,8 +940,33 @@ transition:1s;
 .sycon .myEmail .past03 .con #all,.sycon .myEmail .past03 .con #None{ float:left; opacity:0;}
 .sycon .myEmail .past03 .con input+label{ float:left; height:36px; line-height:36px;  background:url("../images/check.png") no-repeat 0 10px;   padding-left:20px; font-size:16px; width:100%; text-align:left;}
 
+    /*----TabCon7-个人账户---*/
+	
+.sycon .accountCon{ background:#eee; padding:40px 0 20px;}
+.sycon .accountCon .myOderNav{ width:100px; float:left; _display:inline}
+.sycon .accountCon .myOderNav li{ height:40px; line-height:40px; }
+.sycon .accountCon .myOderNav li a{color:#858585; }
+.sycon .accountCon .myOderNav .active{ color:#FF794C; text-decoration:underline; width:100px; float:left; _display:inline}
+.sycon .accountCon .myOder{ width:1070px; float:left; _display:inline; display:none; background:#fff; }
+.sycon .accountCon .myOder .top{ font-size:18px; background:#fff;  padding:40px 40px 0; text-align:left;  }
+.sycon .accountCon .myOder .top .row{ position:relative; margin-bottom:15px;}
+.sycon .accountCon .myOder .top .row .btn{ float:right;  }
+.sycon .accountCon .myOder .top .row .btn:hover{ text-decoration:underline; }
+.sycon .accountCon .myOder .top span{ float:left;  }
+.sycon .accountCon .myOder .top .selets{ margin-right:20px;float:left; width:160px; height:36px; line-height:36px; background:#eee;}
+.sycon .accountCon .myOder .top .selets select{ float:left; display:block; width:100%; height:36px; line-height:36px; padding:0 10px;  }
+.sycon .accountCon .myOder .top input{ float:left; display:block; width:140px; height:36px; line-height:36px; padding:0 10px;   background:#eee; margin-right:20px;}
+.sycon .accountCon .myOder .top .btnBlue{ float:left;}
+.sycon .accountCon .myOder .listTit{ text-align:left; padding:0 40px;border-top:1px solid #ddd; margin-top:20px; line-height:65px; height:65px;  }
 
 
+.sycon .accountCon .orderList{margin-bottom:30px; height:auto; position:relative; background:#fff;}
+
+.sycon .accountCon .orderList .order{ padding-bottom:40px;}
+.sycon .accountCon .orderList .order .title{ padding:0 40px; height:36px; background:#ffbc68; color:#fff;}
+.sycon .accountCon .orderList .order .title span{ width:25%; display:inline-block; float:left; text-align:center; height:36px; line-height:36px; font-size:18px;}
+.sycon .accountCon .orderList .order dd{ height:65px; line-height:65px;  padding:0 40px;  margin:0 auto;}
+.sycon .accountCon .orderList .order dd span{border-bottom:1px solid #ddd; text-align:center;width:25%; display:inline-block; float:left;  height:65px; line-height:65px; }
 
 /*-------------随友个人中心--end-----------*/
 
@@ -1418,7 +1464,7 @@ transition:1s;
 		/*----专栏弹出层----*/
 .mask{ background:rgba(0,0,0,.78); position:fixed; top:0;left:0; z-index:5; display:none; }
 .tanchu-main{width:874px; height:auto; overflow:hidden; background:#FFF; position:absolute; left:50%; top:0px; margin-left:-437px; display:none;z-index:66; padding-bottom:30px; padding-top:110px;}
-.tanchu-main img{  width:100%; height:411px;}
+.tanchu-main img{  width:100%;  }
 .tanchu-main p{ padding:10px 49px; line-height:24px;}
 
 		/*---微博-分享----*/
