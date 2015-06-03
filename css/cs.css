@@ -2736,16 +2736,28 @@ transition:1s;
 .bjy-bj5 div ul li{ width:70px; height:36px; margin:16px 0px 0px 14px; float:left; font-size:14px; text-align:center; line-height:36px; background:#848484; color:#FFEB7F; border-radius:3px;}
 .bjy-bj5 div ul li:hover{ cursor:pointer;}
 .bjy-bj5 div ul li.active-bj{ background:#6EB8FF;}
-.bjy-bj5 .yulan{
-   background: none repeat scroll 0 0 #6cb6ff;
-    color: #ffeb81;
+.bjy-bj5 .btn{
     display: block;
     height: 36px;
     line-height: 36px;
-    text-align: center;
-    width: 80px; 
-	text-align:center; margin:40px auto; 
+    width:100px; 
+	text-align:center;
 	font-size:18px;
+	margin:80px 50px; 
+	cursor:pointer;
+}
+.bjy-bj5 .btn:hover{ text-decoration:underline;}
+.bjy-bj5 .yulan{
+   background:#6cb6ff;
+    color: #ffeb81;
+	 float:left;
+	 
+	 
+}
+.bjy-bj5 .sure{
+   background:#ffa64d;
+    color: #fff;
+	float:right;
   
 }
 /*---------------随友编辑-end------------*/
