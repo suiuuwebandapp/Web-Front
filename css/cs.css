@@ -2362,6 +2362,7 @@ transition:1s;
 .sycon .mySuiyou .orderList .rubbish{ position:absolute; top:0;right:0; cursor:pointer;}
 .sycon .mySuiyou .orderList .order{ padding-bottom:40px;}
 .sycon .mySuiyou .orderList .order .title{ margin-bottom:20px; height:36px; background:#ffbc68; color:#fff;}
+.sycon .mySuiyou .orderList .order .title.grey{ background:#cacaca;}
 .sycon .mySuiyou .orderList .order .title span{ width:14.28%; display:inline-block; float:left; text-align:center; height:36px; line-height:36px;}
 .sycon .mySuiyou .orderList .order dd span{ text-align:center;width:14.28%; display:inline-block; float:left; line-height:22px;}
 .sycon .mySuiyou .orderList .order dd .pic img{ width:50%; margin:0 auto; display:block;}
