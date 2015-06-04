@@ -203,6 +203,17 @@ $(function(){
 })
 */
 
+
+
+/*-----随游Bnner推广弹窗----*/
+$(function(){
+	$('.sylx .syBanner .detailBtn').click(function(e) {
+		$('.mask,.sydetailPop').css('display','block')
+    });
+
+})
+
+
 /*-----完成页满屏显示----*/
 $(function(){
 	var h1=$(window).height();
