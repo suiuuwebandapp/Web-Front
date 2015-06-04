@@ -1145,7 +1145,7 @@ transition:1s;
 
 /*-----------随游页面---------*/
 .sylx{ height:auto; margin:85px auto 0px; overflow:hidden;}
-.sylx .syBanner{ height:400px; width:1200px; margin:0 auto 20px; background:url(../images/syBanner.jpg) no-repeat center 0; overflow:hidden; position:relative;}
+.sylx .syBanner{ height:400px; width:1200px; margin:0 auto 20px; background:url(http://image.suiuu.com/suiuu_index/syBanner.jpg) no-repeat center 0; overflow:hidden; position:relative;}
 .sylx .syBanner .detailBtn{  font-size:18px; color:#ff7a4d; position:absolute; left:287px; top:330px;}
 .sylx .syBanner .detailBtn:hover{ text-decoration:underline;}
 .sylx .syBanner .sylx-serch{  left:50%; margin-left:-170px; width:340px;  overflow:hidden; position:absolute; bottom:10px; left:50%; } 
