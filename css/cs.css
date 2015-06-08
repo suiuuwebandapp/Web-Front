@@ -1238,6 +1238,9 @@ transition:1s;
 .sydetail .web-content .web-left .map{ padding:10px 0; margin-top:20px;}
 .sydetail .web-content .web-left .map .title{ line-height:50px; height:50px; font-size:20px; text-align:center;}
 .sydetail .web-content .web-left .map .title02{ line-height:50px; height:50px; font-size:20px; color:#70b8ff; margin-top:20px;  }
+.sydetail .web-content .web-left .map .p3 b{ height:8px; width:8px; display:inline-block; background:#858585; border-radius:50%; margin-right:10px; }
+
+
 .sydetail .web-content .web-left .map .contian span{ font-size:18px; display:table; float:left; margin-right:50px; margin-top:15px;}
 .sydetail .web-content .web-left .map .contian .icon{ display:table-cell; vertical-align:middle; height:25px; width:25px; display:inline-block; background:url(../images/sydIicon.png) no-repeat 0 0; margin-right:5px;}
 .sydetail .web-content .web-left .map .contian .icon02{ background-position:0 -123px; }
@@ -1646,13 +1649,14 @@ transition:1s;
 #spage li input{ width:70px; height:30px; float:right; margin-top:0px; line-height:30px; border-bottom:#CCC 1px solid;}
 
 /*------------邮件弹层------------*/
-.smessages{ width:390px; height:345px; background:#F4F3EF; font-size:16px; position:fixed; left:50%; margin-left:-175px; top:100px; z-index:99; display:none; box-shadow:0 0 5px rgba(0,0,0,0.4);}
-.smessages .top{ padding:20px; background:#ECEBE3; position:relative;  }
+.smessages{ width:390px; height:345px; background:#F4F3EF; font-size:16px; position:fixed; left:50%; margin-left:-175px; top:100px; z-index:99; display:none; box-shadow:0 0 5px rgba(0,0,0,0.4); border-radius:10px; overflow:hidden;}
+.smessages .top{ padding:20px; background:#ebe3cc; position:relative; border-top:1px solid #fff; box-shadow:0 1px 1px rgba(0,0,0,0.1);  }
 .smessages .top .userPic{display:block; float:left; width:60px; height:60px; overflow:hidden; border-radius:50%; margin-right:10px; }
 .smessages .top .userPic .pic{ width:100%; display:block;}
 .smessages .top .name{ float:left; margin-top:15px; }
+.smessages .top .p1{ position:absolute; top:63px; left:91px; font-size:14px;}
 .smessages textarea{  width:340px; margin:15px; border-radius:5px; height:150px; background:#fff; padding:10px; font-size:14px; line-height:22px; word-break:break-all;  }
-.smessages .btn{ display:block; position:absolute; bottom:15px; right:15px; width:80px; height:36px; line-height:36px; color:#ffeb79; background:#73b9ff; text-align:center;}
+.smessages .btn{ display:block; position:absolute; bottom:15px; right:15px; width:80px; height:30px; line-height:30px; color:#ffeb79; background:#73b9ff; text-align:center;}
 
 /*-----------取消订单弹层-------------*/
 .scancelTip{ width:590px; height:330px; background:#fff; padding:20px;  font-size:16px; position:fixed; left:50%; margin-left:-295px; top:100px; z-index:99; display:none;}
