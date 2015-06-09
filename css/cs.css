@@ -1034,7 +1034,7 @@ transition:1s;
 .bj6 div ul li a{ display:block; width:60px; height:26px; line-height:26px; text-align:center; background:#858585; color:#ffeb80; font-size:12px; border-radius:3px;}
 .bj7{ width:660px; height:300px; background:#c00; float:left; color:#ddd;;}
 
-.bjy{ width:1030px; height:auto; margin:110px auto 0px; position:relative;}
+.bjy{ width:1030px; height:auto; min-height:500px; margin:110px auto 0px; position:relative;}
 .bjy .bjy-bj{ display:none;}
 .bjy ul{ width:1030px; height:30px; margin:30px auto 0px; background:url(../images/bjybj.fw.png) no-repeat; margin-top:15px;}
 .bjy-prev{left:0px; }
@@ -1064,7 +1064,12 @@ transition:1s;
 .bjy-bj3 .imgs img{ width:205px; }
 .bjy-bj3 .imgs .delet{ background:rgba(0,0,0,0.3) url(../images/delete02.png) no-repeat 182px 4px; height:115px; width:205px; display:block; position:absolute; left:0; top:0; display:none;}
 .bjy-bj3 .imgs:hover .delet{ display:block; }
-
+.picPop{ height:495px; width:520px; position:fixed; top:100px; left:50%; margin-left:-225px; z-index:999; display:none; }
+.picPop .pic{ height:450px; width:520px; background:#D6D6D6;   }
+.picPop .pic p{   text-align:center; margin-top:210px; color:#fff; font-size:22px;    }
+.picPop .btn{ height:36px; width:90px; line-height:36px; text-align:center; display:block; position:absolute; font-size:16px;  color:#FFF;    }
+.picPop .btn.sure{background:#73b9ff; bottom:0; right:0px;  }
+.picPop .btn.cancle{ background:#FF7A4D; bottom:0; right:100px;    }
 .bjy-bj4{width:1030px;margin:80px auto 20px; }
 .bjy-bj4 span{width:480px; height:36px; display:block; line-height:36px; text-align:left; margin:10px auto 0; }
 .bjy-bj4 p{ width:480px; height:36px; margin:0px auto 10px; clear:both;}
