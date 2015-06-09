@@ -58,6 +58,7 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 
 
 .sy_order .box .top p{  line-height:1.2rem; margin-top:10px; }
+.sy_order .box .top a{ color:#97cbff; text-decoration:none;}
 .sy_order .box .down{ position:relative;}
 .sy_order .box .down p{  line-height:1.2rem; margin-top:10px; }
 .sy_order .box .money{ color:#FF8000; font-size:1rem; position:absolute;  bottom:0.7rem; right:5rem;}
