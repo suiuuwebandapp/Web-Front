@@ -1251,7 +1251,7 @@ transition:1s;
 .sydetail .web-content .web-left .map .contian .icon02{ background-position:0 -123px; }
 .sydetail .web-content .web-left .map .detNav{ height:40px; line-height:40px; margin:40px 0 20px;  }
 .sydetail .web-content .web-left .map .detNav li{ float:left; margin-right:50px; }
-.sydetail .web-content .web-left .map .detNav .icon{ font-size:18px;background:url(../images/sydIicon.png) no-repeat 0 -245px; padding-left:45px; height:40px; display:block; }
+.sydetail .web-content .web-left .map .detNav .icon{ font-size:20px;background:url(../images/sydIicon.png) no-repeat 0 -245px; padding-left:45px; height:40px; display:block; }
 .sydetail .web-content .web-left .map .detNav .icon01:hover,.sydetail .web-content .web-left .map .detNav .icon01.active{  background-position:0 -805px; color:#70b8ff;  }
 .sydetail .web-content .web-left .map .detNav .icon01{ background-position:0 -945px; }
 .sydetail .web-content .web-left .map .detNav .icon01:hover,.sydetail .web-content .web-left .map .detNav .icon01.active{  background-position:0 -805px;  color:#70b8ff;  }
@@ -1263,14 +1263,21 @@ transition:1s;
 
 
 
-.sydetail .web-content .web-left .map .detCon{ display:none; }
 .sydetail .web-content .web-left .map .details li{height:36px; line-height:36px; width:38%; float:left;  }
 .sydetail .web-content .web-left .map .details li.last{width:24%;}
 .sydetail .web-content .web-left .map .details li span{ height:36px; line-height:28px; display:block; font-size:18px;}
 .sydetail .web-content .web-left .map .details li .icon{ padding-left:35px; background:url(../images/syxq.png) no-repeat 0 0;}
 .sydetail .web-content .web-left .map .details li .icon2{ background-position:0 -67px;}
 .sydetail .web-content .web-left .map .details li .icon3{ background-position:0 -133px;}
-.sydetail .web-content .web-left .map p{   line-height:35px;}
+
+.sydetail .web-content .web-left .map p{ position:relative;  line-height:36px;}
+.sydetail .web-content .web-left .map .detCon{ display:none; padding-left:13px;}
+.sydetail .web-content .web-left .map .p3{ font-size:18px;}
+.sydetail .web-content .web-left .map .con01{ position:relative;  }
+.sydetail .web-content .web-left .map .con01 .line{ height:150px; width:2px; background:#70b8ff; position:absolute; left:23px; top:20px; }
+.sydetail .web-content .web-left .map .con01 p{ position:relative; padding-left:30px;}
+.sydetail .web-content .web-left .map .con01 p span{ display:block; position:absolute; left:0; top:7px; text-align:center; line-height:22px; height:22px; width:22px; color:#fff; background:#70b8ff; border-radius:50px;}
+.sydetail .web-content .web-left .map .detCon .title03{ font-size:18px; color:#70b8ff; line-height:36px; }
 .sydetail .web-content .web-left .map .map-pic{ height:300px; width:100%; background:#DBDBEB; overflow:hidden; margin:20px 0;}
 
 .sydetail .web-content .web-left .title{ color:#FF7945; font-size:20px; height:45px; line-height:45px; border-bottom:1px solid #ddd;  }
