@@ -46,21 +46,21 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 
 .sy_order{ margin-top:2.5rem;  }
 .sy_order .box{ position:relative; padding:0.9rem 0.8rem 3rem; background:#fff;margin-top:0.5rem;  }
-.sy_order .box .top{ border-bottom:1px solid #ddd; padding-bottom:20px; }
+.sy_order .box .top{  padding-bottom:20px; }
 .sy_order .box .top .left{ float:left;  width:36%; text-align:center; position:relative; height:4rem; }
 .sy_order .box .top .right{ float:right; width:60%;  }
 .sy_order .box .top .left .user{ position:relative; width:2.58rem; height:2.58rem; border-radius:50%;display:block; margin:0 auto; overflow:hidden; margin-bottom:5px;}
 .sy_order .box .top .left .user img{ width:2.58rem;  border-radius:50%;display:block; }
 .sy_order .box .top .left .name{ word-break:break-all;   width:5rem; margin:0 auto; }
 .sy_order .box .delete{ position:absolute; height:41px; width:41px; display:block;  top:0.7rem; right:0.7rem; background:url(../images/delet02.png) no-repeat center center;  }
-
-
-
-
 .sy_order .box .top p{  line-height:1.2rem; margin-top:10px; }
 .sy_order .box .top a{ color:#97cbff; text-decoration:none;}
-.sy_order .box .down{ position:relative;}
-.sy_order .box .down p{  line-height:1.2rem; margin-top:10px; }
+.sy_order .box .down{ position:relative; margin-top:1rem;}
+.sy_order .box .down .title{ line-height:1.5rem; position:relative; border-bottom:1px solid #ddd;}
+.sy_order .box .down .title02{  border-bottom:1px solid #ddd; color:#97cbff; text-align:center; line-height:2rem;}
+.sy_order .box .down dl dd{ display:table; vertical-align:middle; border-bottom:1px solid #ddd;}
+.sy_order .box .down dl dd .time{ width:20%; text-align:center; display:table-cell; vertical-align:middle;color:#97cbff; border-right:1px solid #ddd;}
+.sy_order .box .down dl dd .detail{ width:80%; padding:0.3rem;display:table-cell; vertical-align:middle;line-height:1.2rem;}
 .sy_order .box .money{ color:#FF8000; font-size:1rem; position:absolute;  bottom:0.7rem; right:5rem;}
 .sy_order .box .money.money2{ right:9rem;}
 .sy_order .box .btn{ text-decoration:none; position:absolute;  bottom:0.7rem; right:0.7rem;text-align:center; color:#fff; background:#FF8000; display:block; width:3.9rem; height:1.78rem; line-height:1.78rem;}
