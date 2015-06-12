@@ -10,12 +10,39 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .Registered .lists li{ position:relative;  }
 .Registered .lists li label{ font-size:0.85rem; width:100%; margin-top:0.8rem; display:block; }
 .Registered .lists li input{ background:#fff; font-size:0.85rem; width:100%; height:2.7rem; line-height:2.7rem; border:1px solid #ddd; padding:0 1%; display:block;}
-.Registered .lists li .country{ background:#fff url(../images/go.png) no-repeat 96% center; background-size:0.6rem 0.9rem; }
+.Registered .lists li .country{ cursor:pointer;background:#fff url(../images/go.png) no-repeat 96% center; background-size:0.6rem 0.9rem; }
 .Registered .lists li .code{ font-size:0.85rem; position:absolute; right:0.8rem; bottom:0.8rem; color:#FF7F00; text-decoration:none;}
 .Registered .lists li .code:hover{ text-decoration:underline;}
 .Registered .btn{ font-size:0.85rem; color:#fff; background:#97CBFF; display:block; width:8.2rem; height:2.14rem; line-height:2.14rem; text-align:center; margin:1.8rem auto 0; text-decoration:none;}
 .Registered .btn:hover{ text-decoration:underline;}
 
+/*-----------随友注册-------------*/
+.syRegistered .lists li{ position:relative;  }
+.syRegistered .lists li label{ font-size:0.85rem; width:100%; margin-top:0.8rem; display:block; }
+.syRegistered .lists li input{ background:#fff; font-size:0.85rem; width:100%; height:2.7rem; line-height:2.7rem; border:1px solid #ddd; padding:0 1%; display:block;}
+.syRegistered .lists li .country{ background:#fff url(../images/go.png) no-repeat 96% center; background-size:0.6rem 0.9rem; cursor:pointer; }
+.syRegistered .lists li .row{ height:2.7rem; line-height:2.7rem; clear:both; }
+.syRegistered .lists li .row .phone{ font-size:0.85rem; color:#858585; height:2.7rem;  line-height:2.7rem; width:35%; float:left; }
+.syRegistered .lists li .row .phoneNum{ font-size:0.85rem; color:#858585; height:2.7rem;  line-height:2.7rem; width:63%; float:right; }
+.syRegistered .lists li .code{ font-size:0.85rem; position:absolute; right:0.8rem; bottom:0.8rem; color:#FF7F00; text-decoration:none;}
+.syRegistered .lists li .code:hover{ text-decoration:underline;}
+.syRegistered .lists li .box{ display:block;  height:14rem; width:100%; background:#fff;}
+.syRegistered .lists li .box .pic{ display:block;  height:100%; width:100%; background:url(../images/syreg.png) no-repeat center center;}
+.syRegistered .agr{ text-align:center; margin-top:0.8rem;}
+.syRegistered .agr #agreement{ opacity:0;}
+.syRegistered .agr #agreement+label{ display:inline-block; line-height:2rem;   padding-left:1rem; background:url(../images/check1.png) no-repeat 0 center; background-size:0.857rem;}
+.syRegistered .agr #agreement:checked+label{ background:url(../images/check2.png) no-repeat 0 center;background-size:0.857rem;}
+.syRegistered .agr a{ color:#97cbff; text-decoration:none;}
+.syRegistered .btn{ font-size:0.85rem; color:#fff; background:#97CBFF; display:block; width:8.2rem; height:2.14rem; line-height:2.14rem; text-align:center; margin:10px auto 20px; text-decoration:none;}
+.syRegistered .btn:hover{ text-decoration:underline;}
+	/*-----------随友注册选择国家弹层-------------*/
+.sySetcountry{ position:absolute; top:0; left:0; z-index:444; display:none;}
+.sySetcountry .navbars{ font-size:0.85rem; width:1.6rem; position:fixed; right:0; top:5rem; z-index:9; }
+.sySetcountry .navbars a{ color:#FFAB00; font-size:0.85rem; text-decoration:none; line-height:0.85rem; }
+.sySetcountry .search{ height:2.7rem; width:100%; display:block; background:#fff url(../images/top-search.png) no-repeat 0.17rem center; background-size:1.142rem 1.07rem; font-size:0.85rem; margin:0.28rem auto; padding:0 1.25rem; border:1px solid #ddd; }
+.sySetcountry .lists dt{ height:1.5rem;width:100%; display:block; background:#eee;  font-size:0.85rem; line-height:1.5rem; padding:0 0.5rem;}
+.sySetcountry .lists dd{ height:2.5rem; border-bottom:1px solid #ddd; width:100%; display:block; background:#fff;  font-size:0.85rem; line-height:2.5rem; padding:0 0.5rem;}
+/*-----------随友注册--end-------------*/
 
 /*-----------绑定-------------*/
 .bangding .lists li{ position:relative;  }
