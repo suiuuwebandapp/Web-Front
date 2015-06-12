@@ -1387,7 +1387,7 @@ transition:1s;
 .sydetail .web-content .web-right .web-tuijian{width:285px;  overflow:hidden; margin:0 auto 30px;  }
 .sydetail .web-content .web-right .web-tuijian .pic{ width:100%; height:185px; overflow:hidden;  display:block;}
 .sydetail .web-content .web-right .web-tuijian p{ line-height:25px; margin:5px 0;}
-.sydetail .web-content .web-right .web-tuijian .pic img{ width:100%; height:185px; display:block;}
+.sydetail .web-content .web-right .web-tuijian .pic img{ width:100%; display:block;}
 .sydetail .web-content .web-right .web-tuijian .xing{ margin:0;}
 .sydetail .web-content .web-right .web-tuijian .xing span{ color:#ff7a45;   float:right;}
 
