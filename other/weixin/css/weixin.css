@@ -85,7 +85,7 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .sy_order .box .down{ position:relative; margin-top:1rem;}
 .sy_order .box .down .title{ font-size:1rem; text-align:center;  line-height:1.5rem; position:relative; border-bottom:1px solid #ddd;}
 .sy_order .box .down .title02{  border-bottom:1px solid #ddd; color:#97cbff; text-align:center; line-height:2rem;}
-.sy_order .box .down dl dd{ display:table; vertical-align:middle; border-bottom:1px solid #ddd;}
+.sy_order .box .down dl dd{ display:table; width:100%; vertical-align:middle; border-bottom:1px solid #ddd;}
 .sy_order .box .down dl dd .time{ width:20%; text-align:center; display:table-cell; vertical-align:middle;color:#97cbff; border-right:1px solid #ddd;}
 .sy_order .box .down dl dd .detail{ width:80%; padding:0.3rem;display:table-cell; vertical-align:middle;line-height:1.2rem;}
 .sy_order .box .money{ color:#FF8000; font-size:1rem; position:absolute;  bottom:0.7rem; right:5rem;}
