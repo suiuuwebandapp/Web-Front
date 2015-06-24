@@ -504,8 +504,32 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 #pagepiling .section .content .box01 .details .colOrange{ color:#FFEA7F; font-size:0.85rem;}
 #pagepiling .section .content .box01 .details .line img{ float:right; margin-left:3px;}
 
+/*-----------随游详情------------*/
 
 
+.syDetailBanner{ width:100%;   position:relative;}
+.syDetailBanner .banners{ width:100%; overflow:hidden;}
+.syDetailBanner .banners li{ float:left; width:100%;  }
+.syDetailBanner .banners li img{   width:100%; display:block; }
+
+.syDetailBanner .banner-btn{position:absolute;top:330px; width:100%; }
+.syDetailBanner .banner-btn a{display:block;width:40px;height:48px;position:absolute;top:0;}
+.syDetailBanner .banner-btn a.prev{left:20px; background:url(../images/index/bannerbtn.png) no-repeat 0 0;} 
+.syDetailBanner .banner-btn a.next{ background:url(../images/index/bannerbtn.png) no-repeat 0 bottom; right:20px;}
+
+.syDetailBanner .hd {position:absolute;bottom:10px; left:50%; margin-left:20px;}
+.syDetailBanner .hd ul li{width:12px;height:12px;border-radius :50%;text-indent:-9999px;margin-right:5px;background:#ccc;float:left;cursor:pointer;}
+.syDetailBanner .hd ul li.on{background:#DA324D;}
+
+
+.syDetailBanner .banners p{  position:absolute; color:#fff; font-size:30px; left:50%; margin-left:-170px; }
+.syDetailBanner .banners .p1{ top:350px;}
+.syDetailBanner .banners .banner01 .p2{ top:390px; text-indent:2em;}
+.syDetailBanner .banners .banner02 .p2{ top:390px; text-indent:6em;}
+.syDetailBanner .banners .banner02 .p2 a{ color:#fff; font-size:16px; text-decoration:none; position:absolute; top:-20px; right:-60px;}
+.syDetailBanner .banners .banner02 .p2 a:hover{ color:#FF7F00;}
+.syDetailBanner .banners .banner03 .p2{ top:390px; text-indent:2em;}
+.syDetailBanner .banners .banner04 .p0{ top:270px;}
 
 
 

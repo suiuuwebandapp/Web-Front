@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+<title>随游详情</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/weixin.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+<div class="syDetailBanner">
+    <!--banner开始-->
+    <div class="bd">
+        <ul class="banners">
+            <li class="banner01"><img src=""><img src="images/img01.png"></li>
+            <li class="banner01"><img src=""><img src="images/img01.png"></li>
+            <li class="banner01"><img src=""><img src="images/img01.png"></li>
+        </ul>
+        <div class="banner-btn">
+            <a class="prev" href="javascript:void(0);"></a>
+            <a class="next" href="javascript:void(0);"></a>
+        </div>
+        <div class="hd"><ul></ul></div>  
+    </div>
+    <!--banner结束-->
+    <script type="text/javascript">
+    $(document).ready(function(){
+    
+        $(".prev,.next").hover(function(){
+            $(this).stop(true,false).fadeTo("show",1);
+        },function(){
+            $(this).stop(true,false).fadeTo("show",1);
+        });
+        
+        $(".syDetailBanner").slide({
+            titCell:".hd ul",
+            mainCell:".banners",
+            effect:"fold",
+            interTime:3500,
+            delayTime:500,
+            autoPlay:true,
+            autoPage:true, 
+            trigger:"click" 
+        });
+    
+    });
+    </script>
+    
+    <p>iotokyyyyyyyyyyy</p>
+    <p>iotokyyyyyyyyyyy</p>
+    <p>iotokyyyyyyyyyyy</p>
+    <p>iotokyyyyyyyyyyy</p>
+    <p>iotokyyyyyyyyyyy</p>
+    <p>iotokyyyyyyyyyyy</p>
+    <p>iotokyyyyyyyyyyy</p>
+    <p>iotokyyyyyyyyyyy</p>
+    <p>iotokyyyyyyyyyyy</p>
+    <p>iotokyyyyyyyyyyy</p>
+    <p>iotokyyyyyyyyyyy</p>
+    <p>iotokyyyyyyyyyyy</p>
+    <p>iotokyyyyyyyyyyy</p>
+    <p>iotokyyyyyyyyyyy</p>
+
+</div>
+</body>
+</html>

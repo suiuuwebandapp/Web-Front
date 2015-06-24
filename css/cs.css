@@ -1683,7 +1683,14 @@ transition:1s;
 .scancelTip{ width:590px; height:330px; background:#fff; padding:20px;  font-size:16px; position:fixed; left:50%; margin-left:-295px; top:100px; z-index:99; display:none;}
 .scancelTip textarea{ width:100%; height:170px; background:#eee; margin:10px 0;}
 .scancelTip .blue{ color:#73b9ff; font-size:18px;}
-.scancelTip .btn{ display:block; position:absolute; bottom:0; right:0; width:80px; height:36px; line-height:36px; color:#ffeb79; background:#73b9ff; text-align:center;}
+.scancelTip .btn{  display:block; position:absolute; bottom:0; right:0; width:80px; height:36px; line-height:36px; color:#ffeb79; background:#73b9ff; text-align:center;}
 
 
+/*------------支付宝绑定弹层------------*/
+.zfbPro{ width:390px; height:345px; background:#F4F3EF; font-size:16px; position:fixed; left:50%; margin-left:-175px; top:100px; z-index:99; display:none; box-shadow:0 0 5px rgba(0,0,0,0.4); border-radius:10px; overflow:hidden;}
+.zfbPro .top{ margin-bottom:45px;   height:50px; background:#ebe3cc; position:relative; border-top:1px solid #fff; box-shadow:0 1px 1px rgba(0,0,0,0.1);  }
+ 
+.zfbPro input{ margin:0 auto; border:1px solid #ddd; display:block; width:340px;  border-radius:5px; height:45px; line-height:45px; background:#fff; padding:0 10px;   line-height:22px; word-break:break-all;  }
+.zfbPro .tip{ text-align:center; height:45px; line-height:45px; color:#ff794c; font-size:14px;  }
+.zfbPro .btn{ display:block; margin:0 auto;  width:340px;  border-radius:5px; height:45px; line-height:45px;  color:#fff; background:#73b9ff; text-align:center; font-size:20px;}
 
