@@ -5,15 +5,7 @@ body{ background:#eee;font-size:0.85rem;}
 nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6e6e6e; display:block; color:#fff; font-size:1rem; max-width:640px;margin:0 auto }
 .con{ padding:0 1%; width:100%; max-width:640px; margin:0 auto; position:relative;}
 
-.bgwhite{ background:#fff;}
-.mrTop60{ margin-top:60px;}
-.colBlue{ color:#73b9ff ;}
-.colOrange{ color:#FFAA00;}
-.colWit{ color:#FFF;}
-.bgOrange{ background:#FFAA00; }
-.bgBlue{ background:#73b9ff ; }
-.fr{ float:right; _display:inline;}
-.fl{ float:left; _display:inline;}
+
 
 
 /*-----------注册-------------*/
@@ -414,6 +406,106 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .w_suiyou02 .title{  margin-top:10px;  }
 .w_suiyou02 span{ float:left; font-size:0.85rem;line-height:1.7rem; height:1.7rem; padding:0 15px; text-align:center; float:left; border:1px solid #97CBFF; border-radius:20px; margin-right:10px; margin-top:10px;  cursor:pointer;}
 .w_suiyou02 span.active{ background:#97CBFF; color:#fff;}
+
+
+/*-----------手机注册-------------*/
+.RegisteredPhone .lists li{ position:relative; margin-top:15px;  }
+.RegisteredPhone .lists li label{ font-size:0.85rem; width:100%; margin-top:0.8rem; display:block; }
+.RegisteredPhone .lists li .set{ background:#eee; font-size:0.85rem; width:100%; height:2.7rem; line-height:2.7rem; border:1px solid #ddd; padding:0 1%; display:block;}
+.RegisteredPhone .lists li input{ background:#eee; font-size:0.85rem; width:100%; height:2.7rem; line-height:2.7rem; border:1px solid #ddd; padding:0 1%; display:block;}
+.RegisteredPhone .lists li .row{ height:2.7rem; line-height:2.7rem; clear:both; }
+.RegisteredPhone .lists li .row .phone{ font-size:0.85rem; color:#858585; height:2.7rem;  line-height:2.7rem; width:35%; float:left; background:#eee; outline:none; }
+.RegisteredPhone .lists li .row .phoneNum{ font-size:0.85rem; color:#858585; height:2.7rem;  line-height:2.7rem; width:63%; float:right; }
+.RegisteredPhone .lists li .w70{ width:70%; float:left;}
+.RegisteredPhone .lists li .code{height:2.7rem; width:30%; overflow:hidden;font-size:0.85rem; float:right; color:#FF7F00; text-decoration:none; text-align:center; line-height:2.7rem;}
+.RegisteredPhone .lists li .code.colBlue{ color:#73b9ff;}
+.RegisteredPhone .lists li .code img{ width:100%; display:block;}
+.RegisteredPhone .lists li .code:hover{ text-decoration:underline;}
+.RegisteredPhone .agr{ text-align:center; margin-top:15px;}
+.RegisteredPhone .agr #agreement{ opacity:0;}
+.RegisteredPhone .agr #agreement+label{ display:inline-block; line-height:2rem;   padding-left:1rem; background:url(../images/check1.png) no-repeat 0 center; background-size:0.857rem;}
+.RegisteredPhone .agr #agreement:checked+label{ background:url(../images/check2.png) no-repeat 0 center;background-size:0.857rem;}
+.RegisteredPhone .agr a{ color:#97cbff; text-decoration:none;}
+.RegisteredPhone .btn{ border-radius:5px; font-size:0.85rem; color:#fff; background:#97CBFF; display:block; width:8.2rem; height:2.14rem; line-height:2.14rem; text-align:center; margin:2rem auto 20px; text-decoration:none;}
+.RegisteredPhone .btn:hover{ text-decoration:underline;}
+.RegisteredPhone .down{ text-align:center; position:relative; margin-top:1rem;}
+.RegisteredPhone .down .line{ width:100%; height:1px; background:#ddd; position:absolute; left:0; top:20px;}
+.RegisteredPhone .down span{ width:100%; height:1px; background:#fff; padding:0 10px; z-index:44; position:relative;}
+.RegisteredPhone .down .ddd{ width:6.5rem; margin:2rem auto;}
+.RegisteredPhone .down .icon{ display:block; float:left; width:1.6rem; height:1.6rem; background:url(../images/icon02.fw.png) no-repeat center 0; background-size:1.607rem 28.92rem;}
+.RegisteredPhone .down .icon.sina{ background-position:center -3.03rem; }
+.RegisteredPhone .down .icon.wei{ background-position:center -9.03rem; margin:0 0.7rem;}
+.RegisteredPhone .down .icon.qq{ background-position:center -14.96rem; }
+
+/*-----------邮箱注册-------------*/
+.RegisteredPhone .lists li{ position:relative; margin-top:15px;  }
+.RegisteredPhone .lists li label{ font-size:0.85rem; width:100%; margin-top:0.8rem; display:block; }
+.RegisteredPhone .lists li input{ background:#eee; font-size:0.85rem; width:100%; height:2.7rem; line-height:2.7rem; border:1px solid #ddd; padding:0 1%; display:block;}
+
+.RegisteredPhone .agr{ text-align:center; margin-top:15px;}
+.RegisteredPhone .agr #agreement{ opacity:0;}
+.RegisteredPhone .agr #agreement+label{ display:inline-block; line-height:2rem;   padding-left:1rem; background:url(../images/check1.png) no-repeat 0 center; background-size:0.857rem;}
+.RegisteredPhone .agr #agreement:checked+label{ background:url(../images/check2.png) no-repeat 0 center;background-size:0.857rem;}
+.RegisteredPhone .agr a{ color:#97cbff; text-decoration:none;}
+.RegisteredPhone .btn{ border-radius:5px; font-size:0.85rem; color:#fff; background:#97CBFF; display:block; width:8.2rem; height:2.14rem; line-height:2.14rem; text-align:center; margin:2rem auto 20px; text-decoration:none;}
+.RegisteredPhone .btn:hover{ text-decoration:underline;}
+.RegisteredPhone .down{ text-align:center; position:relative; margin-top:1rem;}
+.RegisteredPhone .down .line{ width:100%; height:1px; background:#ddd; position:absolute; left:0; top:20px;}
+.RegisteredPhone .down span{ width:100%; height:1px; background:#fff; padding:0 10px; z-index:44; position:relative;}
+.RegisteredPhone .down .ddd{ width:6.5rem; margin:2rem auto;}
+.RegisteredPhone .down .icon{ display:block; float:left; width:1.6rem; height:1.6rem; background:url(../images/icon02.fw.png) no-repeat center 0; background-size:1.607rem 28.92rem;}
+.RegisteredPhone .down .icon.sina{ background-position:center -3.03rem; }
+.RegisteredPhone .down .icon.wei{ background-position:center -9.03rem; margin:0 0.7rem;}
+.RegisteredPhone .down .icon.qq{ background-position:center -14.96rem; }
+
+
+/*-----------登录------------*/
+.login .lists li{ position:relative; margin-top:15px;  }
+.login .lists li label{ font-size:0.85rem; width:100%; margin-top:0.8rem; display:block; }
+.login .lists li input{ background:#eee; font-size:0.85rem; width:100%; height:2.7rem; line-height:2.7rem; border:1px solid #ddd; padding:0 1%; display:block;}
+
+.login .btn{ border-radius:5px; font-size:0.85rem; color:#fff;   display:block; width:8.2rem; height:2.14rem; line-height:2.14rem; text-align:center; margin:2rem auto 20px; text-decoration:none;}
+.login .btn{ border-radius:5px; font-size:0.85rem; color:#fff;   display:block; width:8.2rem; height:2.14rem; line-height:2.14rem; text-align:center; margin:2rem auto 20px; text-decoration:none;}
+.login .btn:hover{ text-decoration:underline;}
+.login .forgot{ margin-left:23%;}
+.login .log{ margin-right:23%;}
+.login .agr{ text-align:center; margin-top:15px;}
+.login .agr #agreement{ opacity:0;}
+.login .agr #agreement+label{ display:inline-block; line-height:2rem;   padding-left:1rem; background:url(../images/check1.png) no-repeat 0 center; background-size:0.857rem;}
+.login .agr #agreement:checked+label{ background:url(../images/check2.png) no-repeat 0 center;background-size:0.857rem;}
+.login .agr a{ color:#97cbff; text-decoration:none;}
+.login .down{ text-align:center; position:relative; margin-top:2rem;}
+.login .down .line{ width:100%; height:1px; background:#ddd; position:absolute; left:0; top:20px;}
+.login .down span{ width:100%; height:1px; background:#fff; padding:0 10px; z-index:44; position:relative;}
+.login .down .ddd{ width:6.5rem; margin:2rem auto;}
+.login .down .icon{ display:block; float:left; width:1.6rem; height:1.6rem; background:url(../images/icon02.fw.png) no-repeat center 0; background-size:1.607rem 28.92rem;}
+.login .down .icon.sina{ background-position:center -3.03rem; }
+.login .down .icon.wei{ background-position:center -9.03rem; margin:0 0.7rem;}
+.login .down .icon.qq{ background-position:center -14.96rem; }
+
+
+/*-----------随游滚屏------------*/
+#pagepiling .section .box{ position:relative;  max-width:640px; height:100%; margin:0 auto; }
+#pagepiling .section .box .pics{ display:block; width:100%; height:100%;  }
+#pagepiling .section .title{ position:absolute; left:5%; top:4rem;  color:#fff; font-size:1.7rem; }
+#pagepiling .section .detail{  color:#fff; font-size:1.1rem;   position:absolute; left:5%; top:6.5rem; }
+#pagepiling .section .search_out{ width:90%;  position:absolute; left:5%; top:30%; border:1px solid #fff; border-radius:60px; height:2.4rem; line-height:2.4rem; }
+#pagepiling .section .search_out .search{ font-size:1rem; color:#fff; float:left; width:80%; line-height:2.4rem; height:2.4rem; padding:10px; box-sizing:border-box; display:block; background:none; outline:none; border:none; }
+#pagepiling .section .search_out .search::-webkit-input-placeholder{ color:#fff;}
+#pagepiling .section .search_out .btn{ width:2.5rem; height:2rem; margin-top:0.2rem; display:block; float:right; }
+#pagepiling .section .search_out .btn img{ width:2rem; height:2rem; display:block;  }
+
+#pagepiling .section .content{ width:100%; max-width:640px; margin:0 auto;}
+#pagepiling .section .content .box01{ width:100%; position:relative;}
+#pagepiling .section .content .box01 a.pic{ width:100%; display:block;}
+#pagepiling .section .content .box01 a img{ width:100%; display:block;}
+#pagepiling .section .content .box01 .details{ width:100%; box-sizing:border-box; color:#fff; position:absolute; padding:2%; left:0; bottom:0;}
+#pagepiling .section .content .box01 .details .title{ margin-bottom:4px; color:#fff; font-size:0.85rem;}
+#pagepiling .section .content .box01 .details .colOrange{ color:#FFEA7F; font-size:0.85rem;}
+#pagepiling .section .content .box01 .details .line img{ float:right; margin-left:3px;}
+
+
+
 
 
 
