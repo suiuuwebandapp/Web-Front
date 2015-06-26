@@ -323,13 +323,14 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 /*-----------c定制订单-----------*/
 .cdzOder .box{ position:relative; padding:0.9rem 0.8rem; background:#fff;margin-top:0.5rem;  }
 .cdzOder .box .top{  padding-bottom:20px; }
-.cdzOder .box .top .left{ float:left;  width:36%; text-align:center; position:relative; height:4rem; }
-.cdzOder .box .top .right{ float:right; width:60%;  }
+.cdzOder .box .top .left{padding-top:15px;  float:left;  width:36%; text-align:center; position:relative; height:4rem; }
+.cdzOder .box .top .right{ padding-top:15px; float:right; width:60%;  }
 .cdzOder .box .top .left .user{ position:relative; width:2.58rem; height:2.58rem; border-radius:50%;display:block; margin:0 auto; overflow:hidden; margin-bottom:5px;}
 .cdzOder .box .top .left .user img{ width:2.58rem;  border-radius:50%;display:block; }
 .cdzOder .box .top .left .name{ word-break:break-all;   width:5rem; margin:0 auto; }
 .cdzOder .box .delete{ position:absolute; height:41px; width:41px; display:block;  top:0.7rem; right:0.7rem; background:url(../images/delet02.png) no-repeat center center;  }
-.cdzOder .box .top p{  line-height:1.2rem; margin-top:10px; }
+.cdzOder .box .state{ position:absolute;  top:0.7rem; left:0.7rem;   }
+.cdzOder .box .top p{  line-height:1.2rem; margin-bottom:10px; }
 .cdzOder .box .top a{ color:#97cbff; text-decoration:none;}
 
 /*-----------c定制订单详情-----------*/
