@@ -29,6 +29,7 @@ input:focus{outline-width:0;box-shadow:none;-webkit-box-shadow:none;-moz-box-sha
 .colWit{ color:#FFF;}
 .bgOrange{ background:#FFAA00; }
 .bgBlue{ background:#73b9ff ; }
+.bgGrey{ background:#ddd;}
 .fr{ float:right; _display:inline;}
 .fl{ float:left; _display:inline;}
 

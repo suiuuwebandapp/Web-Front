@@ -266,7 +266,8 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .cmyoderDetail .content .part .userPic{ height:2.85rem; width:2.85rem; border-radius:50%; display:block; overflow:hidden; float:left;   }
 .cmyoderDetail .content .part .userPic img{ width:100%; display:block; }
 .cmyoderDetail .content .part .userName{ float:left; margin-top:0.9rem; margin-left:3px; font-size:0.85rem; }
-.cmyoderDetail .content .part .btnfr{ text-align:center; display:block; text-decoration:none;  }
+.cmyoderDetail .content .part .btnfr{ float:right; margin-top:0.6rem;  text-decoration:none;  }
+.cmyoderDetail .content .part .btnfr02{ display:block; text-align:center;  text-decoration:none;  }
 .cmyoderDetail .content .part .btnfr:hover{   text-decoration:underline; }
 .cmyoderDetail .content .part p{ line-height:1.5rem; }
 .cmyoderDetail .content .part .btn{ height:2.1rem; width:30%; line-height:2.1rem; font-size:0.85rem; color:#fff; text-align:center; display:block; text-decoration:none;  }
@@ -540,6 +541,40 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .syContent .contian span img{ width:0.9rem; height:0.9rem; display:inline-block; }
 .syContent .btns{ padding:15px;  width:100%; margin:20px auto 0; border-top:1px solid #ddd; }
 .syContent .btns a{ border-radius:5px; text-align:center; color:#fff; font-size:1rem; display:block;   height:2.14rem; line-height:2.14rem; width:7rem; }
+
+/*-----------支付------------*/
+.payfor .top{ background:#fff; padding:10px 10px 20px; margin-top:10px;}
+.payfor .payway{ background:#fff; padding:10px 10px 20px; margin-top:10px;}
+.payfor .down{ background:#fff; text-align:center; position:relative; margin-top:0.35rem; padding-top:20px;}
+.payfor .down .line{ width:100%; height:1px; background:#ddd; position:absolute; left:0; top:1.5rem;}
+.payfor .down span{ background:#fff; width:100%; height:1px;  padding:0 10px; z-index:44; position:relative;}
+.payfor .down .ddd{ width:5rem; margin:2rem auto;}
+.payfor .down .icon{ display:block;   width:1.6rem; height:1.6rem; background:url(../images/icon02.fw.png) no-repeat center 0; background-size:1.607rem 28.92rem;}
+.payfor .down .icon.wei{ background-position:center -9.03rem; }
+.payfor .down .icon.zfb{ background-position:center -21rem; }
+
+
+
+/*----------- 订单确认----------*/
+.w_dingdan .lists input{ background:#fff; font-size:0.85rem; width:100%; height:2.7rem; line-height:2.7rem; border:1px solid #ddd; padding:0 1%; display:block;}
+.w_dingdan .lists label{ font-size:0.85rem; width:100%; margin-top:0.8rem; display:block; }
+.w_dingdan p{ margin-top:10px; }
+.w_dingdan .row{ display:table; width:100%; height:2.7rem; line-height:2.7rem; background:#fff; padding:0 0.5rem;  }
+.w_dingdan .row .add{ display:table-cell; width:2rem; background:url(../images/add.png) no-repeat center center; background-size:1.78rem 1.71rem;  }
+.w_dingdan .row .text{ text-align:center; border:none; display:table-cell; height:2.7rem; line-height:2.7rem; font-size:1rem; width:100%; margin:0 auto;  }
+.w_dingdan .row .minus{ display:table-cell; width:2rem;  background:url(../images/minus.png) no-repeat center center; background-size:1.78rem 0.35rem;border-right:1px solid #ddd;  }
+.w_dingdan .severs{ background:#fff; padding:15px 10px;}
+.w_dingdan .severs input{ opacity:0; position:absolute;}
+.w_dingdan .severs input+label{ margin-right:10px; float:left; display:inline-block; line-height:2rem;   padding-left:1rem; background:url(../images/check1.png) no-repeat 0 center; background-size:0.857rem;}
+.w_dingdan .severs input:checked+label{ background:url(../images/check2.png) no-repeat 0 center;background-size:0.857rem;}
+.w_dingdan .fixed{ position:fixed; left:0; bottom:0; width:100%; padding:10px; background:#fff; display:block;  height:3.5rem;}
+.w_dingdan .fixed .money{ margin-top:5px;}
+.w_dingdan .fixed .btn{ font-size:0.85rem;  display:block; width:6rem; margin:0 auto; height:2.14rem; line-height:2.14rem; text-align:center;  text-decoration:none;}
+.w_dingdan .fixed .btn:hover{ text-decoration:underline;}
+
+
+
+
 
 
 
