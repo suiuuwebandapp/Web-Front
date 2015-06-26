@@ -266,7 +266,7 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .cmyoderDetail .content .part .userPic{ height:2.85rem; width:2.85rem; border-radius:50%; display:block; overflow:hidden; float:left;   }
 .cmyoderDetail .content .part .userPic img{ width:100%; display:block; }
 .cmyoderDetail .content .part .userName{ float:left; margin-top:0.9rem; margin-left:3px; font-size:0.85rem; }
-.cmyoderDetail .content .part .btnfr{ float:right; text-decoration:none;margin-top:0.9rem; }
+.cmyoderDetail .content .part .btnfr{ text-align:center; display:block; text-decoration:none;  }
 .cmyoderDetail .content .part .btnfr:hover{   text-decoration:underline; }
 .cmyoderDetail .content .part p{ line-height:1.5rem; }
 .cmyoderDetail .content .part .btn{ height:2.1rem; width:30%; line-height:2.1rem; font-size:0.85rem; color:#fff; text-align:center; display:block; text-decoration:none;  }
