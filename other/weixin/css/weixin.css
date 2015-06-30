@@ -402,7 +402,7 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .w_suiyouSelect .btn:hover{ text-decoration:underline;}
 
 
-/*-----------c随游02-------------*/
+/*-----------c随游02/03-------------*/
 .w_suiyou02 .search_out{ margin-top:15px; position:relative;}
 .w_suiyou02 .search_out .search{ font-size:1rem; height:2rem; line-height:2rem; width:80%; background:#eee; display:block; border-radius:80px; padding:0 10px; position:relative;}
 .w_suiyou02 .search_out .search img{ width:1.3rem;}
@@ -411,6 +411,9 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .w_suiyou02 .title{  margin-top:10px;  }
 .w_suiyou02 span{ float:left; font-size:0.85rem;line-height:1.7rem; height:1.7rem; padding:0 15px; text-align:center; float:left; border:1px solid #97CBFF; border-radius:20px; margin-right:10px; margin-top:10px;  cursor:pointer;}
 .w_suiyou02 span.active{ background:#97CBFF; color:#fff;}
+.w_suiyou02 .nothing{ text-align:center; margin-top:35%;}
+
+
 
 
 /*-----------手机注册-------------*/
