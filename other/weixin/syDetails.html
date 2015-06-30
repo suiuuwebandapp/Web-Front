@@ -17,23 +17,28 @@
             <li class="banner01"><img src="images/img02.jpg"></li>
             <li class="banner01"><img src="images/img03.jpg"></li>
         </ul>
-        <div class="banner-btn">
+<!--   
+       <div class="banner-btn">
             <a class="prev" href="javascript:void(0);"></a>
             <a class="next" href="javascript:void(0);"></a>
-        </div>
-        <div class="hd"><ul></ul></div>  
+       </div>
+--> 
+    <div class="hd"><ul></ul></div>  
     </div>
     <!--banner结束-->
     <script type="text/javascript">
     $(document).ready(function(){
-    
+		
+/*    
         $(".prev,.next").hover(function(){
             $(this).stop(true,false).fadeTo("show",1);
         },function(){
             $(this).stop(true,false).fadeTo("show",1);
         });
         
-        $(".syDetailBanner").slide({
+*/ 
+
+     $(".syDetailBanner").slide({
             titCell:".hd ul",
             mainCell:".banners",
             effect:"fold",

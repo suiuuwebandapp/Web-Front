@@ -513,10 +513,13 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .syDetailBanner .banners{ width:100%; overflow:hidden;}
 .syDetailBanner .banners li{ float:left; width:100%;  }
 .syDetailBanner .banners li img{   width:100%; display:block; }
+
+/*
 .syDetailBanner .banner-btn{position:absolute;top:330px; width:100%; }
 .syDetailBanner .banner-btn a{display:block;width:40px;height:48px;position:absolute;top:0;}
 .syDetailBanner .banner-btn a.prev{left:20px; background:url(../images/index/bannerbtn.png) no-repeat 0 0;} 
 .syDetailBanner .banner-btn a.next{ background:url(../images/index/bannerbtn.png) no-repeat 0 bottom; right:20px;}
+*/
 .syDetailBanner .hd {position:absolute;bottom:10px; left:50%; margin-left:-20px;}
 .syDetailBanner .hd ul li{width:12px;height:12px;border-radius :50%;text-indent:-9999px;margin-right:5px;background:#ccc;float:left;cursor:pointer;}
 .syDetailBanner .hd ul li.on{background:#DA324D;}
