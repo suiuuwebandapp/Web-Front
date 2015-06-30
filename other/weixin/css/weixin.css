@@ -321,9 +321,10 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 
 
 /*-----------c定制订单-----------*/
+
 .cdzOder .box{ position:relative; padding:0.9rem 0.8rem; background:#fff;margin-top:0.5rem;  }
-.cdzOder .box01{ margin-top:2.6rem; }
-.cdzOder .btnfixed{ line-height:2rem; height:2rem; z-index:999; position:fixed; top:0; text-align:center;  left:50%; width:6rem; margin-left:-3rem; display:block; }
+.cdzOder .box01{ margin-top:5.5rem; }
+.dbtnfixed{ line-height:2rem; height:2rem; z-index:999; position:absolute; top:3rem; text-align:center;  left:50%; width:6rem; margin-left:-3rem; display:block; }
 .cdzOder .box .top{  padding-bottom:20px; }
 .cdzOder .box .top .left{padding-top:15px;  float:left;  width:36%; text-align:center; position:relative; height:4rem; }
 .cdzOder .box .top .right{ padding-top:15px; float:right; width:60%;  }
@@ -351,7 +352,7 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 
 
 /*----------个人中心 收件箱----------*/
-.center_message{ width:100%; padding:0 1%; max-width:640px; margin:0 auto;}
+.center_message{ width:100%; padding:4rem 1% 0; max-width:640px; margin:0 auto;}
 .center_message .box{ background:#fff; padding:10px;  border-bottom:1px solid #ddd;  }
 .center_message .box .top .userPic{ height:2.85rem; width:2.85rem; border-radius:50%; display:block; overflow:hidden; float:left;   }
 .center_message .box .top .userPic img{ width:100%; display:block; }
