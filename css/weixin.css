@@ -49,7 +49,7 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .syRegistered .agr a{ color:#97cbff; text-decoration:none;}
 .syRegistered .btn{ font-size:0.85rem; color:#fff; background:#97CBFF; display:block; width:8.2rem; height:2.14rem; line-height:2.14rem; text-align:center; margin:10px auto 20px; text-decoration:none;}
 .syRegistered .btn:hover{ text-decoration:underline;}
-	/*-----------随友注册选择国家弹层-------------*/
+/*-----------随友注册选择国家弹层-------------*/
 .sySetcountry{ position:absolute; top:0; left:0; z-index:444; display:none;}
 .sySetcountry .navbars{ font-size:0.85rem; width:1.6rem; position:fixed; right:0; top:5rem; z-index:9; }
 .sySetcountry .navbars a{ color:#FFAB00; font-size:0.85rem; text-decoration:none; line-height:0.85rem; }
@@ -87,14 +87,14 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .bangding02 .lists li .code img{ width:100%; display:block;}
 .bangding02 .lists li .code:hover{ text-decoration:underline;}
 .bangding02 .lists li .country{ color:#858585; text-align:center; cursor:pointer;background:#eee url(../images/go.png) no-repeat 96% center; background-size:0.6rem 0.9rem; }
-.bangding02 .btn{  font-size:0.85rem; 
-  display:block; width:8.2rem; height:2.14rem; line-height:2.14rem;
-   text-align:center; text-decoration:none;
-   position:absolute; left:50%; margin-left:-4.1rem;
-  }
-.bangding02 .lists li.btns{ margin:1.5rem 0;} 
-.bangding02 .forget{ margin-right:2rem; margin-top:0.8rem; color:#858585; text-decoration:none;} 
-  
+.bangding02 .btn{  font-size:0.85rem;
+    display:block; width:8.2rem; height:2.14rem; line-height:2.14rem;
+    text-align:center; text-decoration:none;
+    position:absolute; left:50%; margin-left:-4.1rem;
+}
+.bangding02 .lists li.btns{ margin:1.5rem 0;}
+.bangding02 .forget{ margin-right:2rem; margin-top:0.8rem; color:#858585; text-decoration:none;}
+
 .bangding02 .btn:hover{ text-decoration:underline;}
 
 
@@ -108,14 +108,14 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .findPassword01 .lists li .code img{ width:100%; height:2.7rem;display:block;}
 .findPassword01 .lists li .code:hover{ text-decoration:underline;}
 .findPassword01 .lists li .country{ color:#858585; text-align:center; cursor:pointer;background:#eee url(../images/go.png) no-repeat 96% center; background-size:0.6rem 0.9rem; }
-.findPassword01 .btn{  font-size:0.85rem; 
-  display:block; width:8.2rem; height:2.14rem; line-height:2.14rem;
-   text-align:center; text-decoration:none;
-   margin:1rem auto;
-    
-  }
-.findPassword01 .lists li.btns{ margin:1.5rem 0;} 
-.findPassword01 .forget{ margin-right:2rem; margin-top:0.8rem; color:#858585; text-decoration:none;} 
+.findPassword01 .btn{  font-size:0.85rem;
+    display:block; width:8.2rem; height:2.14rem; line-height:2.14rem;
+    text-align:center; text-decoration:none;
+    margin:1rem auto;
+
+}
+.findPassword01 .lists li.btns{ margin:1.5rem 0;}
+.findPassword01 .forget{ margin-right:2rem; margin-top:0.8rem; color:#858585; text-decoration:none;}
 .findPassword01 .btn:hover{ text-decoration:underline;}
 
 
@@ -159,7 +159,7 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .sy_order .box .paying{ background:#A8A8B7;}
 .sy_order .box .finish{ background:#A8A8B7;}
 
-		/*------fixed------*/
+/*------fixed------*/
 .order_pay{ position:fixed;  bottom:0; left:0;  box-shadow:0 0 4px rgba(0,0,0,0.4);  height:0; width:100%; background:rgba(0,0,0,0.9); overflow:hidden; }
 .order_pay p{ text-align:center; color:#fff; margin-top:0.6rem; }
 .order_pay .select{ width:10rem; margin:1.5rem auto 0;}
@@ -273,26 +273,26 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 
 .userCenter .content{ padding-top:2.85rem;}
 .userCenter .Uheader{
-	text-align:center;
-	background:#73B9FF;
-	font-size:1rem;
-	color: #fff;
-	line-height:2.85rem;
-	width: 100%;
-	height:2.85rem;
-	padding: 0 50px;
-	position:fixed;
-	top:0; left:0;
-	z-index:999;
+    text-align:center;
+    background:#73B9FF;
+    font-size:1rem;
+    color: #fff;
+    line-height:2.85rem;
+    width: 100%;
+    height:2.85rem;
+    padding: 0 50px;
+    position:fixed;
+    top:0; left:0;
+    z-index:999;
 }
 .userCenter .Uheader a{
-	background:url(../images/navIcon.png) no-repeat 0 center;
-	display: block;
-	width: 40px;
-	height:2.85rem;
-	position: absolute;
-	top: 0;
-	left: 10px;
+    background:url(../images/navIcon.png) no-repeat 0 center;
+    display: block;
+    width: 40px;
+    height:2.85rem;
+    position: absolute;
+    top: 0;
+    left: 10px;
 }
 .userCenter .content .box{ width:100%; position:relative;}
 .userCenter .content .box a.pic{ width:100%; display:block;}
@@ -304,6 +304,8 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 
 /*----------个人中心 我的订单----------*/
 .center_myOder .content{ width:100%; max-width:640px; margin:0 auto;}
+.center_myOder .content .logo{ width:4.6rem;display:block; margin:0 auto; margin-top:6.0rem; }
+.center_myOder .content .noOrder{ line-height:1.5rem;margin-top:10px;text-align: center; }
 .center_myOder .content .box{ width:100%; position:relative;}
 .center_myOder .content .box a.pic{ width:100%; display:block;}
 .center_myOder .content .box a img{ width:100%; display:block;}
@@ -360,6 +362,8 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 
 /*----------个人中心 随游订单----------*/
 .center_syOder .content{ width:100%; max-width:640px; margin:0 auto;}
+.center_syOder .content .logo{ width:4.6rem;display:block; margin:0 auto; margin-top:6.0rem; }
+.center_syOder .content .noOrder{ line-height:1.5rem;margin-top:10px;text-align: center; }
 .center_syOder .content .line{ margin-top:10px; margin-bottom:15px; border-bottom:1px solid #73b9ff;  }
 .center_syOder .content .syOdernav{ width:60%; margin:0 auto;}
 .center_syOder .content .syOdernav li{ float:left; width:50%; text-align:center; }
