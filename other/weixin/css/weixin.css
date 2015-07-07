@@ -271,7 +271,7 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 #menu .user .userPic img{ width:100%; display:block; }
 #menu .user .userName{ font-size:1rem;  color:#858585;}
 
-.userCenter .content{ padding-top:2.85rem;}
+.userCenter .content{ padding-top:2.85rem; max-width:640px; margin:0 auto;}
 .userCenter .Uheader{
 	text-align:center;
 	background:#73B9FF;
@@ -294,25 +294,20 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 	top: 0;
 	left: 10px;
 }
-.userCenter .content .box{ width:100%; position:relative;}
-.userCenter .content .box a.pic{ width:100%; display:block;}
+.userCenter .content .box{ width:100%; position:relative; background:#fff; margin-bottom:10px; box-sizing:border-box; }
+.userCenter .content .box a.pic{ width:50%; display:block; }
 .userCenter .content .box a img{ width:100%; display:block;}
-.userCenter .content .box .details{ background:rgba(0,0,0,0.7); width:100%; box-sizing:border-box; color:#fff; position:absolute; padding:2%; left:0; bottom:0;}
-.userCenter .content .box .details .title{ margin-bottom:4px; color:#fff; font-size:0.85rem;}
-.userCenter .content .box .details .colOrange{ color:#FFEA7F; font-size:0.85rem;}
-.userCenter .content .box .details .line img{ float:right; margin-left:3px;}
+.userCenter .content .box .details{ width:50%; padding:10px; box-sizing:border-box;  }
 
 /*----------个人中心 我的订单----------*/
 .center_myOder .content{ width:100%; max-width:640px; margin:0 auto;}
 .center_myOder .content .logo{ width:4.6rem;display:block; margin:0 auto; margin-top:6.0rem; }
 .center_myOder .content .noOrder{ line-height:1.5rem;margin-top:10px;text-align: center; }
-.center_myOder .content .box{ width:100%; position:relative;}
-.center_myOder .content .box a.pic{ width:100%; display:block;}
+.center_myOder .content .box{ width:100%; position:relative; background:#fff; margin-bottom:10px; box-sizing:border-box; }
+.center_myOder .content .box a.pic{ width:50%; display:block; }
 .center_myOder .content .box a img{ width:100%; display:block;}
-.center_myOder .content .box .details{ background:rgba(0,0,0,0.7); width:100%; box-sizing:border-box; color:#fff; position:absolute; padding:2%; left:0; bottom:0;}
-.center_myOder .content .box .details .title{ margin-bottom:4px; color:#fff; font-size:0.85rem;}
-.center_myOder .content .box .details .colOrange{ color:#FFEA7F; font-size:0.85rem;}
-.center_myOder .content .box .details .line img{ float:right; margin-left:3px;}
+.center_myOder .content .box .details{ width:50%; padding:10px; box-sizing:border-box;  }
+.center_myOder .content .box .data{ position:absolute; bottom:10px; left:50%; padding-left:10px; }
 
 /*----------个人中心 我的订单详情----------*/
 .cmyoderDetail .content{ width:100%; max-width:640px; margin:0 auto;}
@@ -439,9 +434,16 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .center_message02 .pass .btn:hover{ text-decoration:underline;}
 
 /*----------c随游---------*/
+.w_suiyou{ max-width:640px; margin:0 auto; }
 .w_suiyou .top{background:#97CBFF;  line-height:3rem; text-align:left; padding:0 10px; }
 .w_suiyou .top span{color:#fff;  }
-.w_suiyou .top .btn{  color:#fff; text-decoration:none; line-height:1.5rem; font-size:60px; font-weight:bold; vertical-align:middle; }
+.w_suiyou .top a img{ width:1.6rem; height:1.75rem; display:block; margin-top:0.5rem; }
+.w_suiyou .selects{  line-height:2rem; height:2rem; }
+.w_suiyou .selects a{ display:block; float:left; width:33.33%; text-align:center;   height:2rem; }
+.w_suiyou .selects a:nth-child(3){   text-align:right; }
+.w_suiyou .selects a:nth-child(1){   text-align:left; }
+.w_suiyou .selects a i{  background:url(../images/drop.png) no-repeat center center; display:inline-block; width:24px; height:14px; background-size:0.85rem 0.5rem; }
+.w_suiyou .top span{color:#fff;  }
 .w_suiyou .content{ width:100%; max-width:640px; margin:0 auto;}
 .w_suiyou .content .box{ width:100%; position:relative;}
 .w_suiyou .content .box a.pic{ width:100%; display:block;}
@@ -450,7 +452,12 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .w_suiyou .content .box .details .title{ margin-bottom:4px; color:#fff; font-size:0.85rem;}
 .w_suiyou .content .box .details .colOrange{ color:#FFEA7F; font-size:0.85rem;}
 .w_suiyou .content .box .details .line img{ float:right; margin-left:3px;}
-
+		/*----------c随游 prop---------*/
+.syprop{ position:fixed;bottom:0; left:0; width:100%; z-index:333; display:none;}		
+.syprop .sets{ box-shadow:0 0 10px rgba(0,0,0,0.5); text-align:center; width:100%; max-width:640px; background:#fff; margin:0 auto;}		
+.syprop .sets li{  line-height:2.6rem; border-bottom:1px solid #ddd;  }		
+.syprop .sets .titles{ color:#fff; line-height:1.4rem;  }		
+		
 /*-----------c随游筛选-------------*/
 .w_suiyouSelect p{ margin-top:10px; }
 .w_suiyouSelect .row{ display:table; width:100%; height:2.7rem; line-height:2.7rem; background:#fff; padding:0 0.5rem;  }
@@ -571,16 +578,11 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 #pagepiling .section .search_out .search::-webkit-input-placeholder{ color:#fff;}
 #pagepiling .section .search_out .btn{ width:2.5rem; height:2rem; margin-top:0.2rem; display:block; float:right; }
 #pagepiling .section .search_out .btn img{ width:2rem; height:2rem; display:block;  }
+#pagepiling .section .p1{ font-size:1rem; color:#fff; text-align:center; width:100%; margin-top:40%;}
+#pagepiling .section .btn02{font-size:1rem;  color:#fff; background:#73b9ff; width:9.7rem; height:2.14rem; 
+ line-height:2.14rem; display:block; margin:1rem auto 0; text-align:center; }
 
-#pagepiling .section .content{ width:100%; max-width:640px; margin:0 auto;}
-#pagepiling .section .content .box01{ width:100%; position:relative;}
-#pagepiling .section .content .box01 a.pic{ width:100%; display:block;}
-#pagepiling .section .content .box01 a img{ width:100%; display:block;}
-#pagepiling .section .content .box01 .details{  width:100%; box-sizing:border-box; color:#fff;
- position:absolute; padding:2%; left:0; bottom:0; background:rgba(0,0,0,0.7);}
-#pagepiling .section .content .box01 .details .title{ position:relative; top:0; left:0; margin:0; margin-bottom:4px;  color:#fff; font-size:0.85rem;}
-#pagepiling .section .content .box01 .details .colOrange{ color:#FFEA7F; font-size:0.85rem;}
-#pagepiling .section .content .box01 .details .line img{ float:right; margin-left:3px;}
+
 
 /*-----------随游详情------------*/
 .syDetailBanner{ width:100%; max-width:640px; margin:0 auto;   position:relative;}
