@@ -438,11 +438,21 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .w_suiyou .top{background:#97CBFF;  line-height:3rem; text-align:left; padding:0 10px; }
 .w_suiyou .top span{color:#fff;  }
 .w_suiyou .top a img{ width:1.6rem; height:1.75rem; display:block; margin-top:0.5rem; }
-.w_suiyou .selects{  line-height:2rem; height:2rem; }
+.w_suiyou .selects{  line-height:2rem; height:2rem; position:relative; }
 .w_suiyou .selects a{ display:block; float:left; width:33.33%; text-align:center;   height:2rem; }
+.w_suiyou .selects a.active{ color:#73b9ff; }
 .w_suiyou .selects a:nth-child(3){   text-align:right; }
 .w_suiyou .selects a:nth-child(1){   text-align:left; }
 .w_suiyou .selects a i{  background:url(../images/drop.png) no-repeat center center; display:inline-block; width:24px; height:14px; background-size:0.85rem 0.5rem; }
+
+		/*----------c随游 prop---------*/
+		
+.w_suiyou .selects .props{ width:100%; z-index:333; position:absolute; top:2rem; left:0; }		
+.w_suiyou .selects .syprop{ display:none;  width:100%; }		
+.w_suiyou .selects .syprop .sets{ box-shadow:0 0 10px rgba(0,0,0,0.5); text-align:center; width:100%; max-width:640px; background:#fff; margin:0 auto;}		
+.w_suiyou .selects .syprop .sets li{  line-height:2.6rem; border-bottom:1px solid #ddd;  }		
+.w_suiyou .selects .syprop .sets .titles{ color:#fff; line-height:1.4rem;  }		
+
 .w_suiyou .top span{color:#fff;  }
 .w_suiyou .content{ width:100%; max-width:640px; margin:0 auto;}
 .w_suiyou .content .box{ width:100%; position:relative;}
@@ -452,11 +462,6 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .w_suiyou .content .box .details .title{ margin-bottom:4px; color:#fff; font-size:0.85rem;}
 .w_suiyou .content .box .details .colOrange{ color:#FFEA7F; font-size:0.85rem;}
 .w_suiyou .content .box .details .line img{ float:right; margin-left:3px;}
-		/*----------c随游 prop---------*/
-.syprop{ position:fixed;bottom:0; left:0; width:100%; z-index:333; display:none;}		
-.syprop .sets{ box-shadow:0 0 10px rgba(0,0,0,0.5); text-align:center; width:100%; max-width:640px; background:#fff; margin:0 auto;}		
-.syprop .sets li{  line-height:2.6rem; border-bottom:1px solid #ddd;  }		
-.syprop .sets .titles{ color:#fff; line-height:1.4rem;  }		
 		
 /*-----------c随游筛选-------------*/
 .w_suiyouSelect p{ margin-top:10px; }
