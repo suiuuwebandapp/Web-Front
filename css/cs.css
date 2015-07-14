@@ -1739,6 +1739,24 @@ transition:1s;
 .suiyouHelp .down .introduce .icon li .text p span.icon{ margin-top:8px; border-radius:50%; display:inline-block; margin-right:20px; height:17px; width:17px;}
 .suiyouHelp .btn{ margin:40px auto 130px; font-size:20px; display:block; width:280px; height:40px; line-height:40px; text-align:center; }
 
+/*------------如何发布随游syhPro------------*/
+.syhPro{ display:none; background:#fff;position:fixed; top:110px; left:50%;  margin-left:-600px; z-index:9999; padding-bottom:170px;}
+.syhPro .top{ padding:70px 0 50px;}
+.syhPro .top p{ font-size:28px; text-align:center; line-height:60px;}
+.syhPro .down{ padding:0 50px;}
+.syhPro .down .introduce{ width:100%;  height:auto;}
+.syhPro .down .introduce .icon li{ border:2px solid #fff; cursor:pointer; padding:30px; height:280px;  width:280px; margin-right:33px; text-align:center; font-size:20px; float:left; _display:inline}
+.syhPro .down .introduce .icon li.nomg{margin-right:0;}
+.syhPro .down .introduce .icon li:hover{ border:2px solid #3dd9c3;}
+.syhPro .down .introduce .icon li .pic{ height:120px;}
+.syhPro .down .introduce .icon li .p1{ font-size:24px; color:#3dd9c3; margin-top:10px;}
+.syhPro .down .introduce .icon li .text{ position:relative; text-align:left; padding-top:10px;}
+.syhPro .down .introduce .icon li .text .line{ position:absolute; left:7px; top:20px; height:59%; width:2px;}
+.syhPro .down .introduce .icon li .text .line.last{ height:39%; }
+.syhPro .down .introduce .icon li .text p{ display:table; font-size:20px; line-height:28px; margin-bottom:20px;}
+.syhPro .down .introduce .icon li .text p span{ font-size:20px; display:table-cell; vertical-align:top;  width:280px;}
+.syhPro .down .introduce .icon li .text p span.icon{ margin-top:8px; border-radius:50%; display:inline-block; margin-right:20px; height:17px; width:17px;}
+
 
 
 
