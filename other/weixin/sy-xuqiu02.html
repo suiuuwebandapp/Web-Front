@@ -6,26 +6,94 @@
 <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
 <title>随游-填写需求</title>
 <link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/jquery.mmenu.css">
 <link rel="stylesheet" href="css/weixin.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+<script type="text/javascript" src="js/weixin.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('div#menu').mmenu();
+    });
+</script>
 </head>
 
 <body>
-<nav>随游-填写需求</nav>
-<div class="con sy_need02 clearfix">
-	<input type="text" placeholder="目的地城市" class="selet">
-    <p>出游人数</p>
-    <div class="row">
-        <a href="#" class="minus"></a> 
-        <input type="text" class="text" value="3">
-        <a href="#" class="add"></a>
-    </div>
-    <p>你在哪天需要随友？</p> 
-    <input type="date" class="sdate">
-    <p>写下你的旅行愿望</p> 
-    <textarea></textarea>
-    
-    <a href="#" class="btn">让随游来帮你</a>
+<div id="page" class="userCenter">
 
+    <div id="menu" class="navBar">
+        <ul>
+            <li class="user">
+            	<a href="#" class="userPic"><img src="images/logo02.png"></a>
+                <span class="userName">soeitreo</span>
+            
+            </li>
+            <li><a href="#">我的随游</a></li>
+            <li><a href="#">我的定制</a></li>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#" class="active">随游订单</a></li>
+            <li><a href="#">收件箱<b class="tip"></b></a></li>
+            <li><a href="#">退出</a></li>
+        </ul>
+    </div>
+    <div class="Uheader header mm-fixed-top">
+        <a href="#menu"></a>
+        <p class="navTop">定制详情</p>
+        
+    </div>
+    <div class="con sy_need02 clearfix">
+        <input type="text" placeholder="目的地城市" class="selet">
+        <p>出游人数</p>
+        <div class="row">
+            <a href="#" class="minus"></a> 
+            <input type="text" class="text" value="3">
+            <a href="#" class="add"></a>
+        </div>
+        <p>你在哪天需要随友？</p> 
+        <input type="date" class="sdate" placeholder="选择日期">
+        <p>旅行需求</p>
+        <div class="box">
+        	<p class="type">舒适度</p>
+            <div class="sels clearfix">
+            	<a href="###" class="active">经济</a>
+            	<a href="###">舒适</a>
+            	<a href="###">豪华</a>
+            </div>
+        </div>
+        <div class="box">
+        	<p class="type">类型</p>
+            <div class="sels clearfix">
+            	<a href="###" class="active">家庭</a>
+            	<a href="###">美食</a>
+            	<a href="###">惊险</a>
+            	<a href="###">博物馆</a>
+            	<a href="###">浪漫</a>
+            	<a href="###">猎奇</a>
+            	<a href="###">购物</a>
+            	<a href="###">自然</a>
+            
+            </div>
+        </div>
+        <div class="box">
+        	<p class="type">导游</p>
+            <div class="sels clearfix">
+            	<a href="###" class="active">男</a>
+            	<a href="###">女</a>
+            	<a href="###">留学生</a>
+            	<a href="###">移民</a>
+            	<a href="###">专业导游</a>
+            
+            </div>
+        </div>
+        <p>其他留言</p> 
+        <textarea></textarea>
+        <div class="btnDiv">
+        <a href="#" class="btn">提交定制</a>
+        </div>
+        
+    
+    </div>
+    
 </div>
 
 
