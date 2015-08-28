@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="css/weixin.css">
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+<script type="text/javascript" src="js/weixin.js"></script>
 <script type="text/javascript">
     $(function() {
         $('div#menu').mmenu();
@@ -17,7 +18,8 @@
 </script>
 </head>
 
-<body class="bgwhite">
+<body>
+
 <div id="page" class="userCenter">
 
     <div id="menu" class="navBar">
@@ -37,21 +39,27 @@
     </div>
     <div class="Uheader header mm-fixed-top">
         <a href="#menu"></a>
-        <p class="navTop">搜索</p>
+        <p class="navTop">设置</p>
         
     </div>
-    <div class="con w_suiyou02 clearfix">
-        <div class="search_out clearfix">
-            <div class="search fl">
-                <input type="text" placeholder="输入你感兴趣的国家/地点">
-                <a href="#" class="searchIcon"><img src="images/top-search.png"></a>
-            </div>
-            <input type="button" value="取消" class="cancel fr">
-        
+    <div class="con cshezhi clearfix">
+    	<p class="title">个人信息</p>
+    	<div class="box">
+        	<p>昵称：<span>xiaolehuo</span></p>
+        	<p>电话：<span>话/待完善</span></p>
+        	<p>邮箱善：<span>邮箱/待完</span></p>
+            <a href="###" class="setBtn"></a>
         </div>
-        <div class="clearfix">
-            <p class="nothing">抱歉&nbsp;&nbsp;没搜索到相关内容</p>
-        </div> 
+    	<p class="关于随游">关于随游</p>
+    	<div class="box">
+        <ul class="list">
+        	<li>我们提供</li>
+        	<li>订购须知</li>
+        	<li>联系我们</li>
+        
+        </ul>
+
+        </div>
     </div>
 </div>
 

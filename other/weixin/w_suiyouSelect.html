@@ -6,10 +6,17 @@
 <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
 <title>随游更多筛选</title>
 <link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/jquery.mmenu.css">
 <link rel="stylesheet" href="css/weixin.css">
 <link rel="stylesheet" href="css/jquery-ui.css">
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('div#menu').mmenu();
+    });
+</script>
 <script type="text/javascript">
 
 /*-----随游-价格区间拖动条----*/
@@ -33,27 +40,63 @@
 </head>
 
 <body>
-<div class="con w_suiyouSelect clearfix">
-    <p>出游人数</p>
-    <div class="row">
-        <a href="#" class="minus"></a> 
-        <input type="text" class="text" value="3">
-        <a href="#" class="add"></a>
-    </div>
-    <p>类型</p> 
-    <div class="type clearfix">
-    	<span class="active">家庭</span><span>购物</span><span>自然</span><span>惊险</span><span>浪漫</span><span>博物馆</span><span>猎奇</span>
-    </div>
-    <div class="price-select clearfix">
-        <p>
-          <label for="amount">价格:</label>
-          <input type="text" id="amount">
-        </p>
-        <div id="slider-range"></div>
-    </div>
-    
-    <a href="#" class="btn">确定</a>
+<div id="page" class="userCenter">
 
+    <div id="menu" class="navBar">
+        <ul>
+            <li class="user">
+            	<a href="#" class="userPic"><img src="images/logo02.png"></a>
+                <span class="userName">soeitreo</span>
+            
+            </li>
+            <li><a href="#">我的随游</a></li>
+            <li><a href="#">我的定制</a></li>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#" class="active">随游订单</a></li>
+            <li><a href="#">收件箱<b class="tip"></b></a></li>
+            <li><a href="#">退出</a></li>
+        </ul>
+    </div>
+    <div class="Uheader header mm-fixed-top">
+        <a href="#menu"></a>
+        <p class="navTop">筛选搜索</p>
+        
+    </div>
+    <div class="con w_suiyouSelect clearfix">
+        <div class="search_out clearfix">
+            <div class="search fl">
+                <input type="text" placeholder="输入你感兴趣的国家/地点">
+                <a href="#" class="searchIcon"><img src="images/top-search.png"></a>
+            </div>
+            <input type="button" value="取消" class="cancel fr">
+        
+        </div>
+        <p>分类</p> 
+        <div class="type clearfix">
+            <span class="active">慢性探索</span><span>个性玩法</span><span>交通服务</span>
+        </div>
+        <p>出游人数</p>
+        <div class="row">
+            <a href="#" class="minus"></a> 
+            <input type="text" class="text" value="3">
+            <a href="#" class="add"></a>
+        </div>
+        
+        <p>类型</p> 
+        <div class="type clearfix">
+            <span class="active">家庭</span><span>购物</span><span>自然</span><span>惊险</span><span>浪漫</span><span>博物馆</span><span>猎奇</span>
+        </div>
+        <div class="price-select clearfix">
+            <p>
+              <label for="amount">价格:</label>
+              <input type="text" id="amount">
+            </p>
+            <div id="slider-range"></div>
+        </div>
+        
+        <a href="#" class="btn">确定</a>
+    
+    </div>
 </div>
 
 

@@ -10,7 +10,7 @@ table{border-collapse:collapse;border-spacing:0;}
 img{border:none;}
 a{ text-decoration:none; color:#858585;}
 ol,ul,li{vertical-align:middle;}
-input,textarea{font-family:"Microsoft YaHei"; outline:none; font-size:0.85rem; -webkit-appearance: none; background:none;}
+input,textarea{ color:#aaa;font-family:"Microsoft YaHei"; outline:none; font-size:0.85rem; -webkit-appearance: none; background:none;}
 textarea{resize:none;}
 textarea::-webkit-input-placeholder,
 textarea::-moz-input-placeholder,

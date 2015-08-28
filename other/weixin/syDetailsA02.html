@@ -4,106 +4,164 @@
 <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
 <title>随游详情</title>
 <link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/jquery.mmenu.css">
 <link rel="stylesheet" href="css/weixin.css">
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
 <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('div#menu').mmenu();
+    });
+</script>
 </head>
 <body class="bgwhite">
-<div class="syDetailBanner02">
-    <!--banner开始-->
-    <div class="bd">
-        <ul class="banners">
-            <li class="banner01"><img src="images/img01.jpg"></li>
-            <li class="banner01"><img src="images/img02.jpg"></li>
-            <li class="banner01"><img src="images/img03.jpg"></li>
-        </ul>
-<!--   
-       <div class="banner-btn">
-            <a class="prev" href="javascript:void(0);"></a>
-            <a class="next" href="javascript:void(0);"></a>
-       </div>
---> 
-    <div class="hd"><ul></ul></div>  
-    </div>
-    <!--banner结束-->
-    <script type="text/javascript">
-    $(document).ready(function(){
-		
-/*    
-        $(".prev,.next").hover(function(){
-            $(this).stop(true,false).fadeTo("show",1);
-        },function(){
-            $(this).stop(true,false).fadeTo("show",1);
-        });
-        
-*/ 
+<div id="page" class="userCenter">
 
-     $(".syDetailBanner02").slide({
-            titCell:".hd ul",
-            mainCell:".banners",
-            effect:"fold",
-            interTime:3500,
-            delayTime:500,
-            autoPlay:true,
-            autoPage:true, 
-            trigger:"click" 
-        });
-    
-    });
-    </script>
-</div>
-<div class="syContent02 con">
-    <div class="top clearfix"> 
-        <a href="#" class="userPic"><img src="images/logo02.png"></a>
-        <span class="userName">吴青筱</span>
-        <a href="#" class="collect"></a>
-    </div>  
-    <p>法国巴黎最浪漫温馨之路</p>
-    <p class="bq"><span>吃货</span><span>购物</span><span>奇葩</span></p>
-    <p class="adress">英国，伦敦</p>
-    <p class="line clearfix">
-        <b class="colOrange">￥2000</b>
-        <img src="images/xing01.png" width="13" height="13">
-        <img src="images/xing01.png" width="13" height="13">
-        <img src="images/xing02.png" width="13" height="13">
-        <img src="images/xing02.png" width="13" height="13">
-        <img src="images/xing02.png" width="13" height="13">
-    </p>
-    <div class="map"><img src="images/map.jpg" class="mapPic"></div>
-    <ul class="details clearfix">
-        <li>
-            <span class="icon icon1">随游
-                <b> 09:00 AM -7:00 PM</b>
-            </span>
-        </li>
-        <li><span class="icon icon2">随游时长<b id="tripTime">10</b>小时</span></li>
-        <li class="last"><span class="icon icon3">随友最多接待<b id="maxPeopleCount">7</b>人</span></li>
-    </ul>
-    <h3 class="title colGreen">详情描述</h3>
-    <p>威斯敏斯特宫（Palace of Westminster），又称国会大厦（Houses of Parliament）是英国国会（包括上议院和下议院）的所在地。威斯敏斯特宫是哥特复兴式建筑的代表作之一，1987年被列为世界文化遗产。 该建筑包括约1,100个独立房间、100座楼梯和4.8公里长的走廊。尽管今天的宫殿基本上由19世纪重修而来，但依然保留了初建时的许多历史遗迹，如威斯敏斯特厅（可追溯至1097年），今天用作重大的公共庆典仪式，如国葬前的陈列等</p>
-    <img src="images/1.jpg" class="pics">
-    <p class="title01">威斯敏斯特宫</p>
-    <p>威斯敏斯特宫（Palace of Westminster），又称国会大厦（Houses of Parliament）是英国国会（包括上议院和下议院）的所在地。威斯敏斯特宫是哥特复兴式建筑的代表作之一，1987年被列为世界文化遗产。 该建筑包括约1,100个独立房间、100座楼梯和4.8公里长的走廊。尽管今天的宫殿基本上由19世纪重修而来，但依然保留了初建时的许多历史遗迹，如威斯敏斯特厅（可追溯至1097年），今天用作重大的公共庆典仪式，如国葬前的陈列等。</p>
-    <img src="images/1.jpg" class="pics">
-    <p class="title01">威斯敏斯特宫</p>
-    <p>威斯敏斯特宫（Palace of Westminster），又称国会大厦（Houses of Parliament）是英国国会（包括上议院和下议院）的所在地。威斯敏斯特宫是哥特复兴式建筑的代表作之一，1987年被列为世界文化遗产。 该建筑包括约1,100个独立房间、100座楼梯和4.8公里长的走廊。尽管今天的宫殿基本上由19世纪重修而来，但依然保留了初建时的许多历史遗迹，如威斯敏斯特厅（可追溯至1097年），今天用作重大的公共庆典仪式，如国葬前的陈列等。</p>
-    <div class="tuijian bgGreen clearfix">
-        <a href="#" class="left"><img src="images/logo02.png"></a>
-    	<div class="right">
-        	<p>推荐理由：</p>
-            <p>依然保留了初建时的许多历史遗迹，如威斯敏斯特厅</p>
+    <div id="menu" class="navBar">
+        <ul>
+            <li class="user">
+            	<a href="#" class="userPic"><img src="images/logo02.png"></a>
+                <span class="userName">soeitreo</span>
+            
+            </li>
+            <li><a href="#">我的随游</a></li>
+            <li><a href="#">我的定制</a></li>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#" class="active">随游订单</a></li>
+            <li><a href="#">收件箱<b class="tip"></b></a></li>
+            <li><a href="#">退出</a></li>
+        </ul>
+    </div>
+    <div class="Uheader header mm-fixed-top">
+        <a href="#menu"></a>
+        <p class="navTop">法国巴黎最浪漫温馨之路</p>
+        
+    </div>
+
+    <div class="syDetailBanner">
+        <!--banner开始-->
+        <div class="bd">
+            <ul class="banners">
+                <li class="banner01"><img src="images/img01.jpg"></li>
+                <li class="banner01"><img src="images/img02.jpg"></li>
+                <li class="banner01"><img src="images/img03.jpg"></li>
+            </ul>
+    <!--   
+           <div class="banner-btn">
+                <a class="prev" href="javascript:void(0);"></a>
+                <a class="next" href="javascript:void(0);"></a>
+           </div>
+    --> 
+        <div class="hd"><ul></ul></div>  
         </div>
+        <!--banner结束-->
+        <script type="text/javascript">
+        $(document).ready(function(){
+            
+    /*    
+            $(".prev,.next").hover(function(){
+                $(this).stop(true,false).fadeTo("show",1);
+            },function(){
+                $(this).stop(true,false).fadeTo("show",1);
+            });
+            
+    */ 
     
+         $(".syDetailBanner").slide({
+                titCell:".hd ul",
+                mainCell:".banners",
+                effect:"fold",
+                interTime:3500,
+                delayTime:500,
+                autoPlay:true,
+                autoPage:true, 
+                trigger:"click" 
+            });
+        
+        });
+        </script>
     </div>
-    
-  <h3 class="title colGreen">价格内容</h3>
-    <div class="contian clearfix">
-    	<span><img src="images/syhas.png">接/送机费用</span><span><img src="images/syhas.png">用车费</span><span><img src="images/syhas.png">用车费</span><span><img src="images/syhas.png">用车费</span><span><img src="images/syhas.png">用车费</span><span><img src="images/syhas.png" >用车费</span><span><img src="images/syhas.png" >用车费</span><span><img src="images/syno.png" >用车费</span> 
-    </div>
-    <div class="btns clearfix">
-    	<a href="#" class="bgGreen fl">咨询</a>
-    	<a href="#" class="bgOrange fr">预定</a>
-    
+    <div class="syContent syContent02 con">
+        <div class="top clearfix"> 
+            <a href="#" class="userPic"><img src="images/logo02.png"></a>
+            <span class="userName">吴青筱</span>
+            <p class="adress">英国，伦敦</p>
+            <a href="#" class="collect"></a>
+        </div>  
+        <p class="bq"><span>吃货</span><span>购物</span><span>奇葩</span></p>
+        <ul class="details clearfix">
+            <li>
+                <span class="icon icon1">同伴最多
+                    <b> 4人</b>
+                </span>
+            </li>
+            <li><span class="icon icon2"> 9:00-19:00</span></li>
+            <li class="last"><span class="icon icon3">￥2000</span></li>
+        </ul>
+        <div class="bgbox"> 
+            <h3 class="title colGreen">详情描述</h3>
+            <p>威斯敏斯特宫（Palace of Westminster），又称国会大厦（Houses of Parliament）是英国国会（包括上议院和下议院）的所在地。威斯敏斯特宫是哥特复兴式建筑的代表作之一，1987年被列为世界文化遗产。 该建筑包括约1,100个独立房间、100座楼梯和4.8公里长的走廊。尽管今天的宫殿基本上由19世纪重修而来，但依然保留了初建时的许多历史遗迹，如威斯敏斯特厅（可追溯至1097年），今天用作重大的公共庆典仪式，如国葬前的陈列等</p>
+            <img src="images/1.jpg" class="pics">
+            <p class="title01">威斯敏斯特宫</p>
+            <p>威斯敏斯特宫（Palace of Westminster），又称国会大厦（Houses of Parliament）是英国国会（包括上议院和下议院）的所在地。威斯敏斯特宫是哥特复兴式建筑的代表作之一，1987年被列为世界文化遗产。 该建筑包括约1,100个独立房间、100座楼梯和4.8公里长的走廊。尽管今天的宫殿基本上由19世纪重修而来，但依然保留了初建时的许多历史遗迹，如威斯敏斯特厅（可追溯至1097年），今天用作重大的公共庆典仪式，如国葬前的陈列等。</p>
+            <img src="images/1.jpg" class="pics">
+            <p class="title01">威斯敏斯特宫</p>
+            <p>威斯敏斯特宫（Palace of Westminster），又称国会大厦（Houses of Parliament）是英国国会（包括上议院和下议院）的所在地。威斯敏斯特宫是哥特复兴式建筑的代表作之一，1987年被列为世界文化遗产。 该建筑包括约1,100个独立房间、100座楼梯和4.8公里长的走廊。尽管今天的宫殿基本上由19世纪重修而来，但依然保留了初建时的许多历史遗迹，如威斯敏斯特厅（可追溯至1097年），今天用作重大的公共庆典仪式，如国葬前的陈列等。</p>
+        </div>            
+        <div class="tuijian bgGreen clearfix">
+            <a href="#" class="left"><img src="images/logo02.png"></a>
+            <div class="right">
+                <p>推荐理由：</p>
+                <p>依然保留了初建时的许多历史遗迹，如威斯敏斯特厅</p>
+            </div>
+        
+        </div>
+        
+        <h3 class="title colGreen">价格内容</h3>
+        <div class="contian clearfix">
+            <span><img src="images/syhas.png">接/送机费用</span><span><img src="images/syhas.png">用车费</span><span><img src="images/syhas.png">用车费</span><span><img src="images/syhas.png">用车费</span><span><img src="images/syhas.png">用车费</span><span><img src="images/syhas.png" >用车费</span><span><img src="images/syhas.png" >用车费</span><span><img src="images/syno.png" >用车费</span> 
+        </div>
+        <p class="line clearfix">
+            <b>用户评价10</b>
+            <img src="images/xing01.png" width="13" height="13">
+            <img src="images/xing01.png" width="13" height="13">
+            <img src="images/xing02.png" width="13" height="13">
+            <img src="images/xing02.png" width="13" height="13">
+            <img src="images/xing02.png" width="13" height="13">
+        </p>
+        <ul class="weblist clearfix">
+        	<li>
+                <div class="box clearfix"> 
+                    <a href="#" class="userPic"><img src="images/logo02.png"></a>
+                    <span class="userName">吴青筱</span>
+                    <p class="text">大道两旁皆是色彩缤纷的花园和雅致的风味餐厅</p>                    
+                </div>  
+            
+            </li>
+        	<li>
+                <div class="box clearfix"> 
+                    <a href="#" class="userPic"><img src="images/logo02.png"></a>
+                    <span class="userName">吴青筱</span>
+                    <p class="text">大道两旁皆是色彩缤纷的花园和雅致的风味餐厅</p>                    
+                </div>  
+            
+            </li>
+        	<li>
+                <div class="box clearfix"> 
+                    <a href="#" class="userPic"><img src="images/logo02.png"></a>
+                    <span class="userName">吴青筱</span>
+                    <p class="text">大道两旁皆是色彩缤纷的花园和雅致的风味餐厅</p>                    
+                </div>  
+            
+            </li>
+        
+        </ul>
+        <div class="btns clearfix">
+            <a href="#" class="bgGreen fl">咨询</a>
+            <a href="#" class="bgOrange fr">预定</a>
+        
+        </div>
     </div>
 </div>
 </body>

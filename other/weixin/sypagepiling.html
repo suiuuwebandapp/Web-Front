@@ -4,10 +4,21 @@
 <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
 <title>随游</title>
 <link rel="stylesheet" href="css/weixin.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/jquery.mmenu.css">
 <link rel="stylesheet" href="css/pagepiling.css" />
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <!-- 上下滚动JS/css play -->
+
+<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+<script type="text/javascript" src="js/weixin.js"></script>
 <script type="text/javascript" src="js/pagepiling.js"></script>
+
+<script type="text/javascript">
+    $(function() {
+        $('div#menu').mmenu();
+    });
+</script>
 <script type="text/javascript">
 $(function() {
 	$('#pagepiling').pagepiling({
@@ -21,66 +32,75 @@ $(function() {
 
 </script>
 <!-- 上下滚动JS/css stop -->
-
 </head>
 <body>
-<div id="pagepiling">
-    <div class="section" id="section1">
-        <div class="box">
-            <h2 class="title">澳大利亚</h2>
-            <p class="detail">和神兽一起玩耍</p>
-            <div class="search_out">
-                <input type="text" placeholder="你的旅行目的地" class="search">
-                <a href="###" class="btn"><img src="images/top-search.png"> </a>
-            </div>
-        
-        </div>
-        <img src="images/pic01.jpg" class="pics">
-    </div>
-    <div class="section" id="section2">
-        <div class="box">
-            <h2 class="title">澳大利亚</h2>
-            <p class="detail">和神兽一起玩耍</p>
-            <div class="search_out">
-                <input type="text" placeholder="你的旅行目的地" class="search">
-                <a href="###" class="btn"><img src="images/top-search.png"> </a>
-            </div>
-        </div>
-        <img src="images/pic02.jpg" class="pics">
+<div id="page" class="userCenter">
 
+    <div id="menu" class="navBar">
+        <ul>
+            <li class="user">
+            	<a href="#" class="userPic"><img src="images/logo02.png"></a>
+                <span class="userName">soeitreo</span>
+            
+            </li>
+            <li><a href="#">我的随游</a></li>
+            <li><a href="#">我的定制</a></li>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#" class="active">随游订单</a></li>
+            <li><a href="#">收件箱<b class="tip"></b></a></li>
+            <li><a href="#">退出</a></li>
+        </ul>
     </div>
-    <div class="section" id="section3">
-        <div class="box">
-            <h2 class="title">澳大利亚</h2>
-            <p class="detail">和神兽一起玩耍</p>
-            <div class="search_out">
-                <input type="text" placeholder="你的旅行目的地" class="search">
-                <a href="###" class="btn"><img src="images/top-search.png"> </a>
+    <div class="Uheader header mm-fixed-top">
+        <a href="#menu"></a>
+        <div class="search_out">
+            <input type="text" placeholder="你的旅行目的地" class="search">
+            <a href="###" class="btn"><img src="images/top-search.png"> </a>
+        </div>
+        
+    </div>
+    <div id="pagepiling">
+        <div class="section" id="section1">
+            <div class="box">
+                <h2 class="title">澳大利亚</h2>
+                <p class="detail">和神兽一起玩耍</p>
             </div>
-        
+            <img src="images/pic01.jpg" class="pics">
         </div>
-        <img src="images/pic03.jpg" class="pics">
-    </div>
-    <div class="section" id="section4">
-        <div class="box">
-            <h2 class="title">澳大利亚</h2>
-            <p class="detail">和神兽一起玩耍</p>
-            <div class="search_out">
-                <input type="text" placeholder="你的旅行目的地" class="search">
-                <a href="###" class="btn"><img src="images/top-search.png"> </a>
+        <div class="section" id="section2">
+            <div class="box">
+                <h2 class="title">澳大利亚</h2>
+                <p class="detail">和神兽一起玩耍</p>
             </div>
-        
+            <img src="images/pic02.jpg" class="pics">
+    
         </div>
-        <img src="images/pic04.jpg" class="pics">
-    </div>
-    <div class="section" id="section5">
-        <div class="box">
-        	<p class="p1">找不到您想要的体验？</p>
-            <a href="#" class="btn02">订制服务</a>
+        <div class="section" id="section3">
+            <div class="box">
+                <h2 class="title">澳大利亚</h2>
+                <p class="detail">和神兽一起玩耍</p>
+            
+            </div>
+            <img src="images/pic03.jpg" class="pics">
         </div>
-        <img src="images/pic05.jpg" class="pics">
-        
+        <div class="section" id="section4">
+            <div class="box">
+                <h2 class="title">澳大利亚</h2>
+                <p class="detail">和神兽一起玩耍</p>
+            
+            </div>
+            <img src="images/pic04.jpg" class="pics">
+        </div>
+        <div class="section" id="section5">
+            <div class="box">
+                <p class="p1">找不到您想要的体验？</p>
+                <a href="#" class="btn02">订制服务</a>
+            </div>
+            <img src="images/pic05.jpg" class="pics">
+            
+        </div>
     </div>
 </div>
+
 </body>
 </html>
