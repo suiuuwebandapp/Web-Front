@@ -959,6 +959,11 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 /*-----------设置-个人资料-设置---------*/
 .Uheader .sures{ left:auto; right:10px; background:none; width:auto; color:#fff;}
 .cshezhi_ziliaoSet input{ height:2.5rem; line-height:2.5rem;  display:block; width:100%; padding:0 10px;  background:#fff;}
+.cshezhi_ziliaoSet .phArea{ margin-bottom:10px; outline:none; font-size:0.8rem; color:#858585; border:none; height:2.5rem; line-height:2.5rem;  display:block; width:100%; padding:0 10px;  background:#fff;}
+.cshezhi_ziliaoSet .line{ margin-top:10px; height:2.5rem; line-height:2.5rem;   width:100%;  }
+.cshezhi_ziliaoSet .line input{ width:68%; float:left;  }
+.cshezhi_ziliaoSet .line .codes{ text-align:center; width:30%; float:right; display:block; background:#FFAA00; color:#fff; border-radius:5px;  }
+
 .cshezhi_ziliaoSet textarea{ padding:10px; min-height:8rem; width:100%; background:#fff; display:block; }
 .cshezhi_ziliaoSet .tip{ margin-top:14px; }
 
@@ -1006,6 +1011,12 @@ nav{ height:3rem; line-height:3rem; width:100%; text-align:center; background:#6
 .cshezhi_xuzhi .box{ margin-bottom:15px; padding:10px; background:#fff;}
 .cshezhi_xuzhi .box .title{ color:#333;}
 .cshezhi_xuzhi .box p{ margin-bottom:15px;}
+
+/*-----------设置—Pro--------*/
+.cshezhiPro{ display:none; border-radius:5px;  background:rgba(0,0,0,0.8); height: auto; width:80%; padding:20px; position:fixed; top:30%; left:50%; margin-left:-40%;}
+.cshezhiPro p{ line-height:1.8rem;font-size:1rem; color:#fff; text-align:center;}
+.cshezhiPro .closes{ height:24px; width:24px; position:absolute; top:10px; right:10px; background:url(../images/close.png) no-repeat 0 0; display:block;}
+.cshezhiPro .smile{ display:block; margin:10px auto; width:60px;  }
 
 
 
