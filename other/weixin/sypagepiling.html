@@ -6,32 +6,15 @@
 <link rel="stylesheet" href="css/weixin.css">
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/jquery.mmenu.css">
-<link rel="stylesheet" href="css/pagepiling.css" />
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<!-- 上下滚动JS/css play -->
-
+<script type="text/javascript" src="js/myTab.js"></script>
 <script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
-<script type="text/javascript" src="js/weixin.js"></script>
-<script type="text/javascript" src="js/pagepiling.js"></script>
-
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript">
     $(function() {
         $('div#menu').mmenu();
     });
 </script>
-<script type="text/javascript">
-$(function() {
-	$('#pagepiling').pagepiling({
-    sectionsColor: ['#fff','#fff', '#fff', '#fff','#fff'],
-    navigation: {
-    	'position': 'right',
-   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Pgae 5']
-   	}
-  });
-});
-
-</script>
-<!-- 上下滚动JS/css stop -->
 </head>
 <body>
 <div id="page" class="userCenter">
@@ -59,47 +42,176 @@ $(function() {
         </div>
         
     </div>
-    <div id="pagepiling">
-        <div class="section" id="section1">
-            <div class="box">
-                <h2 class="title">澳大利亚</h2>
-                <p class="detail">和神兽一起玩耍</p>
+    <div class="indexBanner">
+            <!--banner开始-->
+            <div class="bd">
+                <ul class="banners">
+                    <li class="banner01">
+                    	<p class="title">大手拉小手的旅行</p>
+                        <img src="images/img01.jpg">
+                    </li>
+                    <li class="banner01">
+                    	<p class="title">小手的旅行</p>
+                        <img src="images/img02.jpg">
+                    </li>
+                </ul>
+            <div class="hd"><ul></ul></div>  
             </div>
-            <img src="images/pic01.jpg" class="pics">
-        </div>
-        <div class="section" id="section2">
-            <div class="box">
-                <h2 class="title">澳大利亚</h2>
-                <p class="detail">和神兽一起玩耍</p>
-            </div>
-            <img src="images/pic02.jpg" class="pics">
-    
-        </div>
-        <div class="section" id="section3">
-            <div class="box">
-                <h2 class="title">澳大利亚</h2>
-                <p class="detail">和神兽一起玩耍</p>
+            <!--banner结束-->
+            <script type="text/javascript">
+            $(document).ready(function(){
+                
             
-            </div>
-            <img src="images/pic03.jpg" class="pics">
-        </div>
-        <div class="section" id="section4">
-            <div class="box">
-                <h2 class="title">澳大利亚</h2>
-                <p class="detail">和神兽一起玩耍</p>
+                $(".prev,.next").hover(function(){
+                    $(this).stop(true,false).fadeTo("show",1);
+                },function(){
+                    $(this).stop(true,false).fadeTo("show",1);
+                });
+             $(".indexBanner").slide({
+                    titCell:".hd ul",
+                    mainCell:".banners",
+                    effect:"fold",
+                    interTime:3500,
+                    delayTime:500,
+                    autoPlay:true,
+                    autoPage:true, 
+                    trigger:"click" 
+                });
             
-            </div>
-            <img src="images/pic04.jpg" class="pics">
+            });
+            </script>
+        </div> 
+    <div class="indexCon">
+        <a href="#" class="btn">开始你的专属定制<img src="images/dz.png"></a>
+        <div class="tabs">
+            <ul class="top tabTitle clearfix">
+                <li><a href="###" class="active">慢性探索</a></li>
+                <li><a href="###">个性玩法</a></li>
+                <li><a href="###">交通服务</a></li>
+            </ul>
         </div>
-        <div class="section" id="section5">
+        <div class="down tabCon" style="display:block;">
             <div class="box">
-                <p class="p1">找不到您想要的体验？</p>
-                <a href="#" class="btn02">订制服务</a>
+                <a href="" class="pic"><img src="images/img01.jpg"></a>
+                <div class="details">
+                    <h3 class="title">法国巴黎最浪漫温馨之路</h3>
+                    <p class="line clearfix">
+                        <b class="colOrange">￥2000</b>
+                        <img src="images/xing01.png" width="13" height="13">
+                        <img src="images/xing01.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <span>20条评论</span>
+                        <span>10人去过</span>
+                    </p>
+                </div>
             </div>
-            <img src="images/pic05.jpg" class="pics">
-            
+            <div class="box">
+                <a href="" class="pic"><img src="images/img01.jpg"></a>
+                <div class="details">
+                    <h3 class="title">法国巴黎最浪漫温馨之路</h3>
+                    <p class="line clearfix">
+                        <b class="colOrange">￥2000</b>
+                        <img src="images/xing01.png" width="13" height="13">
+                        <img src="images/xing01.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <span>20条评论</span>
+                        <span>10人去过</span>
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="" class="pic"><img src="images/img01.jpg"></a>
+                <div class="details">
+                    <h3 class="title">法国巴黎最浪漫温馨之路</h3>
+                    <p class="line clearfix">
+                        <b class="colOrange">￥2000</b>
+                        <img src="images/xing01.png" width="13" height="13">
+                        <img src="images/xing01.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <span>20条评论</span>
+                        <span>10人去过</span>
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="down tabCon">
+            <div class="box">
+                <a href="" class="pic"><img src="images/img01.jpg"></a>
+                <div class="details">
+                    <h3 class="title">法国巴黎最浪漫温馨之路</h3>
+                    <p class="line clearfix">
+                        <b class="colOrange">￥2000</b>
+                        <img src="images/xing01.png" width="13" height="13">
+                        <img src="images/xing01.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <span>20条评论</span>
+                        <span>10人去过</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="down tabCon">
+            <div class="box">
+                <a href="" class="pic"><img src="images/img01.jpg"></a>
+                <div class="details">
+                    <h3 class="title">法国巴黎最浪漫温馨之路</h3>
+                    <p class="line clearfix">
+                        <b class="colOrange">￥2000</b>
+                        <img src="images/xing01.png" width="13" height="13">
+                        <img src="images/xing01.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <span>20条评论</span>
+                        <span>10人去过</span>
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="" class="pic"><img src="images/img01.jpg"></a>
+                <div class="details">
+                    <h3 class="title">法国巴黎最浪漫温馨之路</h3>
+                    <p class="line clearfix">
+                        <b class="colOrange">￥2000</b>
+                        <img src="images/xing01.png" width="13" height="13">
+                        <img src="images/xing01.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <span>20条评论</span>
+                        <span>10人去过</span>
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <a href="" class="pic"><img src="images/img01.jpg"></a>
+                <div class="details">
+                    <h3 class="title">法国巴黎最浪漫温馨之路</h3>
+                    <p class="line clearfix">
+                        <b class="colOrange">￥2000</b>
+                        <img src="images/xing01.png" width="13" height="13">
+                        <img src="images/xing01.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <img src="images/xing02.png" width="13" height="13">
+                        <span>20条评论</span>
+                        <span>10人去过</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>   
 </div>
 
 </body>
