@@ -8,33 +8,15 @@
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/jquery.mmenu.css">
 <link rel="stylesheet" href="css/weixin.css">
-<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="css/nouislider.css">
+
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script src="js/nouislider.min.js"></script>
 <script type="text/javascript">
     $(function() {
         $('div#menu').mmenu();
     });
-</script>
-<script type="text/javascript">
-
-/*-----随游-价格区间拖动条----*/
-  $(function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 10000,
-      values: [ 0, 5000 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "￥" + ui.values[ 0 ] + " - ￥" + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount" ).val( "￥" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - ￥" + $( "#slider-range" ).slider( "values", 1 ) );
-  });
-
-
 </script>
 
 </head>
@@ -87,11 +69,46 @@
             <span class="active">家庭</span><span>购物</span><span>自然</span><span>惊险</span><span>浪漫</span><span>博物馆</span><span>猎奇</span>
         </div>
         <div class="price-select clearfix">
-            <p>
-              <label for="amount">价格:</label>
-              <input type="text" id="amount">
-            </p>
-            <div id="slider-range"></div>
+        	<div id="money">
+                <p id="p1">价格(元):&nbsp;&nbsp;</p>
+                <div id="v1">0</div>
+                <div id="v3">-</div>
+                <div id="v2">1</div>
+            </div>
+            <div id="slider"></div>
+            <!--价格区间滑块-->            
+            <script>
+                var slider = document.getElementById('slider');
+            
+                noUiSlider.create(slider, {
+                    start: [20, 80],
+                    connect: true,
+                    range: {
+                        'min': 0,
+                        'max': 100
+                    }
+                });
+                var valueInput = document.getElementById('v1'),
+                    valueSpan = document.getElementById('v2');
+            
+                // When the slider value changes, update the input and span
+                slider.noUiSlider.on('update', function( values, handle ) {
+                    if ( handle ) {
+                        valueInput.innerHTML = values[handle];
+                    } else {
+                        valueSpan.innerHTML = values[handle];
+                    }
+                });
+            
+                // When the input changes, set the slider value
+                valueInput.addEventListener('change', function(){
+                    slider.noUiSlider.set([null, this.value]);
+                });
+            </script>
+            
+
+
+            
         </div>
         
         <a href="#" class="btn">确定</a>
