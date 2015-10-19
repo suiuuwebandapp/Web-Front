@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>支付</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" type="text/css" href="css/cs.css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<!--nav begin-->
+<div class="nav-out"></div>
+<!--nav end-->
+
+<div class="payfor clearfix">
+    <div class="left">
+        <h2 class="title">为了确保您顺畅的出行体验，请确认或补充以下信息</h2>
+        <div class="box">
+            <p>联系方式</p>
+            <p class="p1">用于接收相关提醒及预订确认信息</p>
+            <ul class="forms clearfix">
+                <li>
+                    <label for="">联系人姓名</label>
+                    <input type="text" placeholder="请填写实际姓名">
+                </li>
+                <li>
+                    <label for="">微信号</label>
+                    <input type="text" placeholder="选填">
+                </li>
+                <li>
+                    <label for="">主要联系号码</label>
+                    <input type="text" placeholder="国内手机号">
+                </li>
+                <li>
+                    <label for="">备用联系号码</label>
+                    <input type="text" placeholder="选填">
+                </li>
+            </ul>
+        </div>
+        <div class="box">
+            <p>紧急联系方式</p>
+            <p class="p1">当无法联系到主要联系人时的备用联络方式</p>
+            <ul class="forms clearfix">
+                <li>
+                    <label for="">紧急联系人姓名</label>
+                    <input type="text" placeholder="请填写实际姓名">
+                </li>
+                <li>
+                    <label for="">紧急联系人联系方式</label>
+                    <input type="text" placeholder="请填写实际姓名">
+                </li>
+            </ul>
+        </div>
+        <div class="box">
+            <p>支付方式</p>
+            <p class="p1">您将跳转到支付页面，完成交易后返回本页进行确认是否支付完成</p>
+            <div class="maths clearfix">
+                <div class="zfdiv">
+                    <b class="icon zfb"></b>
+                    <input type="radio" id="radio01" name="pay"><label for="radio01"></label>
+                    <b class="icon weixin"></b>
+                    <input type="radio" id="radio02" name="pay"><label for="radio02"></label>
+                </div>
+            </div>
+            
+        </div>
+    
+    </div>
+    <div class="right">
+        <h2 class="title bgGreen">慕尼黑皇家体验之旅</h2>
+        <a href="###" class="product"><img src="images/55.jpg"></a>
+        <div class="detail">
+            <p>预约日期: <span>2015年8月8日15：30</span></p>
+            <p>出行人数: <span>3人</span></p>
+            <p>随游类型: <span>慢行探索</span></p>
+            <p>基础价格: <span>￥150X 3</span></p>
+            <p>代订晚餐: <span>￥150X 3</span></p>
+            <p class="total">总价: <span>￥550</span></p>
+            <p>预订须知：</p>
+        </div>
+        <div class="suggest">
+            <div class="line"></div>
+            <p>预订前，请提前与当地人沟通时间、行程。</p>
+            <p>支付成功后，“随游”会通过短信及站内信的方式通
+    知您。</p>
+            <p>支付后需当地人确认服务的时间、行程；成功预订后
+    ，“随游”会以短信及站内通知的方式通知您。</p>
+            <p>支付后如预订未成功，“随游”会将预订的钱款退回
+    原支付账号。</p>
+        </div>
+      
+    </div>
+    
+</div>
+
+<!------------支付 prop------------>
+<div class="mask" style="display:block;"></div>
+<div class="jtpayPro01">
+    <a href="###" class="close"></a>
+    <h2 class="title">已跳转到第三方支付页面，在付款完成前请勿关闭此页面</h2>
+    <p>如付款失败，建议重新选择付款方式</p>
+    <div class="maths clearfix">
+        <div class="zfdiv">
+            <b class="icon zfb"></b>
+            <input type="radio" id="radio04" name="pay"><label for="radio04"></label>
+            <b class="icon weixin"></b>
+            <input type="radio" id="radio05" name="pay"><label for="radio05"></label>
+        </div>
+    </div>
+</div>
+<div class="jtpayPro02">
+    <a href="###" class="close"></a>
+    <span class="sucess"></span>
+	<p class="tip">您已成功付款<span>￥1800</span>元</p>
+    <a href="###" class="btn">查看此订单的详情</a>
+    <a href="###" class="btn">查看其他订单</a>
+    <a href="###" class="btn">返回主页</a>
+
+</div>
+<!------------支付 prop--end------------>
+
+
+<!--footer-->
+<div id="footer-out" class="clearfix bgGreen"></div>
+</body>
+</html>
+

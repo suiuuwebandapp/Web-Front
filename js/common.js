@@ -35,9 +35,11 @@ $(function(){
 })
 
 
+
+
 /*----详情页滚动中间导航效果----*/
 
-
+/*
 $(function(){
 	$(window).scroll(function(e) {
 		var h1=$(window).scrollTop();
@@ -52,6 +54,53 @@ $(function(){
     });
 
 })
+*/
+/*----帮助中心-导航---*/
+
+
+$(function(){
+	$(window).scroll(function(e) {
+		var h1=$(window).scrollTop();
+		if(h1>20){
+			$('#aboutCon-out .aboutNav-out').addClass('fixed')
+			$('#aboutCon-out .leftNav').addClass('fixed')
+		}else{
+			$('#aboutCon-out .aboutNav-out').removeClass('fixed')
+			$('#aboutCon-out .leftNav').removeClass('fixed')
+		}
+        
+    });
+	
+	$('#aboutCon-out .aboutCon .leftNav li .drop02 a').click(function(e) {
+			$(this).addClass('active').siblings().removeClass('active');        
+		
+		
+		
+    });
+
+})
+/*----首页广告---*/
+
+
+$(function(){
+	 var appDownloadClosed = false;
+    $(window).on("scroll", function () {
+        if ($(window).scrollTop() >= 300) {
+            if (!appDownloadClosed) {
+                $(".indexAd").show();
+            }
+        } else {
+            $(".indexAd").hide();
+        }
+    });
+
+    $(".indexAd .closed").on("click", function () {
+        $(".indexAd").hide();
+        appDownloadClosed = true;
+    });
+});
+	
+
 
 /*----nav-index登录、注册弹框-----*/
 
@@ -91,52 +140,79 @@ $(function(){
 
 /*-----随游详情页banner轮播----*/
 $(function(){
-	var num=0;
-	var timer=null;
-	var maxnum=$('.sydetailBanner .banner li').size()-1;
-	var area=$('.sydetailBanner .banner');
-	$(area).html($(area).html()+$(area).html());
 
+    var imgCount=$('.sydetailBanner .banner li img').size();
+    var nowCount=0;
+    var maxWidth=0;
+    var beforeWidth=0;
+    var endWidth=0;
+    var area=$('.sydetailBanner .banner ul');
+    var html=$(area).html();
+    var timer=null;
+    var documentWidth=$(document).width();
+    var left=0;
+    $('.sydetailBanner .banner li img').load(function(){
+        nowCount++;
+        maxWidth+=$(this).width();
+        beforeWidth=maxWidth;
 
-	function fn(){
-		
-		num++;
-		if(num>maxnum){num=0}
-		$('.web-banner .banner').stop().animate({left:num*-600},1000)
-	}
-	timer=setInterval(fn,2000)
-	$('.web-banner ul li').hover(function(e) {
-        clearInterval(timer)
-		
-    },function(){
-		clearInterval(timer)
-    	timer=setInterval(fn,2000)
-    
-    });
-	
-	$('.web-banner .next').click(function(e) {
-        num++;
-		if(num>maxnum){num=0}
-		$('.web-banner .banner').stop().animate({left:num*-600},500)
+        if(imgCount!=nowCount){
+           return;
+        }
 
+        var flag=true;
+        while(flag){
+            if((maxWidth<documentWidth)){
+                maxWidth+=beforeWidth;
+                $(area).width(maxWidth);
+                $(area).html($(area).html()+html);
+            }else{
+                flag=false;
+            }
+        }
+        endWidth=documentWidth-maxWidth;
+        function fn(){
+            if(left==endWidth){left=0;}else{left-=500;}
+            if(left>0){left=0;}
+            if(left<endWidth&&left!=0){left=endWidth;}
+            $('.web-banner .banner').stop().animate({left:left},1000)
+        }
+        timer=setInterval(fn,2000)
+        $('.web-banner ul li').hover(function(e) {
+            clearInterval(timer)
+
+        },function(){
+            clearInterval(timer)
+            timer=setInterval(fn,2000)
+
+        });
+
+        $('.web-banner .next').click(function(e) {
+
+            if(left==endWidth){left=0;}else{left-=500;}
+            if(left>0){left=0;}
+            if(left<endWidth&&left!=0){left=endWidth;}
+            $('.web-banner .banner').stop().animate({left:left},500)
+
+        });
+        $('.web-banner .pre').click(function(e) {
+            if(left==0){left=endWidth}else{left+=500;}
+            if(left>0){left=0;}
+            if(left<endWidth&&left!=0){left=endWidth;}
+            $('.web-banner .banner').stop().animate({left:left},500)
+        });
+        $('.web-banner .nex,.web-banner .pre').hover(function(e) {
+            clearInterval(timer)
+        });
+
+        $('.web-banner .prev,.web-banner .next').hover(function(e) {
+            clearInterval(timer)
+        },function(){
+            clearInterval(timer)
+            timer=setInterval(fn,2000)
+        });
     });
-	$('.web-banner .pre').click(function(e) {
-        num--;
-		if(num<0){num=maxnum}
-		$('.web-banner .banner').stop().animate({left:num*-600},500)
-    });
-	$('.web-banner .nex,.web-banner .pre').hover(function(e) {
-		clearInterval(timer)
-    });
-	
-	$('.web-banner .prev,.web-banner .next').hover(function(e) {
-        clearInterval(timer)
-    },function(){
-		clearInterval(timer)
-		timer=setInterval(fn,2000)
-	});
-	
-	
+
 })
 
 
@@ -225,5 +301,183 @@ $(function(){
     });
 
 })
+
+
+/*-----sy编辑step1提示-----*/
+$(function(){
+	$('.bjy-bj1 .name').hover(function(e) {
+        $('.bjy-bj1 .bj1Pro01').css('display','block');
+		
+    },function(){
+        $('.bjy-bj1 .bj1Pro01').css('display','none');
+    });
+	$('.bjy-bj1 .fPic').hover(function(e) {
+        $('.bjy-bj1 .bj1Pro02').css('display','block');
+		
+    },function(){
+        $('.bjy-bj1 .bj1Pro02').css('display','none');
+    });
+	
+	
+	$('.bjy-bj2 .jings').hover(function(e) {
+        $('.bjy-bj2 .bj2Pro01').css('display','block');
+		
+    },function(){
+        $('.bjy-bj2 .bj2Pro01').css('display','none');
+    });
+	
+	
+	$('.bjy-bj4 .price1').hover(function(e) {
+        $('.bjy-bj4 .bj4Pro01').css('display','block');
+		
+    },function(){
+        $('.bjy-bj4 .bj4Pro01').css('display','none');
+    });
+	
+	$('.bjy-bj4 .price2').hover(function(e) {
+        $('.bjy-bj4 .bj4Pro02').css('display','block');
+		
+    },function(){
+        $('.bjy-bj4 .bj4Pro02').css('display','none');
+    });
+	
+	$('.bjy-bj4 .creat').hover(function(e) {
+        $('.bjy-bj4 .bj4Pro03').css('display','block');
+		
+    },function(){
+        $('.bjy-bj4 .bj4Pro03').css('display','none');
+    });
+	
+	$('.bjy-bj4 .start-time').hover(function(e) {
+        $('.bjy-bj4 .bj4Pro04').css('display','block');
+		
+    },function(){
+        $('.bjy-bj4 .bj4Pro04').css('display','none');
+    });
+	
+	$('.bjy-bj5 .box01').hover(function(e) {
+        $('.bjy-bj5 .bj5Pro01').css('display','block');
+		
+    },function(){
+        $('.bjy-bj5 .bj5Pro01').css('display','none');
+    });
+	
+	$('.bjy-bj5 .box02').hover(function(e) {
+        $('.bjy-bj5 .bj5Pro02').css('display','block');
+		
+    },function(){
+        $('.bjy-bj5 .bj5Pro02').css('display','none');
+    });
+	
+	$('.bjy-bj5 .box03').hover(function(e) {
+        $('.bjy-bj5 .bj5Pro03').css('display','block');
+		
+    },function(){
+        $('.bjy-bj5 .bj5Pro03').css('display','none');
+    });
+	
+	
+	$('.bjy-bj5 .biaoqian ul li.add').click(function(e) {
+        $('.bjy-bj5 .bj5Add,.mask').css('display','block');
+    });
+	$('.bjy-bj5 .biaoqian a.addL').click(function(e) {
+        $('.bjy-bj5 .tog').slideToggle();
+    });
+	
+	
+	
+	
+   /*-----交通编辑提示-----*/
+   
+	$('.bjy-bj3 .car').hover(function(e) {
+        $('.bjy-bj3 .bj3Pro01').css('display','block');
+		
+    },function(){
+        $('.bjy-bj3 .bj3Pro01').css('display','none');
+    });
+      
+	$('.bjy-bj3 .pack').hover(function(e) {
+        $('.bjy-bj3 .bj3Pro02').css('display','block');
+		
+    },function(){
+        $('.bjy-bj3 .bj3Pro02').css('display','none');
+    });
+	
+	$('.bjy-bj3 .carPic').hover(function(e) {
+        $('.bjy-bj3 .bj3Pro03').css('display','block');
+		
+    },function(){
+        $('.bjy-bj3 .bj3Pro03').css('display','none');
+    });
+	
+	
+})
+
+/*-----sy资料补全页name提示-----*/
+
+$(function(){
+	$('.syInformation .forms .name').hover(function(e) {
+        $('.syInformation .forms .name .nameTip').css('display','block');
+		
+    },function(){
+        $('.syInformation .forms .name .nameTip').css('display','none');
+    });
+
+})
+/*-----个人中心-----*/
+
+$(function(){
+	$('.sycon .myInformation .past01 .box .tog .adds').click(function(e) {
+		$(this).parents().children('.togT').toggle();
+        
+    })
+
+})
+
+/*-----帮助中心-----*/
+$(function(){
+	$('#aboutCon-out .helps .feedBack .choose .sel').click(function(e) {
+		if( $('#aboutCon-out .helps .feedBack .choose .sel #rad02').prop("checked")){
+			$('#aboutCon-out .helps .feedBack .choose .drop').css('display','block');
+		}else{
+			$('#aboutCon-out .helps .feedBack .choose .drop').css('display','none');
+		}
+	});
+})
+/*-----帮助中心侧导航 三级下拉菜单-----*/
+$(function(){
+	$('#aboutCon-out .aboutCon .leftNav li>a').click(function(e) {
+		if( $('#aboutCon-out .aboutCon .leftNav li>a').hasClass('active')){
+			$('#aboutCon-out .aboutCon .leftNav li .drop02').css('display','none');
+			$(this).parent().children('.drop02').css('display','block');
+		}else{
+			$(this).parent().children('.drop02').css('display','none');
+		}
+	});
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

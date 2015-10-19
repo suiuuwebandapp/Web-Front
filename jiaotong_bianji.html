@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>交通编辑页</title>
+<link rel="stylesheet" type="text/css" href="css/cs.css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!--编辑切换-->
+<script src="js/xcbjy.js"></script>
+<script>
+window.onload=function(){
+/*添加标签*/
+	xcbjy();
+	bz('bjybox','bjy-bj');
+/*添加标签*/
+
+};
+</script>
+</head>
+<body>
+
+<!--header开始-->
+<div class="header"></div>
+
+<!--header结束-->
+
+<!-----发布随游--->
+<div class="jtbjy clearfix" id="bjy-box">
+	<ul id="bz">
+    	<li class="active"><a href="javascript:;">上传封面</a></li>
+        <li><a href="javascript:;">基本信息</a></li>
+        <li><a href="javascript:;">车辆信息</a></li>
+        <li><a href="javascript:;">设置价格</a></li>
+        <li><a href="javascript:;">服务详情</a></li>
+    </ul>
+    <div class="bjy-list clearfix">
+             <!--step1-->
+            <div class="bjy-bj1 bjy-bj" style=" display:block;">
+                <span class="name">随游名称</span>
+                <input  class="name" type="text" placeholder="清晰且具有描述性">
+                <span class="fPic">封面</span>
+                <div class="pic fPic"><img src="images/01.jpg"></div>
+                         <!--step1 提示-->
+    
+                <div class="bjyPro bj1Pro01">
+                    <h2 class="tit bgGreen">随游名称</h2>
+                    <p>给随游起一个好名字是让游客 认识您的随游的重要途径</p>
+                    <p class="p2">示列：法国美食文化半日慢行</p>
+                
+                </div>
+                <div class="bjyPro bj1Pro02">
+                    <h2 class="tit bgGreen">封面图</h2>
+                    <p>封面图会显示在搜索列表页面及推荐页面，好的封面图会为您的随游引来更多关注。</p>
+                </div>
+            </div>
+            <!--step1 End-->
+            
+            <!--step2 begin-->
+            <div class="bjy-bj2 bjy-bj">
+            	<p>您主要可以服务的地区</p>
+                <div class="lines">
+                	<div class="selets cty">
+                        <select name="" id="">
+                            <option>国家</option>
+                            <option>国家</option>
+                            <option>国家</option>
+                            <option>国家</option>
+                        </select>
+                    </div>
+                	<div class="selets">
+                        <select name="" id="">
+                            <option>城市</option>
+                            <option>城市</option>
+                            <option>城市</option>
+                            <option>城市</option>
+                        </select>
+                    </div>
+                </div>
+            	<p>驾照发放时间</p>
+                <div class="lines">
+                	<div class="selets cty">
+                        <select name="" id="">
+                            <option>年</option>
+                            <option>年</option>
+                            <option>年</option>
+                            <option>年</option>
+                        </select>
+                    </div>
+                	<div class="selets">
+                        <select name="" id="">
+                            <option>月</option>
+                            <option>月</option>
+                            <option>月</option>
+                            <option>月</option>
+                        </select>
+                    </div>
+                </div>
+            	<p>可接待人数</p>
+                <div class="lines">
+                	<div class="selets cty">
+                        <select name="" id="">
+                            <option>1人</option>
+                            <option>1人</option>
+                            <option>1人</option>
+                        </select>
+                    </div>
+                </div>
+            	<p>接受预定时间</p>
+                <div class="time">
+                	<input type="radio" name="rad02" id="yes"><label for="yes" class="lab1">随时接受预定</label>
+                	<input type="radio" name="rad02" id="no"><label for="no">需提前<input type="text" placeholder="几天">预定</label>
+                </div>
+                <script type="text/javascript">
+					$(function(){
+						$('.jtbjy .bjy-bj2 .time input:radio').click(function(e) {
+							
+                            if($(this).attr("id")=="no"&&$(this).prop("checked")){
+								$('.jtbjy .bjy-bj2 .time label input').css('display','inline-block');
+							}else{
+								$('.jtbjy .bjy-bj2 .time label input').css('display','none')
+                            }
+                        });
+					})
+                </script>
+            </div>
+            <!--step2 end-->
+            
+            <!--step3 begin-->
+            <div class="bjy-bj3 bjy-bj">
+                <h2 class="titles">填写关于您车辆的基本信息</h2>
+                <p>车型</p>
+                <input type="text" class="car">
+                    <!--step3Pro-->
+                <div class="bjyPro bj3Pro01">
+                    <h2 class="tit bgGreen">车型</h2>
+                    <p>车辆信息对游客十分重要，请您如实填写车辆品牌+车型</p>
+                    <p class="p2">示例：别克GL8</p>
+                
+                </div>
+                
+                <div class="lines clearfix">
+                	<span>座位数</span>
+                	<span class="pack">行李空间</span>
+                	<div class="selets cty">
+                        <select name="" id="">
+                            <option>年</option>
+                            <option>年</option>
+                            <option>年</option>
+                            <option>年</option>
+                        </select>
+                    </div>
+                	<div class="selets pack">
+                    	<input type="text">
+                    </div>
+                    
+                        <!--step3Pro-->
+                    <div class="bjyPro bj3Pro02">
+                        <h2 class="tit bgGreen">行李空间</h2>
+                        <p>简短清晰的描述行李空间的大小，比如最多可以摆放多少件行李</p>
+                    </div>
+                </div>
+                <ul class="list clearfix">
+                	<li>
+                    	<span>乘客吸烟</span>
+                        <input type="radio" name="a" id="a1"><label for="a1" class="label01">允许</label>
+                        <input type="radio" name="a" id="a2"><label for="a2">不允许</label>
+                    </li>
+                	<li>
+                    	<span>携带宠物</span>
+                        <input type="radio" name="b" id="b1"><label for="b1" class="label01">允许</label>
+                        <input type="radio" name="b" id="b2"><label for="b2">不允许</label>
+                    </li>
+                	<li>
+                    	<span>儿童座椅</span>
+                        <input type="radio" name="c" id="c1"><label for="c1" class="label01">有</label>
+                        <input type="radio" name="c" id="c2"><label for="c2">没有</label>
+                    </li>
+                
+                </ul>
+                <h2 class="titles">添加车辆照片</h2>
+                <div class="carPic clearfix"> 
+                    <a href="#" class="imgs"><span class="delet"></span><img src="images/lvyou.png"></a>
+                    <a href="#" class="imgs"><img src="images/addPic.gif"></a>
+                    <div class="bjyPro bj3Pro03">
+                        <h2 class="tit bgGreen">车辆照片</h2>
+                        <p>车俩照片是游客选择时最直观的依据，随游要求您上传至少5张照片<br><br></p>
+                        <p>
+                            建议包括：<br>
+                            车辆外部最新照片<br>
+                            车辆内室最新照片<br>
+                            您与车辆的合照<br>
+                        </p>
+                    </div>
+                
+                </div>    
+            </div>
+            <!------step3  end-->
+            
+            <!----step4 ------>
+            <div class="bjy-bj4 bjy-bj">
+                <h2 class="titles">包车服务价格</h2>
+                <div class="line">
+                	<input type="radio" id="d"><label for="d">我不提供全天包车服务</label>
+                </div>
+                <div class="price1 clearfix">
+                    <span class="title">基本价格</span>
+                    <p><input type="text" class="text01"><b>RMB/每天</b></p>
+                    <div class="lines clearfix">
+                        <span>服务时长</span>
+                        <span>服务里程</span>
+                        <div class="selets cty">
+                            <input type="text"><span>小时/每天</span>
+                        </div>
+                        <div class="selets pack">
+                            <input type="text"><span>公里/每天</span>
+                        </div>
+                    </div>
+                    <div class="lines clearfix">
+                        <span>超时费用</span>
+                        <span>超程费用</span>
+                        <div class="selets cty">
+                            <input type="text"><span>￥/小时</span>
+                        </div>
+                        <div class="selets pack">
+                            <input type="text"><span>￥/公里</span>
+                        </div>
+                    </div>
+                    <div class="bjyPro bj4Pro01">
+                        <h2 class="tit bgGreen">服务价格</h2>
+                        <p>
+                            建议您的价格是： <br>
+                            根据您所在地区的旅游需求定价<br>
+                            参考您所在城市的消费水平<br>
+                            根据您服务里的涵盖内容<br>
+                        
+                        </p>
+                        <p class="p2">价格是影响游客预订服务的重要因素，具有性价比的价格会更受游客欢迎</p>
+                    </div>
+                    
+                    <h2 class="titles mT">接送机服务价格</h2>
+                    <div class="line">
+                        <input type="radio" id="e"><label for="e">我不提供接送机服务</label>
+                    </div>
+                    <span class="title">基本价格</span>
+                    <p><input type="text" class="text02"><b>每次</b></p>
+                    <h2 class="titles mT">夜间加价</h2>
+                    <div class="line">
+                        <input type="radio" id="f" name="g"><label for="f">不加收夜间费用</label>
+                        <input type="radio" id="g" name="g"><label for="g">加收夜间服务费</label>
+                    </div>
+                    <div class="serverPrice clearfix">
+                    	<p><input type="text" placeholder="00:00"><span>-</span><input type="text" placeholder="00:00"><span>加收夜间服务费</span></p>
+                    	<p><span>夜间加收服务费</span><input type="text" class="text"><b>￥/每次</b></p>
+                    
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!---step4--end-->
+            
+            
+            <!---step5- begin-->
+            <div class="bjy-bj5 bjy-bj clearfix"  id="bjy">
+                <div class="bjyPro bj5Add screens">
+                    <h2 class="tit bgGreen">添加标签</h2>
+                    <input type="text">
+                    <a href="###" class="btn">提交</a>
+                </div>
+                <div class="box01">
+                    <span>服务描述</span>
+                    <textarea>告诉游客关于您车辆信息之外有哪些服务优势</textarea>
+                    <div class="bjyPro bj5Pro01">
+                        <h2 class="tit bgGreen">服务描述</h2>
+                        <p>游客不仅想了解服务的车辆信息，更希望看到服务优势的介绍。</p>
+                        <p>
+                            建议包含以下内容： <br>                       
+                            可解决语言不通、交通不便、出行费用高昂等各类问题<br>
+                            服务提供者独特的个人身份及背景，如：资深司机兼导游<br>
+                            车辆整洁舒适、熟悉当地路况、旅途更安全更放心<br>
+                        </p>
+                    </div>
+                </div>
+                
+                <h2 class="titles mT">夜间加价</h2>
+                <div class="line">
+                    <input type="radio" id="h" name="h"><label for="h">不加收夜间费用</label>
+                    <input type="radio" id="i" name="h"><label for="i">加收夜间服务费</label>
+                </div>
+                <div class="serverPrice clearfix">
+                    <p><input type="text" placeholder="00:00"><span>-</span><input type="text" placeholder="00:00"><span>加收夜间服务费</span></p>
+                    <p><span>夜间加收服务费</span><input type="text" class="text"><b>￥/每次</b></p>
+                
+                </div>
+                <h2 class="titles mT">服务包含的内容</h2>
+                <div class="sevBox clearfix">
+                    <input type="checkbox" id="check1"><label for="check1">燃油费</label>
+                    <input type="checkbox" id="check2"><label for="check2">过路费</label>
+                    <input type="checkbox" id="check3"><label for="check3">过桥费</label>
+                    <input type="checkbox" id="check4"><label for="check4">停车费</label>
+                    <input type="checkbox" id="check5"><label for="check5">服务小费</label>
+                    <input type="checkbox" id="check6"><label for="check6">司机餐饮费</label>
+                    <input type="checkbox" id="check7"><label for="check7">协助办理入住</label>
+                    <input type="checkbox" id="check8"><label for="check8">行李搬运</label>
+                    <input type="checkbox" id="check9"><label for="check9">办理退税</label>
+                    <input type="checkbox" id="check10"><label for="check10">导游讲解</label>
+                </div>
+                
+                <div class="adds clearfix">
+                    <span class="title">其他服务中包括的内容（选填）</span>
+                    <p><input type="text"><a href="###" class="jian"></a></p>
+                    <p><input type="text"><a href="###" class="add"></a></p>
+                    <span class="title">其他服务中不包括的内容（选填）</span>
+                    <p><input type="text"><a href="###" class="jian"></a></p>
+                    <p><input type="text"><a href="###" class="add"></a></p>
+                </div>
+                
+            </div>
+            <!---step5 end-->
+        </div>
+    <div class="stepBtn clearfix">
+        <a href="javascript:;" class="bjy-prev colOrange" id="bjy-prev">上一步</a>
+        <a href="javascript:;" class="bjy-next colGreen" id="bjy-next">下一步</a>
+    </div>    
+</div>
+
+<div class="mask"></div>
+<div class="picPop screens">
+    <div class="pic clearfix">
+    	<p>正在上传...</p>
+    </div>
+    <a href="###" class="btn sure">确定</a>
+    <a href="###" class="btn cancle">取消</a>
+
+
+</div>
+
+    <!--发布随游 end-->
+    
+    
+   
+
+<!-----footer------>
+
+<div id="footer-out" class="bgGreen clearfix"></div>
+<!-----footer--end---->
+</body>
+</html>

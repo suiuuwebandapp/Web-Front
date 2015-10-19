@@ -2,8 +2,8 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<title>随游编辑页</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>随游编辑页</title>
 <link rel="stylesheet" type="text/css" href="css/cs.css">
 <link rel="stylesheet" type="text/css" href="css/my_select.css">
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
@@ -43,86 +43,114 @@ window.onload=function(){
 <div class="bjy clearfix" id="bjy-box">
 	<ul id="bz">
     	<li class="active"><a href="javascript:;">上传封面</a></li>
-        <li><a href="javascript:;">位置地图</a></li>
-        <li><a href="javascript:;">上传图片</a></li>
-        <li><a href="javascript:;">服务/价格</a></li>
+        <li><a href="javascript:;">位置信息</a></li>
+        <li><a href="javascript:;">添加照片</a></li>
+        <li><a href="javascript:;">设置价格</a></li>
         <li><a href="javascript:;">详情描述</a></li>
-        <li><a href="wancheng.html">完成</a></li>
     </ul>
-    <a href="javascript:;" class="bjy-prev" id="bjy-prev">上一步</a>
-    <a href="javascript:;" class="bjy-next" id="bjy-next">下一步</a>
-    <div class="bjy-list clearfix">
+<div class="bjy-list clearfix">
          <!--step1-->
         <div class="bjy-bj1 bjy-bj" style=" display:block;">
-            <span>标题</span>
-          <input type="text" value="">
-<!--            <span>随游简介</span>
-          <textarea class="jianjie"></textarea>
--->  
-          <span>封面</span>
-            <div class="pic"><img src="images/grsc1.fw.png" width="285" height="260"></div>
+            <span class="name">随游名称</span>
+            <input  class="name" type="text" placeholder="清晰且具有描述性">
+            <span class="fPic">封面</span>
+            <div class="pic fPic"><img src="images/01.jpg"></div>
+                     <!--step1 提示-->
+
+            <div class="bjyPro bj1Pro01">
+            	<h2 class="tit bgGreen">随游名称</h2>
+                <p>给随游起一个好名字是让游客 认识您的随游的重要途径</p>
+                <p class="p2">示列：法国美食文化半日慢行</p>
+            
+            </div>
+            <div class="bjyPro bj1Pro02">
+            	<h2 class="tit bgGreen">封面图</h2>
+                <p>封面图会显示在搜索列表页面及推荐页面，好的封面图会为您的随游引来更多关注。</p>
+            </div>
         </div>
         <!--step1 End-->
         
         <!--step2 begin-->
         <div class="bjy-bj2 bjy-bj">
-            <span>坐标</span>
-            <input type="text" placeholder="国家">
-            <input type="text" placeholder="城市">
-            <span>景点名称</span>
-            <div class="jing"><input type="text" placeholder="景点"><a href="###" class="add"></a></div>
-            <div class="jing"><input type="text" placeholder="景点"><a href="###" class="remove"></a></div>
-            <div class="map"></div>
+        	<h2 class="titles">添加您的随游所涉及的位置地点，帮助旅行者更好的作出决策</h2>
+            <div class="jings clearfix">
+                <div class="map"></div>
+                <div class="bjyPro bj2Pro01">
+                    <h2 class="tit bgGreen">随游名称</h2>
+                    <p>给随游起一个好名字是让游客认识您的随游的重要途径</p>
+                    <p class="p2">示列：法国美食文化半日慢行</p>
+                
+                </div>
+          </div>
+            <div class="jing"><a href="###" class="add colGreen">添加景点</a><a href="###" class="remove colOrange">重新添加景点</a></div>
+            
         </div>
         <!--step2 end-->
         
         <!--step3 begin-->
         <div class="bjy-bj3 bjy-bj">
-        	<a href="#" class="imgs"><span class="delet"></span><img src="images/lvyou.png"></a>
-           <a href="#" class="imgs"><img src="images/addPic.gif"></a>
-           
-        	
+        	<h2 class="titles">添加您的随游所涉及的位置地点，帮助旅行者更好的作出决策</h2>
+            <div class="clearfix"> 
+                <a href="#" class="imgs"><span class="delet"></span><img src="images/lvyou.png"></a>
+                <a href="#" class="imgs"><img src="images/addPic.gif"></a>
+            </div>    
+          <p>这里上传的照片都会显示在随游详情页的嘴周要位置，请好好挑选照片上传吧！</p>       
+       	  <p>有您自己上镜的照片会让随游的可信度更高哦！</p>
         	
         </div>
         <!------step3  end-->
         
         <!----step4 ------>
         <div class="bjy-bj4 bjy-bj">
-        	<span>基本价格</span>
-            <p><input type="text" vlaue="">
-            	<select name="" id="" class="selt1">
-                	<option value="">每人</option>
-                	<option value="">每次</option>
-                </select>
-            </p>
-            
-        	<span>价格包括</span>
-            <p><input type="text" vlaue="" class="text2"><a href="###" class="jian"></a></p>
-            <p><input type="text" vlaue="" class="text2"><a href="###" class="add"></a></p>
-        	<span>价格不包括</span>
-            <p><input type="text" vlaue="" class="text2"><a href="###" class="jian"></a></p>
-            <p><input type="text" vlaue="" class="text2"><a href="###" class="add"></a></p>
-            
-            
+        	<h2 class="titles">设置一个能体现随游的价值和好客之道的价格</h2>
+            <div class="price1 clearfix">
+                <span class="title">基本价格</span>
+                <p><input type="text" class="text01"><b>RMB</b>
+                    <select name="" id="" class="selt1">
+                        <option value="">每人</option>
+                        <option value="">每次</option>
+                    </select>
+                </p>
+                
+                <span class="title">价格包括</span>
+                <p><input type="text" vlaue="" class="text2"><a href="###" class="jian"></a></p>
+                <p><input type="text" vlaue="" class="text2"><a href="###" class="add"></a></p>
+                <span class="title">价格不包括</span>
+                <p><input type="text" vlaue="" class="text2"><a href="###" class="jian"></a></p>
+                <p><input type="text" vlaue="" class="text2"><a href="###" class="add"></a></p>
+                
+                <div class="bjyPro bj4Pro01">
+                    <h2 class="tit bgGreen">基本价格</h2>
+                    <p>你可以通过设置低廉的价格吸引到头一批游客从而积攒好评，之后可以适当提高价格</p>
+                </div>
+                
+                
+            </div>
             
             <p class="mixi"><font>价格明细</font></p>
             <div class="bj4-main">
-            	<span>人数上限</span>
-                <input type="text" placeholder="你最多可以接待多少人呢" class="sx">
-                <span>阶梯价格</span>
-                <p>
-                	<input type="text" value=""><em>人至</em>
-                    <input type="text" value=""><em>人</em>
-                    <input type="text" value=""><em>RMB</em>
-                    <a href="###" class="add"></a>
-                </p>
-                <p>
-                	<input type="text" value=""><em>人至</em>
-                    <input type="text" value=""><em>人</em>
-                    <input type="text" value=""><em>RMB</em>
-                    <a href="###" class="jian"></a>
-                </p>
-                <span>单项服务及价格</span>
+            	<div class="price2">
+                    <span class="title">人数上限</span>
+                    <input type="text" placeholder="你最多可以接待多少人呢" class="sx">
+                    <span class="title">阶梯价格</span>
+                    <p>
+                        <input type="text" value=""><b>人</b><em>至</em>
+                        <input type="text" value=""><b>人</b>
+                        <input type="text" value=""><b>RMB</b>
+                        <a href="###" class="add"></a>
+                    </p>
+                    <p>
+                        <input type="text" value=""><b>人</b><em>至</em>
+                        <input type="text" value=""><b>人</b>
+                        <input type="text" value=""><b>RMB</b>
+                        <a href="###" class="jian"></a>
+                    </p>
+                    <div class="bjyPro bj4Pro02">
+                        <h2 class="tit bgGreen">优惠价格</h2>
+                        <p>设置多人预订优惠价格，吸引旅行者团体预订。</p>
+                    </div>
+                </div>
+                <span class="title">附加服务及价格</span>
                 <div class="creat clearfix">
                 	<dl>
                     	<dt><span>服务</span><span>价格</span><span>单位</span></dt>
@@ -130,7 +158,7 @@ window.onload=function(){
                         	<input type="text" value="" class="m0-input">
                             <input type="text" value="">
                         	 <div class="sect">
-                                <select name="" data-enabled="false">
+                                <select name="">
                                     <option>一人</option>
                                     <option>一次</option>
                                 </select>
@@ -141,7 +169,7 @@ window.onload=function(){
                         	<input type="text" value="" class="m0-input">
                             <input type="text" value="">
                         	 <div class="sect">
-                                <select name="" data-enabled="false">
+                                <select name="">
                                     <option>一人</option>
                                     <option>一次</option>
                                 </select>
@@ -149,20 +177,27 @@ window.onload=function(){
                              <a href="###" class="jian"></a>
                         </dd>
                     </dl>
-                
+                    <div class="bjyPro bj4Pro03">
+                        <h2 class="tit bgGreen">可选服务</h2>
+                        <p>在额外的随友服务项目之外可供游客选择的附加服务</p>
+                    </div>
                 </div>
                 <div class="start-time clearfix">
-                    <dl>
-                        <dt><span>景点开放时间</span><span>景点结束时间</span></dt>
+                    <dl class="clearfix">
+                        <dt><span class="title">可提供服务时间</span></dt>
                         <dd>
                             <input type="text" value="" placeholder="拣选器">
                             <input type="text" value="" placeholder="拣选器">
                         </dd>
-                    </dl>   
+                    </dl>  
+                    <div class="bjyPro bj4Pro04">
+                        <h2 class="tit bgGreen">服务时间</h2>
+                        <p>明确设置随游服务时间可以有效避免服务中产生的纠纷与误解</p>
+                    </div>
                </div>
                <div class="times clearfix">
-                  <dl>
-                      <dt><span>随游时长</span></dt>
+                  <dl class="clearfix">
+                      <dt><span class="title">随游时长</span></dt>
                       <dd>
                         <input type="text" value="">
                          <div class="sect">
@@ -184,45 +219,97 @@ window.onload=function(){
         
         <!---step5- begin-->
         <div class="bjy-bj5 bjy-bj clearfix"  id="bjy">
-        	<span>详情介绍</span>
-            <textarea></textarea>
-        	<span>添加行程标签</span>
+            <div class="bjyPro bj5Add screens">
+                <h2 class="tit bgGreen">添加标签</h2>
+                <input type="text">
+                <a href="###" class="btn">提交</a>
+            </div>
+        	<h2 class="titles">设置一个能体现随游的价值和好客之道的价格</h2>
+            <div class="box01">
+                <span>详情描述</span>
+                <textarea>更近一步的介绍您的随游，讲讲您亲身的体验经历，告知旅行者注意事项</textarea>
+                <div class="bjyPro bj5Pro01">
+                    <h2 class="tit bgGreen">基本价格</h2>
+                    <p>你可以通过设置低廉的价格吸引到头一批游客从而积攒好评，之后可以适当提高价格</p>
+                </div>
+                
+            </div>
+           
+        	<span>随游标签</span>
             <div class="biaoqian clearfix">
-            	<ul class="clearfix">
-                	<li class="active-bj">家庭</li>
-                    <li>美食</li>
-                    <li>惊悚</li>
-                    <li>博物馆</li>
-                    <li>猎奇</li>
-                    <li>自然</li>
-                    <li>浪漫</li>
-                    <li>购物</li>
-                </ul>
-                <span>随游亮点</span>
-                <p>
-                	<input type="text" value="">
-                    <a href="###" class="jian"></a>
-                </p>
-                <p>
-                	<input type="text" value="">
-                    <a href="###" class="jian"></a>
-                </p>
-                <p>
-                	<input type="text" value="">
-                    <a href="###" class="jian"></a>
-                </p>
-                <p>
-                	<input type="text" value="">
-                    <a href="###" class="add"></a>
-                </p>
-                <input type="button" class="btn yulan" value="预览">
-                <input type="button" class="btn sure" value="立即发布">
-                	
+                <div class="box02">
+                    <ul class="clearfix">
+                        <li class="active-bj">家庭</li>
+                        <li>美食</li>
+                        <li>惊悚</li>
+                        <li>博物馆</li>
+                        <li>猎奇</li>
+                        <li>自然</li>
+                        <li>浪漫</li>
+                        <li class="add"> <img src="images/addG.png" width="25" height="25"></li>
+                    </ul>
+                    <div class="bjyPro bj5Pro02">
+                        <h2 class="tit bgGreen">基本价格</h2>
+                        <p>你可以通过设置低廉的价格吸引到头一批游客从而积攒好评，之后可以适当提高价格</p>
+                    </div>
+                </div>
+                <div class="box03">
+                    <span>随游亮点</span>
+                    <ol>
+                        <li>
+                        	<a href="###" class="addPic"><img src="images/minO.png" width="25" height="25"></a>
+                            <a href="" class="pic"><img src="images/222.gif" width="145" height="81"></a>
+                            <div class="text">
+                                <h3 class="tit">法国巴黎最浪漫温馨之路</h3>
+                                <p> 该建筑包括约1,100个独间、100座楼该建...</p>
+                            
+                            </div>
+                        </li>
+                        <li>
+                        	<a href="###" class="addPic"><img src="images/minO.png" width="25" height="25"></a>
+                            <a href="" class="pic"><img src="images/222.gif" width="145" height="81"></a>
+                            <div class="text">
+                                <h3 class="tit">法国巴黎最浪漫温馨之路</h3>
+                                <p> 该建筑包括约1,100个独间、100个独间、100个独间、100座楼该建筑...</p>
+                            
+                            </div>
+                        </li>
+                        <li>
+                        	<a href="###" class="addPic"><img src="images/minO.png" width="25" height="25"></a>
+                            <a href="" class="pic"><img src="images/222.gif" width="145" height="81"></a>
+                            <div class="text">
+                                <h3 class="tit">法国巴黎最浪漫温馨之路</h3>
+                                <p> 该建筑包括约1,100个独间、100座楼该...</p>
+                            
+                            </div>
+                        </li>
+                    </ol>
+                    <div class="bjyPro bj5Pro03">
+                        <h2 class="tit bgGreen">随游亮点</h2>
+                        <p>用文字和照片单独描述您随游中的亮点，让随游中的亮点，让游客眼前一亮吧！</p>
+                    </div>
+                </div>  
+                <div class="clearfix">
+                    <span><a href="###" class="addL"><img src="images/addG.png" width="25" height="25"></a>添加随游亮点</span>
+                   <div class="tog clearfix">
+                   		<h2 class="title">添加亮点</h2>
+                        <span>亮点名称</span>
+                        <input type="text">
+                        <span>亮点描述</span>
+                        <textarea>最多150个字</textarea>
+                        <span>上传图片 <a href="#" class="fr colGreen selPic">从已上传图片中选取</a></span>
+                        <a href="" class="pic"><img src="images/addd.png" width="380" height="247"></a>
+                        <a href="###" class="btn sbu colGreen">提交</a>
+                    </div>
+                </div>  	
             </div>
         </div>
         <!---step5 end-->
-        <div class="bjy-bj6 bjy-bj">6</div>
     </div>
+    <div class="stepBtn clearfix">
+        <a href="javascript:;" class="bjy-prev colOrange" id="bjy-prev">上一步</a>
+        <a href="javascript:;" class="bjy-next colGreen" id="bjy-next">下一步</a>
+    </div>    
 </div>
 
 <div class="mask"></div>
@@ -235,53 +322,70 @@ window.onload=function(){
 
 
 </div>
+<div class="syBjPro screens">
+	<ul class="clearfix pics">
+    	<li><a href="#"><img src="images/44.jpg" width="203" height="113"></a></li>
+    	<li><a href="#"><img src="images/44.jpg" width="203" height="113"></a></li>
+    	<li><a href="#"><img src="images/44.jpg" width="203" height="113"></a></li>
+    	<li><a href="#"><img src="images/44.jpg" width="203" height="113"></a></li>
+    	<li><a href="#"><img src="images/44.jpg" width="203" height="113"></a></li>
+    	<li><a href="#"><img src="images/44.jpg" width="203" height="113"></a></li>
+    	<li><a href="#"><img src="images/44.jpg" width="203" height="113"></a></li>
+    	<li><a href="#"><img src="images/44.jpg" width="203" height="113"></a></li>
+    	<li><a href="#"><img src="images/44.jpg" width="203" height="113"></a></li>
+    	<li><a href="#"><img src="images/44.jpg" width="203" height="113"></a></li>
+    </ul>
+    <a href="#" class="btn">取消</a> 
+</div>
+<script type="text/javascript">
+$(function(){
+	$('.bjy-bj5 span .selPic').click(function(e) {
+        $('.syBjPro,.mask').css('display','block');
+    });
 
+
+})
+
+
+</script>
+
+    <!------bjy-bj5弹窗----->
+
+<div class="syBj2Pro01 screens">
+    <h2 class="title">景点位置及名称</h2>
+    <input type="text" placeholder="国家">
+    <input type="text" placeholder="城市">
+    <input type="text" placeholder="景点名称">
+    <div class="stepBtn clearfix">
+        <a href="javascript:;" class="bjy-prev colOrange">取消</a>
+        <a href="javascript:;" class="bjy-next colGreen">下一步</a>
+    </div>    
+</div>
+<div class="syBj2Pro02 screens">
+    <h2 class="title">地图上的位置是否正确？</h2>
+    <div class="map"></div>
+    <div class="stepBtn clearfix">
+        <a href="javascript:;" class="bjy-prev bgOrange">调整位置</a>
+        <a href="javascript:;" class="bjy-next bgGreen">看上去不错</a>
+    </div>    
+</div>
+<div class="syBj2Pro03 screens">
+    <h2 class="title">拖动？"<img src="images/position.png" width="14" height="18">"标记定位准确位置</h2>
+    <div class="map"></div>
+    <div class="stepBtn clearfix">
+        <a href="javascript:;" class="bjy-next bgGreen">确定</a>
+    </div>    
+</div>
 
 
     <!--发布随游 end-->
+    
+    
+   
 
 <!-----footer------>
 
-<div id="footer-out" class="clearfix">
-	<div class="footer w1200 clearfix">
-    	<div class="left fl">
-            <img src="images/footer-pic.png" width="174" height="122">
-         </div>
-        <dl class="fl middle">
-        	<dt>公司信息</dt>
-            <dd><a href="#">关于随游</a></dd>
-            <dd><a href="#">服务协议</a></dd>
-            <dd><a href="#">联系我们</a></dd>
-            <dd><a href="#">加入我们</a></dd>
-        </dl>
-        <dl class="fl ">
-        	<dt>帮助中心</dt>
-            <dd><a href="#">帮助</a></dd>
-            <dd><a href="#">反馈</a></dd>
-            <dd><a href="#">使用流程</a></dd>
-            <dd><a href="#">退款政策</a></dd>
-        </dl>
-        <dl class="fl ">
-        	<dt>声明</dt>
-            <dd><a href="#">版权声明</a></dd>
-            <dd><a href="#">免责声明</a></dd>
-        </dl>
-        <dl class="fl ">
-        	<dt>随游移动端</dt>
-            <dd><a href="#">APP近期发布</a></dd>
-        </dl>
-        <div class="fr right">
-        	<ul>
-        		<li class="fl"><a href="#" class="icon sina"></a></li>
-        		<li class="fl"><a href="#" class="icon weixin"></a></li>
-        	</ul>
-        	
-        </div>
-    	
-    
-  </div>
-
-</div>
+<div id="footer-out" class="bgGreen clearfix"></div>
 <!-----footer--end---->
 </body>
-</html>>>>>>>>>>
+</html>
