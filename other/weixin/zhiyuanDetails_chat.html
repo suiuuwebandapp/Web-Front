@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+<title>志愿产品详情-咨询</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/jquery.mmenu.css">
+<link rel="stylesheet" href="css/weixin.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('div#menu').mmenu();
+    });
+</script>
+</head>
+<body>
+<div id="page" class="userCenter">
+
+    <div id="menu" class="navBar">
+        <ul>
+            <li class="user">
+            	<a href="#" class="userPic"><img src="images/logo02.png"></a>
+                <span class="userName">soeitreo</span>
+            
+            </li>
+            <li><a href="#">我的随游</a></li>
+            <li><a href="#">我的定制</a></li>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#" class="active">随游订单</a></li>
+            <li><a href="#">收件箱<b class="tip"></b></a></li>
+            <li><a href="#">退出</a></li>
+        </ul>
+    </div>
+    <div class="Uheader header mm-fixed-top">
+        <a href="#menu" class="back"></a>
+        <p class="navTop">志愿产品咨询</p>
+    </div>
+    <div class="con zyCon_chat">
+        <ul class="list">
+            <li><span>微信客服</span><b>chipmunkfoxy</b> <a href="#" class="get">点击获取<img src="images/ws.png"></a></li>
+            <li><span>QQ客服</span><b>1295913524</b></li>
+            <li><span>电话咨询</span><b>010-58483692</b></li>
+        </ul>
+		<p class="tip">随游客服周一至周日09:00 - 22:00</p>
+    </div>
+    <script type="text/javascript">
+		$(function(){
+			$('.zyCon_chat .get').click(function(e) {
+                $('.chatPro').css('display','block');
+            })
+			$('.chatPro .close').click(function(e) {
+                $('.chatPro').css('display','none');
+            })
+        })
+    
+    </script>
+
+    
+</div>
+<div class="chatPro">
+	<a href="###" class="close"></a>
+    <img src="images/wb.png">
+	<p>长按添加随游微信客服</p>
+</div>
+<div class="fixed zybtns clearfix">
+    <a href="###">
+        <b class="icon icon01"></b>
+        <span>详情</span>
+    </a>
+    <a href="###">
+        <b class="icon icon02"></b>
+        <span>日期</span>
+    </a>
+    <a href="###" class="active">
+        <b class="icon icon03"></b>
+        <span>咨询</span>
+    </a>
+    <a href="###" class="last">
+        <b class="icon icon04"></b>
+        <span>预定</span>
+    </a>
+</div>
+</body>
+</html>

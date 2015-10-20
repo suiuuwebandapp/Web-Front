@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport">
+<title>志愿产品详情</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/jquery.mmenu.css">
+<link rel="stylesheet" href="css/weixin.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/myTab.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('div#menu').mmenu();
+    });
+</script>
+</head>
+<body class="bgwhite">
+<div id="page" class="userCenter">
+
+    <div id="menu" class="navBar">
+        <ul>
+            <li class="user">
+            	<a href="#" class="userPic"><img src="images/logo02.png"></a>
+                <span class="userName">soeitreo</span>
+            
+            </li>
+            <li><a href="#">我的随游</a></li>
+            <li><a href="#">我的定制</a></li>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#" class="active">随游订单</a></li>
+            <li><a href="#">收件箱<b class="tip"></b></a></li>
+            <li><a href="#">退出</a></li>
+        </ul>
+    </div>
+    <div class="Uheader header mm-fixed-top">
+        <a href="#menu" class="back"></a>
+        <p class="navTop">志愿产品详情</p>
+        
+    </div>
+    <div class="syDetailBanner zhiyuanBanner">
+        <!--banner开始-->
+        <div class="bd">
+            <ul class="banners">
+                <li class="banner01"><img src="images/img01.jpg"></li>
+                <li class="banner01"><img src="images/img02.jpg"></li>
+                <li class="banner01"><img src="images/img03.jpg"></li>
+            </ul>
+<!--       
+           <div class="banner-btn">
+                <a class="prev" href="javascript:void(0);"></a>
+                <a class="next" href="javascript:void(0);"></a>
+           </div>
+     
+           <div class="hd"><ul></ul></div>  
+-->
+
+        </div>
+        <div class="moneyDiv">
+            <h2 class="title">法国巴黎最浪漫温馨之路</h2>
+            <p class="p1">Merapoh Malaysia</p>
+            <div class="times">
+                <span class="active">7天</span>
+                <span>14天</span>
+                <span>21天</span>
+                <span>28天</span>
+                <strong>￥5375</strong>
+            </div>
+        
+        </div>
+
+        <!--banner结束-->
+        <script type="text/javascript">
+        $(document).ready(function(){
+            
+        
+            $(".prev,.next").hover(function(){
+                $(this).stop(true,false).fadeTo("show",1);
+            },function(){
+                $(this).stop(true,false).fadeTo("show",1);
+            });
+            
+     
+    
+         $(".syDetailBanner").slide({
+                titCell:".hd ul",
+                mainCell:".banners",
+                effect:"fold",
+                interTime:3500,
+                delayTime:500,
+                autoPlay:true,
+                autoPage:true, 
+                trigger:"click" 
+            });
+        
+        });
+        </script>
+    </div>
+    <div class="actCon" style="display:block;">
+        <div class="syContent con zyDetails">
+            <div class="top clearfix"> 
+                <a href="#" class="userPic"><img src="images/logo02.png"></a>
+                <span class="userName">合作机构</span>
+                <p  class="role"><span>GVSV natrual conservation</span></p>
+            </div>  
+            <h3 class="title colGreen">基本信息</h3>
+            <ul class="details clearfix">
+                <li>
+                    <span class="icon icon1">年龄限制：<b>18岁以上</b></span>
+                </li>
+                <li>
+                    <span class="icon icon2">出发地点
+                        <b>马来西亚吉隆坡</b>
+                    </span>
+                </li>
+                <li><span class="icon icon3">团队人数：<b>20人以内</b></span></li>
+                <li class="last"><span class="icon icon4">有效期至:<b>2016.01.12</b></span></li>
+            </ul>
+            <div class="tuijian clearfix">
+                    <h3 class="title colGreen">推荐理由</h3>
+                    <p>学习如何跟踪老虎和其他大型动物在热带雨林中发现可能的陷阱和当地土著人一起交流</p>        
+            </div>
+            <h3 class="title colGreen">项目详情</h3>
+            <p>你做好迎接新的挑战的准备了吗？ 来到马来西亚的热带雨林发现这
+    里的动物，保护那些濒临灭绝的老虎，蜥蜴，大象以及熊。马来西
+    亚拥有世界第三位的野生老虎总数，仅次于印度和俄罗斯。这些奇
+    妙的生物，以及许多其他物种都依赖于“野生动物走廊”而生存着
+    “野生动物走廊”是一大片热带雨林主要连接TamanNegara国家
+    公园以及在马来西亚西部主要山脉 。没有走廊，这2个地区的野生
+    动物种群将不再能够跨物种繁殖，这将使它们更接近灭绝。这个项
+    目是ecoteer和MYCAT之间的合作，其目的是在主要的公路入口减
+    少偷猎和人类影响以保护这些珍贵的野生动物。</p>   
+            <div class="tuijian clearfix">
+                    <h3 class="title colGreen">行前准备</h3>
+                    <p>从早上到晚上你都会参加志愿者活动， 精确的时间表取决于天气。
+    一些活动可能会因为下雨延迟。</p>        
+            </div>
+            <h3 class="title colGreen">行程安排</h3>
+            <p>从早上到晚上你都会参加志愿者活动， 精确的时间表取决于天气一
+    些活动可能会因为下雨延迟。<br>
+    可能的行程（视季节和天气而调整）：</p> 
+    
+      
+            <div class="dataCon">
+                <div class="line"></div>
+                <h4 class="datas"> <b></b>第1天</h4>
+                <p>抵达日，项目介绍和学习如何追踪动物足迹。</p>
+                <h4 class="datas"> <b></b>第2天</h4>
+                <p>丛林步行6小时</p>
+                <h4 class="datas"> <b></b>第3天</h4>
+                <p>丛林步行6小时</p>
+                <h4 class="datas"> <b></b>第4天</h4>
+                <p>在早晨你会与你的小组一起做石灰石矿的开采，在下午你将为明天
+    的活动准备英语课程计划</p>
+                <h4 class="datas"> <b></b>第5天</h4>
+                <p>参观巴迪族村，了解他们的生活方式。同时为这里的年轻人教授英
+    语课。这对保护马来西亚西部的野生动物是非常重要的，因为它们
+    是森林的眼睛和耳朵，他们的配合会让保护野生动物的工作更加容
+    易进行。</p>
+                <h4 class="datas"> <b></b>第6天</h4>
+                <p>丛林漫步，在巴迪族村庄里搭帐篷过夜</p>
+                <h4 class="datas"> <b></b>第7天</h4>
+                <p>在巴迪村度过了一个充满大自然声音的晚上，整理行装回到主营地
+    这大概会花费4小时的徒步旅行时间。下午你可以放松一下，晚上
+    和你的团队享用晚餐。</p>
+                <h4 class="datas"> <b></b>第8天</h4>
+                <p>准备返回</p>
+            </div>
+            
+            
+            
+            <div class="tuijian clearfix">
+                    <h3 class="title colGreen">住宿安排</h3>
+                    <p>抵达日，项目介绍和学习如何追踪动物足迹。</p>        
+            </div>
+            <h3 class="title colGreen">餐饮安排</h3>
+            <p>抵达日，项目介绍和学习如何追踪动物足迹。</p>
+            <div class="tuijian clearfix">
+                    <h3 class="title colGreen">注意事项</h3>
+                    <p>丛林散步需要你有中等以上 的健康状况。散步是为了在慢行中发现
+    动物的踪迹并且追踪他们的行为，但是这是一个热带雨林，这里的
+    湿度可以达到90-100%它可能不热，湿度真的很大，而且遇到水蛭
+    的可能性也很大，所以这可能不是胆小或者身体欠佳的人希望参加
+    的。</p>        
+            </div>
+            <h3 class="title colGreen">价格内容</h3>
+            <div class="contian clearfix">
+                <span><img src="images/syhas.png">住宿</span>
+                <span><img src="images/syhas.png">早饭</span>
+                <span><img src="images/syhas.png" >旅行保险</span>
+                <span><img src="images/syno.png" >用车费</span> 
+            </div>
+        </div>
+    </div>
+    <div class="actCon">
+        <div class="zyCon_data">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    
+</div>
+<div class="fixed zybtns actNav clearfix">
+    <a href="###" class="active">
+        <b class="icon icon01"></b>
+        <span>详情</span>
+    </a>
+    <a href="###">
+        <b class="icon icon02"></b>
+        <span>日期</span>
+    </a>
+    <a href="###">
+        <b class="icon icon03"></b>
+        <span>咨询</span>
+    </a>
+    <a href="###" class="last">
+        <b class="icon icon04"></b>
+        <span>预定</span>
+    </a>
+</div>
+
+</body>
+</html>
